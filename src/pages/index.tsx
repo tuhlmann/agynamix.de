@@ -6,7 +6,7 @@ import ReactDOM from "react-dom"
 import theme from "../../config/theme"
 import website from "../../config/website"
 import {SimpleHero} from "../components/simple-hero"
-import Container, { FullWidthContainer } from "../components/Container"
+import Container, {FullWidthContainer} from "../components/Container"
 import Layout from "../components/Layout"
 import Link from "../components/Link"
 import SEO from "../components/SEO"
@@ -18,8 +18,8 @@ import resumeImg from "../images/resume.svg"
 import skillsImg from "../images/skills.svg"
 import clientImg from "../images/client.svg"
 
-import photoOfTorsten from '../images/hero/torsten.png'
-import { NavLink, TextLink, TextExtLink } from "../components/Header";
+import photoOfTorsten from "../images/hero/torsten.png"
+import {NavLink, TextLink, TextExtLink} from "../components/Header"
 
 interface IProps {
   backgroundColor: string
@@ -140,7 +140,7 @@ function SubscribeConfirmation() {
       top: 0,
       left: 0,
       width: "100%",
-      zIndex: 11,
+      zIndex: 11
     })
     document.body.append(portalContainerRef.current)
   }, [])
@@ -155,15 +155,12 @@ function SubscribeConfirmation() {
       }, 200)
     }
   }, [])
-  React.useEffect(
-    () => {
-      if (showMessage) {
-        setAnimateIn(true)
-        setTimeout(() => setAnimateIn(false), 4000)
-      }
-    },
-    [showMessage]
-  )
+  React.useEffect(() => {
+    if (showMessage) {
+      setAnimateIn(true)
+      setTimeout(() => setAnimateIn(false), 4000)
+    }
+  }, [showMessage])
 
   if (showMessage) {
     return ReactDOM.createPortal(
@@ -199,39 +196,48 @@ interface IRoundLinkProps {
 const RoundLink: React.SFC<IRoundLinkProps> = ({background, link, text}) => {
   return (
     <Link to={link}>
-      <div css={{
-        width: 130,
-        height: 130,
-        display: 'flex',
-        margin: 5,
-        background: background,
-        backgroundPosition: 'center',
-        backgroundSize: 'contain',
-        borderRadius: '50%',
-        justifyItems: 'center',
-        padding: 10,
-      }}>
-        <span css={{
-          margin: 'auto', 
-          textAlign: 'center', 
-          color: 'white', 
-          opacity: 0.8,
-          '&:hover': {
-            opacity: 1
-          }        }}>{text}</span>
+      <div
+        css={{
+          width: 130,
+          height: 130,
+          display: "flex",
+          margin: 5,
+          background,
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+          borderRadius: "50%",
+          justifyItems: "center",
+          padding: 10
+        }}
+      >
+        <span
+          css={{
+            margin: "auto",
+            textAlign: "center",
+            color: "white",
+            opacity: 0.8,
+            "&:hover": {
+              opacity: 1
+            }
+          }}
+        >
+          {text}
+        </span>
       </div>
     </Link>
   )
 }
 
-
 export default function Index(dataWrapper: any) {
-  const { data: { allMdx } } = dataWrapper
+  const {
+    data: {allMdx}
+  } = dataWrapper
   return (
     <Layout headerColor={theme.colors.black} hero={<SimpleHero />} pageTitle="AGYNAMIX - Passionate Software">
       <SEO />
       <SubscribeConfirmation />
-      <Container maxWidth={1200}
+      <Container
+        maxWidth={1200}
         css={css`
           display: flex;
           justify-content: space-around;
@@ -254,65 +260,67 @@ export default function Index(dataWrapper: any) {
           }
         `}
       >
-        <div css={{flexGrow: 1, alignSelf: 'center'}}>
+        <div css={{flexGrow: 1, alignSelf: "center"}}>
           <div
             css={{
-              maxWidth: 380,            
+              maxWidth: 380,
               [bpMaxSM]: {
                 width: 200
-              },
+              }
             }}
           >
             <img
               src={photoOfTorsten}
               alt="Torsten Uhlmann"
-              css={{ maxWidth: '90%', marginBottom: 0, borderRadius: '50%' }}
+              css={{maxWidth: "90%", marginBottom: 0, borderRadius: "50%"}}
             />
           </div>
         </div>
         <div css={{flexGrow: 1, maxWidth: 600}}>
           <div>
-            <h1 css={{marginTop:0}}>Hello, my name is Torsten.</h1>
+            <h1 css={{marginTop: 0}}>Hello, my name is Torsten.</h1>
             <p>
-              I'm a Full Stack software developer working with Scala, Java, Clojure
-              and Typescript, <TextLink to="/skills">amongst others</TextLink>.
+              I'm a Full Stack software developer working with Scala, Java, Clojure and Typescript,{" "}
+              <TextLink to="/skills">amongst others</TextLink>.
             </p>
-            <p>I love developing <TextLink to="/products">new things</TextLink> and
-            working with <TextLink to="/clients">great teams</TextLink>; 
-            I taught <TextLink to="/teaching">courses</TextLink>, spoke 
-            at <TextLink to="/teaching">conferences</TextLink> and
-            wrote a <TextLink to="/teaching">book</TextLink>.</p>            
-            <h2 style={{marginBottom: '10px'}}>More about me:</h2>
+            <p>
+              I love developing <TextLink to="/products">new things</TextLink> and working with{" "}
+              <TextLink to="/clients">great teams</TextLink>; I taught <TextLink to="/teaching">courses</TextLink>,
+              spoke at <TextLink to="/teaching">conferences</TextLink> and wrote a{" "}
+              <TextLink to="/teaching">book</TextLink>.
+            </p>
+            <h2 style={{marginBottom: "10px"}}>More about me:</h2>
           </div>
-          <div css={css`
-            display: flex;
-            justify-content: space-between;
-            ${bpMaxSM} {
-              flex-direction: column;
-              align-items: center;
-            }
-            `
-          }>
-            <RoundLink 
-              background={`linear-gradient(45deg, rgba(219, 87, 86, 0.75), rgba(219, 87, 86, 1)), url(${resumeImg})`} 
-              link="/resume" 
+          <div
+            css={css`
+              display: flex;
+              justify-content: space-between;
+              ${bpMaxSM} {
+                flex-direction: column;
+                align-items: center;
+              }
+            `}
+          >
+            <RoundLink
+              background={`linear-gradient(45deg, rgba(219, 87, 86, 0.75), rgba(219, 87, 86, 1)), url(${resumeImg})`}
+              link="/resume"
               text="My Resume"
             />
-            <RoundLink 
-              background={`linear-gradient(45deg, rgba(6, 19, 36, 0.75), rgba(6, 19, 36, 1)), url(${skillsImg})`} 
-              link="/skills" 
+            <RoundLink
+              background={`linear-gradient(45deg, rgba(6, 19, 36, 0.75), rgba(6, 19, 36, 1)), url(${skillsImg})`}
+              link="/skills"
               text="My Skills"
             />
-            <RoundLink 
-              background={`linear-gradient(45deg, rgba(73, 115, 140, 0.75), rgba(73, 115, 140, 1)), url(${clientImg})`} 
-              link="/clients" 
+            <RoundLink
+              background={`linear-gradient(45deg, rgba(73, 115, 140, 0.75), rgba(73, 115, 140, 1)), url(${clientImg})`}
+              link="/clients"
               text="My Clients"
             />
           </div>
           <div>
             <p style={{marginTop: 10}}>
-              If you're looking for an accomplished software engineer 
-              you've come to the right place, <TextExtLink href={website.contactEmail}>let's get in touch!</TextExtLink>
+              If you're looking for an accomplished software engineer you've come to the right place,{" "}
+              <TextExtLink href={website.contactEmail}>let's get in touch!</TextExtLink>
             </p>
           </div>
         </div>

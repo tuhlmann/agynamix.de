@@ -1,7 +1,7 @@
 import {
   preparePresentationData,
   sortByPresentationDate,
-} from '../lib/prepare-presentation-data'
+} from "../lib/prepare-presentation-data"
 
 export default [
   // {
@@ -18,19 +18,19 @@ export default [
   //   ],
   //   description: `
   //   `,
-  // },
+  // }, 
   {
-    title: 'React Hooks and Suspense',
+    title: "React Hooks and Suspense",
     resources: [
-      '[repo](https://github.com/kentcdodds/react-hooks-and-suspense-egghead-playlist)',
+      "[repo](https://github.com/kentcdodds/react-hooks-and-suspense-egghead-playlist)",
     ],
-    tags: ['react', 'testing'],
+    tags: ["react", "testing"],
     deliveries: [
       {
-        event: '[Egghead.io](https://kcd.im/egghead) Course',
-        date: '2018-10-27',
+        event: "[Egghead.io](https://kcd.im/egghead) Course",
+        date: "2018-10-27",
         recording:
-          'https://egghead.io/playlists/react-hooks-and-suspense-650307f2',
+          "https://egghead.io/playlists/react-hooks-and-suspense-650307f2",
       },
     ],
     description: `
@@ -39,15 +39,15 @@ export default [
     `,
   },
   {
-    title: 'Simplify React Apps with React Hooks',
-    resources: ['[repo](https://github.com/kentcdodds/react-github-profile)'],
-    tags: ['react', 'testing'],
+    title: "Simplify React Apps with React Hooks",
+    resources: ["[repo](https://github.com/kentcdodds/react-github-profile)"],
+    tags: ["react", "testing"],
     deliveries: [
       {
-        event: '[Egghead.io](https://kcd.im/egghead) Course',
-        date: '2018-12-04',
+        event: "[Egghead.io](https://kcd.im/egghead) Course",
+        date: "2018-12-04",
         recording:
-          'https://egghead.io/courses/simplify-react-apps-with-react-hooks',
+          "https://egghead.io/courses/simplify-react-apps-with-react-hooks",
       },
     ],
     description: `
@@ -61,21 +61,21 @@ export default [
     `,
   },
   {
-    title: 'Modern React Workshop: Hooks and Suspense',
-    resources: ['[repo](https://github.com/kentcdodds/modern-react)'],
-    tags: ['react'],
+    title: "Modern React Workshop: Hooks and Suspense",
+    resources: ["[repo](https://github.com/kentcdodds/modern-react)"],
+    tags: ["react"],
     deliveries: [
       {
-        event: 'Self-organized PayPal workshop day (Part 2)',
-        date: '2018-11-28',
+        event: "Self-organized PayPal workshop day (Part 2)",
+        date: "2018-11-28",
         recording:
-          'https://www.youtube.com/watch?v=NKAfuguroRY&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf',
+          "https://www.youtube.com/watch?v=NKAfuguroRY&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf",
       },
       {
-        event: 'Self-organized PayPal workshop day (Part 1)',
-        date: '2018-11-28',
+        event: "Self-organized PayPal workshop day (Part 1)",
+        date: "2018-11-28",
         recording:
-          'https://www.youtube.com/watch?v=xcZXS_VEJS0&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf',
+          "https://www.youtube.com/watch?v=xcZXS_VEJS0&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf",
       },
     ],
     description: `
@@ -85,18 +85,18 @@ export default [
     `,
   },
   {
-    title: 'Testing React and Web Applications',
-    resources: ['[repo](https://github.com/kentcdodds/testing-workshop)'],
-    tags: ['testing', 'automation', 'jest', 'cypress', 'react'],
+    title: "Testing React and Web Applications",
+    resources: ["[repo](https://github.com/kentcdodds/testing-workshop)"],
+    tags: ["testing", "automation", "jest", "cypress", "react"],
     deliveries: [
       {
-        event: 'Workshop.me in San Francisco',
-        date: '2018-03-27',
+        event: "Workshop.me in San Francisco",
+        date: "2018-03-27",
       },
       {
         event:
-          '[Frontend Masters](https://frontendmasters.com/courses/testing-react/)',
-        date: '2018-04-19',
+          "[Frontend Masters](https://frontendmasters.com/courses/testing-react/)",
+        date: "2018-04-19",
       },
     ],
     description: `
@@ -120,27 +120,27 @@ export default [
     `,
   },
   {
-    title: 'Testing Practices and Principles',
+    title: "Testing Practices and Principles",
     resources: [
-      '[slides](http://slides.com/kentcdodds/testing-principles)',
-      '[repo](https://github.com/kentcdodds/testing-workshop)',
+      "[slides](http://slides.com/kentcdodds/testing-principles)",
+      "[repo](https://github.com/kentcdodds/testing-workshop)",
     ],
-    tags: ['testing', 'automation', 'jest', 'cypress'],
+    tags: ["testing", "automation", "jest", "cypress"],
     deliveries: [
       {
-        event: '[Assert(JS)](https://www.assertjs.com/training)',
-        date: '2018-02-21',
+        event: "[Assert(JS)](https://www.assertjs.com/training)",
+        date: "2018-02-21",
         recording:
-          'https://www.youtube.com/watch?v=VQZx1Z3sW0E&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf',
+          "https://www.youtube.com/watch?v=VQZx1Z3sW0E&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf",
       },
       {
-        event: 'Workshop.me in San Francisco',
-        date: '2018-03-26',
+        event: "Workshop.me in San Francisco",
+        date: "2018-03-26",
       },
       {
         event:
-          '[Frontend Masters](https://frontendmasters.com/courses/testing-practices-principles/)',
-        date: '2018-04-18',
+          "[Frontend Masters](https://frontendmasters.com/courses/testing-practices-principles/)",
+        date: "2018-04-18",
       },
     ],
     description: `
@@ -163,38 +163,38 @@ export default [
     `,
   },
   {
-    title: 'Advanced React Component Patterns',
+    title: "Advanced React Component Patterns",
     resources: [
-      '[repo](https://github.com/kentcdodds/advanced-react-patterns)',
+      "[repo](https://github.com/kentcdodds/advanced-react-patterns)",
     ],
-    tags: ['react'],
+    tags: ["react"],
     deliveries: [
       {
         event:
-          '[Egghead.io](https://egghead.io/courses/advanced-react-component-patterns)',
-        date: '2017-12-04',
+          "[Egghead.io](https://egghead.io/courses/advanced-react-component-patterns)",
+        date: "2017-12-04",
         recording:
-          'https://egghead.io/courses/advanced-react-component-patterns',
+          "https://egghead.io/courses/advanced-react-component-patterns",
       },
       {
         event:
-          '[Frontend Masters](https://frontendmasters.com/courses/advanced-react-patterns/)',
-        date: '2018-04-17',
+          "[Frontend Masters](https://frontendmasters.com/courses/advanced-react-patterns/)",
+        date: "2018-04-17",
       },
       {
-        event: 'JS@PayPal (internal conference)',
-        date: '2018-05-11',
+        event: "JS@PayPal (internal conference)",
+        date: "2018-05-11",
         recording:
-          'https://www.youtube.com/playlist?list=PLV5CVI1eNcJgBniABPfk_tMliLrSJNC-T',
+          "https://www.youtube.com/playlist?list=PLV5CVI1eNcJgBniABPfk_tMliLrSJNC-T",
       },
       {
-        event: 'Workshop.me online',
-        date: '2018-06-19',
-        endDate: '2018-06-20',
+        event: "Workshop.me online",
+        date: "2018-06-19",
+        endDate: "2018-06-20",
       },
       {
-        event: 'Workshop.me in Portland',
-        date: '2018-07-11',
+        event: "Workshop.me in Portland",
+        date: "2018-07-11",
       },
     ],
     description: `
@@ -218,25 +218,25 @@ export default [
     `,
   },
   {
-    title: `The Beginner's Guide to ReactJS`,
+    title: "The Beginner's Guide to ReactJS",
     resources: [
-      '[repo](https://github.com/eggheadio-projects/the-beginner-s-guide-to-reactjs)',
+      "[repo](https://github.com/eggheadio-projects/the-beginner-s-guide-to-reactjs)",
     ],
-    tags: ['react'],
+    tags: ["react"],
     deliveries: [
       {
         event:
-          '[Egghead.io](https://egghead.io/courses/the-beginner-s-guide-to-reactjs)',
-        date: '2017-12-04',
+          "[Egghead.io](https://egghead.io/courses/the-beginner-s-guide-to-reactjs)",
+        date: "2017-12-04",
       },
       {
-        event: 'Workshop.me in Salt Lake City',
-        date: '2018-08-14',
+        event: "Workshop.me in Salt Lake City",
+        date: "2018-08-14",
       },
       {
         event:
-          '[Framework Summit 2018](https://www.frameworksummit.com/workshop/introduction-to-react)',
-        date: '2018-10-01',
+          "[Framework Summit 2018](https://www.frameworksummit.com/workshop/introduction-to-react)",
+        date: "2018-10-01",
       },
     ],
     description: `
@@ -254,23 +254,23 @@ export default [
     `,
   },
   {
-    title: 'Code Transformation and Linting',
+    title: "Code Transformation and Linting",
     resources: [
-      '[slides](http://slides.com/kentcdodds/asts-workshop)',
-      '[repo](https://github.com/kentcdodds/asts-workshop)',
+      "[slides](http://slides.com/kentcdodds/asts-workshop)",
+      "[repo](https://github.com/kentcdodds/asts-workshop)",
     ],
-    tags: ['babel', 'eslint', 'codemod', 'Abstract Syntax Trees', 'asts'],
+    tags: ["babel", "eslint", "codemod", "Abstract Syntax Trees", "asts"],
     deliveries: [
       {
         event:
-          '[Frontend Masters](https://frontendmasters.com/courses/linting-asts/)',
-        date: '2017-04-26',
+          "[Frontend Masters](https://frontendmasters.com/courses/linting-asts/)",
+        date: "2017-04-26",
       },
       {
-        event: 'Self-organized PayPal practice-run',
-        date: '2017-04-19',
+        event: "Self-organized PayPal practice-run",
+        date: "2017-04-19",
         recording:
-          'https://www.youtube.com/watch?v=-iA7TAUGn2Y&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf',
+          "https://www.youtube.com/watch?v=-iA7TAUGn2Y&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf",
       },
     ],
     description: `
@@ -285,23 +285,23 @@ export default [
     `,
   },
   {
-    title: 'Testing JavaScript Applications',
+    title: "Testing JavaScript Applications",
     resources: [
-      '[slides](http://slides.com/kentcdodds/testing-workshop)',
-      '[repo](https://github.com/kentcdodds/testing-workshop)',
+      "[slides](http://slides.com/kentcdodds/testing-workshop)",
+      "[repo](https://github.com/kentcdodds/testing-workshop)",
     ],
-    tags: ['testing', 'jest', 'cypress'],
+    tags: ["testing", "jest", "cypress"],
     deliveries: [
       {
         event:
-          '[Frontend Masters](https://frontendmasters.com/courses/testing-javascript/)',
-        date: '2017-04-25',
+          "[Frontend Masters](https://frontendmasters.com/courses/testing-javascript/)",
+        date: "2017-04-25",
       },
       {
-        event: 'Self-organized PayPal practice-run',
-        date: '2017-04-20',
+        event: "Self-organized PayPal practice-run",
+        date: "2017-04-20",
         recording:
-          'https://youtu.be/DdqiXcYDv-8?list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf',
+          "https://youtu.be/DdqiXcYDv-8?list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf",
       },
     ],
     description: `
@@ -315,52 +315,52 @@ export default [
     `,
   },
   {
-    title: 'ES6 and Beyond',
+    title: "ES6 and Beyond",
     resources: [
-      '[slides](http://slides.com/kentcdodds/es6-workshop#/)',
-      '[workshop repo](https://github.com/kentcdodds/es6-workshop)',
-      '[app repo](https://github.com/kentcdodds/es6-todomvc)',
+      "[slides](http://slides.com/kentcdodds/es6-workshop#/)",
+      "[workshop repo](https://github.com/kentcdodds/es6-workshop)",
+      "[app repo](https://github.com/kentcdodds/es6-todomvc)",
     ],
-    tags: ['ES.next', 'ES6', 'webpack'],
+    tags: ["ES.next", "ES6", "webpack"],
     deliveries: [
       {
-        event: 'Self-organized PayPal workshop day (Part 2)',
-        date: '2017-03-07',
+        event: "Self-organized PayPal workshop day (Part 2)",
+        date: "2017-03-07",
         recording:
-          'https://youtu.be/eOKQDh50ECU?list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf',
+          "https://youtu.be/eOKQDh50ECU?list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf",
       },
       {
-        event: 'Self-organized PayPal workshop day (Part 1)',
-        date: '2017-01-23',
+        event: "Self-organized PayPal workshop day (Part 1)",
+        date: "2017-01-23",
         recording:
-          'https://youtu.be/t3R3R7UyN2Y?list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf',
+          "https://youtu.be/t3R3R7UyN2Y?list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf",
       },
       {
         event:
-          '[The Strange Loop](http://www.thestrangeloop.com/2016/es6-and-beyond.html)',
-        date: '2016-09-15',
-        recording: 'https://youtu.be/dnF-wrw0Q_w',
+          "[The Strange Loop](http://www.thestrangeloop.com/2016/es6-and-beyond.html)",
+        date: "2016-09-15",
+        recording: "https://youtu.be/dnF-wrw0Q_w",
       },
       {
-        event: '[Connect.Tech](http://connect.tech/)',
-        date: '2016-10-20',
-        recording: 'https://youtu.be/nCP6jsN9XPI',
+        event: "[Connect.Tech](http://connect.tech/)",
+        date: "2016-10-20",
+        recording: "https://youtu.be/nCP6jsN9XPI",
       },
       {
-        event: '[The Kansas City Developer Conference](http://www.kcdc.info/)',
-        date: '2016-06-22',
+        event: "[The Kansas City Developer Conference](http://www.kcdc.info/)",
+        date: "2016-06-22",
       },
       {
-        event: '[MidwestJS](http://midwestjs.com/)',
-        date: '2015-08-12',
+        event: "[MidwestJS](http://midwestjs.com/)",
+        date: "2015-08-12",
         recording:
-          'https://youtu.be/aeY6ctvsurs?list=PLV5CVI1eNcJi1ZdXFSxR23QUeNVbauL3A',
+          "https://youtu.be/aeY6ctvsurs?list=PLV5CVI1eNcJi1ZdXFSxR23QUeNVbauL3A",
       },
       {
         event:
-          '[SLC JS Learners](http://www.meetup.com/SLC-JS-Learners/events/220770922/)',
-        date: '2015-04-21',
-        recording: 'https://youtu.be/_Pn32tTtbuQ',
+          "[SLC JS Learners](http://www.meetup.com/SLC-JS-Learners/events/220770922/)",
+        date: "2015-04-21",
+        recording: "https://youtu.be/_Pn32tTtbuQ",
       },
     ],
     description: `
@@ -385,55 +385,55 @@ export default [
     `,
   },
   {
-    title: 'Intro to ReactJS',
+    title: "Intro to ReactJS",
     resources: [
-      '[repo](https://github.com/kentcdodds/react-workshop)',
-      '[app](https://github.com/kentcdodds/react-github-profile)',
+      "[repo](https://github.com/kentcdodds/react-workshop)",
+      "[app](https://github.com/kentcdodds/react-github-profile)",
     ],
-    tags: ['react'],
+    tags: ["react"],
     deliveries: [
       {
-        event: 'Internally at PayPal',
-        recording: 'https://youtu.be/VZaQfb2y6BI',
-        date: '2016-12-13',
+        event: "Internally at PayPal",
+        recording: "https://youtu.be/VZaQfb2y6BI",
+        date: "2016-12-13",
       },
       {
-        event: 'Internally at PayPal',
-        recording: 'https://youtu.be/e-A4qAwr9Tg',
-        date: '2016-10-06',
+        event: "Internally at PayPal",
+        recording: "https://youtu.be/e-A4qAwr9Tg",
+        date: "2016-10-06",
       },
       {
-        event: '[MidwestJS](http://midwestjs.com/)',
-        date: '2016-08-10',
+        event: "[MidwestJS](http://midwestjs.com/)",
+        date: "2016-08-10",
       },
     ],
-    description: `TODO 😅`,
+    description: "TODO 😅",
   },
   {
-    title: 'Webpack Deep Dive',
+    title: "Webpack Deep Dive",
     resources: [
-      '[slides](https://slides.com/kentcdodds/webpack-deep-dive)',
-      '[app repo](https://github.com/kentcdodds/es6-todomvc)',
+      "[slides](https://slides.com/kentcdodds/webpack-deep-dive)",
+      "[app repo](https://github.com/kentcdodds/es6-todomvc)",
     ],
-    tags: ['webpack'],
+    tags: ["webpack"],
     deliveries: [
       {
-        event: '[Frontend Masters](http://kcd.im/fem-webpack)',
-        date: '2016-08-08',
-        recording: 'http://kcd.im/fem-webpack',
+        event: "[Frontend Masters](http://kcd.im/fem-webpack)",
+        date: "2016-08-08",
+        recording: "http://kcd.im/fem-webpack",
       },
       {
         event:
-          '[Egghead.io](https://egghead.io/courses/using-webpack-for-production-javascript-applications)',
-        date: '2016-06-17',
+          "[Egghead.io](https://egghead.io/courses/using-webpack-for-production-javascript-applications)",
+        date: "2016-06-17",
         recording:
-          'https://egghead.io/courses/using-webpack-for-production-javascript-applications',
+          "https://egghead.io/courses/using-webpack-for-production-javascript-applications",
       },
       {
-        event: '[MidwestJS](http://midwestjs.com/)',
-        date: '2015-08-12',
+        event: "[MidwestJS](http://midwestjs.com/)",
+        date: "2015-08-12",
         recording:
-          'https://youtu.be/a96r7Tjf0Ps?list=PLV5CVI1eNcJi1ZdXFSxR23QUeNVbauL3A',
+          "https://youtu.be/a96r7Tjf0Ps?list=PLV5CVI1eNcJi1ZdXFSxR23QUeNVbauL3A",
       },
     ],
     description: `
@@ -452,19 +452,19 @@ export default [
     `,
   },
   {
-    title: 'How to Write an Open Source JavaScript Library',
-    resources: ['[repo](https://github.com/kentcdodds/starwars-names)'],
-    tags: ['open source'],
+    title: "How to Write an Open Source JavaScript Library",
+    resources: ["[repo](https://github.com/kentcdodds/starwars-names)"],
+    tags: ["open source"],
     deliveries: [
       {
-        event: '[Frontend Masters](http://kcd.im/fem-oss)',
-        date: '2016-08-09',
-        recording: 'http://kcd.im/fem-oss',
+        event: "[Frontend Masters](http://kcd.im/fem-oss)",
+        date: "2016-08-09",
+        recording: "http://kcd.im/fem-oss",
       },
       {
-        event: '[Egghead.io](http://kcd.im/write-oss)',
-        date: '2015-08-24',
-        recording: 'http://kcd.im/write-oss',
+        event: "[Egghead.io](http://kcd.im/write-oss)",
+        date: "2015-08-24",
+        recording: "http://kcd.im/write-oss",
       },
     ],
     description: `
@@ -483,19 +483,19 @@ export default [
     `,
   },
   {
-    title: 'React + AVA = ❤️',
-    resources: ['[repo](https://github.com/kentcdodds/react-ava-workshop)'],
-    tags: ['react', 'testing'],
+    title: "React + AVA = ❤️",
+    resources: ["[repo](https://github.com/kentcdodds/react-ava-workshop)"],
+    tags: ["react", "testing"],
     deliveries: [
       {
-        event: 'Internally at PayPal',
-        date: '2016-02-16',
-        recording: 'https://youtu.be/UmDNx06472I',
+        event: "Internally at PayPal",
+        date: "2016-02-16",
+        recording: "https://youtu.be/UmDNx06472I",
       },
       {
-        event: 'Hangout with my team',
-        date: '2016-04-13',
-        recording: 'https://youtu.be/RxLW6-3dk5A',
+        event: "Hangout with my team",
+        date: "2016-04-13",
+        recording: "https://youtu.be/RxLW6-3dk5A",
       },
     ],
     description: `
@@ -504,15 +504,15 @@ export default [
     `,
   },
   {
-    title: 'How to Contribute to an Open Source Project on GitHub',
-    tags: ['open source'],
+    title: "How to Contribute to an Open Source Project on GitHub",
+    tags: ["open source"],
     deliveries: [
       {
         event:
-          '[Egghead.io](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)',
-        date: '2016-02-18',
+          "[Egghead.io](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)",
+        date: "2016-02-18",
         recording:
-          'https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github',
+          "https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github",
       },
     ],
     description: `
@@ -526,29 +526,29 @@ export default [
     `,
   },
   {
-    title: 'Intro to Webpack and Migrating from Require.js to Webpack ',
+    title: "Intro to Webpack and Migrating from Require.js to Webpack ",
     resources: [
-      '[repo](https://github.com/kentcdodds/require-to-webpack-todomvc)',
+      "[repo](https://github.com/kentcdodds/require-to-webpack-todomvc)",
     ],
-    tags: ['webpack'],
+    tags: ["webpack"],
     deliveries: [
       {
-        event: 'JS @ PayPal',
-        date: '2015-12-17',
-        recording: 'https://youtu.be/NEJyIBwo-ik',
+        event: "JS @ PayPal",
+        date: "2015-12-17",
+        recording: "https://youtu.be/NEJyIBwo-ik",
       },
     ],
   },
   {
-    title: 'Angular and Webpack for Modular Applications',
-    tags: ['angular', 'webpack'],
+    title: "Angular and Webpack for Modular Applications",
+    tags: ["angular", "webpack"],
     deliveries: [
       {
         event:
-          '[Egghead.io](https://egghead.io/courses/angular-and-webpack-for-modular-applications)',
-        date: '2015-09-05',
+          "[Egghead.io](https://egghead.io/courses/angular-and-webpack-for-modular-applications)",
+        date: "2015-09-05",
         recording:
-          'https://egghead.io/courses/angular-and-webpack-for-modular-applications',
+          "https://egghead.io/courses/angular-and-webpack-for-modular-applications",
       },
     ],
     description: `
@@ -560,29 +560,29 @@ export default [
     `,
   },
   {
-    title: 'angular-formly',
+    title: "angular-formly",
     resources: [
-      '[slides](http://slides.com/kentcdodds/angular-formly)',
-      '[repo](https://github.com/kentcdodds/angular-formly-convert)',
+      "[slides](http://slides.com/kentcdodds/angular-formly)",
+      "[repo](https://github.com/kentcdodds/angular-formly-convert)",
     ],
-    tags: ['angular'],
+    tags: ["angular"],
     deliveries: [
       {
-        event: '[ng-conf](https://www.ng-conf.org/)',
-        date: '2015-03-04',
+        event: "[ng-conf](https://www.ng-conf.org/)",
+        date: "2015-03-04",
       },
     ],
   },
   {
-    title: 'AngularJS Authentication with JWT',
-    tags: ['angular'],
+    title: "AngularJS Authentication with JWT",
+    tags: ["angular"],
     deliveries: [
       {
         event:
-          '[Egghead.io](https://egghead.io/courses/angularjs-authentication-with-jwt)',
-        date: '2014-09-22',
+          "[Egghead.io](https://egghead.io/courses/angularjs-authentication-with-jwt)",
+        date: "2014-09-22",
         recording:
-          'https://egghead.io/courses/angularjs-authentication-with-jwt',
+          "https://egghead.io/courses/angularjs-authentication-with-jwt",
       },
     ],
     description: `
@@ -600,21 +600,21 @@ export default [
     `,
   },
   {
-    title: 'Intro to AngularJS',
+    title: "Intro to AngularJS",
     resources: [
-      '[slides](http://slides.com/kentcdodds/intro-to-angularjs)',
-      '[workshop](http://kentcdodds.com/ng-workshop/)',
+      "[slides](http://slides.com/kentcdodds/intro-to-angularjs)",
+      "[workshop](http://kentcdodds.com/ng-workshop/)",
     ],
-    tags: ['angular'],
+    tags: ["angular"],
     deliveries: [
       {
-        event: '[JFokus 2015](http://www.jfokus.se/jfokus/)',
-        date: '2015-02-06',
+        event: "[JFokus 2015](http://www.jfokus.se/jfokus/)",
+        date: "2015-02-06",
       },
       {
-        event: '[BYU](https://byu.edu/)',
-        date: '2014-01-20',
-        recording: 'https://youtu.be/GmVUw_Efi_M',
+        event: "[BYU](https://byu.edu/)",
+        date: "2014-01-20",
+        recording: "https://youtu.be/GmVUw_Efi_M",
       },
     ],
     description: `

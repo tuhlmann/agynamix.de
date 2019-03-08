@@ -1,13 +1,13 @@
 import React from "react"
-import { css } from "@emotion/core"
+import {css} from "@emotion/core"
 import Layout from "../components/Layout"
-import Container from "components/Container"
+import Container from "../components/Container"
 import SEO from "../components/SEO"
 import theme from "../../config/theme"
-import workshops from "../data/workshops"
-import Presentations from "components/presentations"
+import clients from "../data/clients"
+import {ClientRenderer} from "../components/ClientRenderer"
 
-export default function Workshops() {
+export default function Clients() {
   return (
     <Layout headerColor={theme.colors.black}>
       <SEO />
@@ -17,7 +17,7 @@ export default function Workshops() {
           margin-top: 30px;
         `}
       >
-        <Presentations presentations={workshops} />
+        <ClientRenderer clients={clients} />
       </Container>
     </Layout>
   )

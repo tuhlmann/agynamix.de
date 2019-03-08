@@ -1,14 +1,14 @@
-import React from 'react'
-import Link from '../components/Link'
-import { css } from '@emotion/core'
-import { bpMaxSM } from '../lib/breakpoints'
+import React from "react"
+import Link from "../components/Link"
+import { css } from "@emotion/core"
+import { bpMaxSM } from "../lib/breakpoints"
 // import SubscribeForm from './Forms/Subscribe'
-import { Twitter, GitHub, LinkedIn, Facebook } from './Social'
-import Container from './Container'
-import theme from '../../config/theme'
-import website from '../../config/website'
-import styled from '@emotion/styled'
-import { ContactIcon, FollowIcon, CopyrightIcon, CallIcon } from './ConfirmMessage/Illustrations'
+import { Twitter, GitHub, LinkedIn, Facebook } from "./Social"
+import Container from "./Container"
+import theme from "../../config/theme"
+import website from "../../config/website"
+import styled from "@emotion/styled"
+import { ContactIcon, FollowIcon, CopyrightIcon, CallIcon } from "./ConfirmMessage/Illustrations"
 
 // import Signature from '../images/signature.png'
 
@@ -18,10 +18,10 @@ function FooterLink({ ...props }) {
     <Link
       activeClassName="active"
       css={{
-        textDecoration: 'none',
+        textDecoration: "none",
         color: footerColor,
-        '&:hover,&:focus': {
-          color: 'white',
+        "&:hover,&:focus": {
+          color: "white",
         },
       }}
       {...props}
@@ -30,15 +30,15 @@ function FooterLink({ ...props }) {
 }
 
 const NavLink = styled(FooterLink)({
-  padding: '8px',
-  borderRadius: '3px',
-  background: 'transparent',
+  padding: "8px",
+  borderRadius: "3px",
+  background: "transparent",
   opacity: 0.8,
-  '&:hover': {
+  "&:hover": {
     opacity: 1,
   },
-  '&.active': {
-    background: 'rgba(40, 28, 77, 0.7)',
+  "&.active": {
+    background: "rgba(40, 28, 77, 0.7)",
   },
 })
 
@@ -47,10 +47,10 @@ function FooterExtLink({ children, ...props }) {
   return (
     <a
       css={{
-        textDecoration: 'none',
+        textDecoration: "none",
         color: footerColor,
-        '&:hover,&:focus': {
-          color: 'white',
+        "&:hover,&:focus": {
+          color: "white",
         },
       }}
       {...props}
@@ -59,15 +59,15 @@ function FooterExtLink({ children, ...props }) {
 }
 
 const ExternalLink = styled(FooterExtLink)({
-  padding: '8px',
-  borderRadius: '3px',
-  background: 'transparent',
+  padding: "8px",
+  borderRadius: "3px",
+  background: "transparent",
   opacity: 0.8,
-  '&:hover': {
+  "&:hover": {
     opacity: 1,
   },
-  '&.active': {
-    background: 'rgba(40, 28, 77, 0.7)',
+  "&.active": {
+    background: "rgba(40, 28, 77, 0.7)",
   },
 })
 
@@ -159,7 +159,7 @@ const Footer = () => (
         {/* <Link to="/" aria-label="Return to homepage">
           <img
             src={Signature}
-            alt="Kent C. Dodds"
+            alt="Kent C. Dodds" 
             css={css`
               max-width: 100px;
             `}
@@ -174,11 +174,11 @@ const Footer = () => (
         `}>
         {CopyrightIcon}
         <div>
-          <NavLink css={{ marginLeft: 10 }} to="/imprint">Imprint</NavLink>{' / '}<NavLink to="/privacy-policy">Privacy Policy</NavLink>
+          <NavLink css={{ marginLeft: 10 }} to="/imprint">Imprint</NavLink>{" / "}<NavLink to="/privacy-policy">Privacy Policy</NavLink>
           <Paragraph>
             © 2019 by Torsten Uhlmann.
           <br />
-            Built with {' '} <span dangerouslySetInnerHTML={{ __html: '\u2764' }} /> in Thalheim.
+            Built with {" "} <span dangerouslySetInnerHTML={{ __html: "\u2764" }} /> in Thalheim.
           </Paragraph>
         </div>
       </div>

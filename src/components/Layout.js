@@ -1,19 +1,19 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { graphql, StaticQuery } from 'gatsby'
-import { MDXProvider } from '@mdx-js/tag'
-import { Global, css } from '@emotion/core'
+import React from "react"
+import Helmet from "react-helmet"
+import { graphql, StaticQuery } from "gatsby"
+import { MDXProvider } from "@mdx-js/tag"
+import { Global, css } from "@emotion/core"
 // import styled from '@emotion/styled'
-import { ThemeProvider } from 'emotion-theming'
-import { bpMaxSM } from '../lib/breakpoints'
-import theme from '../../config/theme'
-import mdxComponents from './mdx'
-import Header from './Header'
-import reset from '../lib/reset'
-import { fonts } from '../lib/typography'
-import config from '../../config/website'
-import Footer from '../components/Footer'
-import { SimpleHero } from './simple-hero';
+import { ThemeProvider } from "emotion-theming"
+import { bpMaxSM } from "../lib/breakpoints"
+import theme from "../../config/theme"
+import mdxComponents from "./mdx"
+import Header from "./Header"
+import reset from "../lib/reset"
+import { fonts } from "../lib/typography"
+import config from "../../config/website"
+import Footer from "../components/Footer"
+import { SimpleHero } from "./simple-hero"
 
 export const globalStyles = css`
   .button-secondary {
@@ -166,8 +166,8 @@ function Layout({
       <Helmet
         title={title}
         meta={[
-          { name: 'description', content: description },
-          { name: 'keywords', content: keywords.join() },
+          { name: "description", content: description },
+          { name: "keywords", content: keywords.join() },
         ]}
       >
         <html lang="en" />
@@ -183,7 +183,7 @@ function Layout({
           ${backgroundImage && `background-image: url(${backgroundImage})`};
         `}
       >
-        <div css={{ flex: '1 0 auto' }}>
+        <div css={{ flex: "1 0 auto" }}>
           {React.cloneElement(hero, { headerColor })}
           <Header
             siteTitle={pageTitle || siteMetadata.title}
@@ -197,7 +197,7 @@ function Layout({
             <>{children}</>
           </MDXProvider>
         </div>
-        <div css={{ flexShrink: '0' }}>
+        <div css={{ flexShrink: "0" }}>
           {noFooter ? null : (
             <Footer
               author={siteMetadata.author.name}

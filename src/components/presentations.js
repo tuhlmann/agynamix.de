@@ -1,17 +1,17 @@
-import React from 'react'
-import {css} from '@emotion/core'
-import {isEmpty} from 'lodash'
-import Markdown from 'react-markdown'
-import {bpMaxSM} from '../lib/breakpoints'
+import React from "react"
+import { css } from "@emotion/core"
+import { isEmpty } from "lodash"
+import Markdown from "react-markdown"
+import { bpMaxSM } from "../lib/breakpoints"
 
-function Presentations({presentations}) {
+function Presentations({ presentations }) {
   return presentations.map(
-    ({title, slug, description, deliveries, resources, tags}) => (
+    ({ title, slug, description, deliveries, resources, tags }) => (
       <div
         key={title}
         css={css`
           background: white;
-          border-radius: 5px;
+          border-radius: 5px; 
           padding: 40px;
           ${bpMaxSM} {
             padding: 20px;
@@ -120,15 +120,15 @@ function Presentations({presentations}) {
             <li key={index}>
               <div
                 css={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  '& > p': {marginBottom: 0},
+                  display: "flex",
+                  alignItems: "center",
+                  "& > p": { marginBottom: 0 },
                 }}
               >
                 <Markdown source={delivery.event} />
                 {delivery.recording ? (
                   <a
-                    css={{fontSize: '0.8rem', marginLeft: 10}}
+                    css={{ fontSize: "0.8rem", marginLeft: 10 }}
                     href={delivery.recording}
                   >
                     <span role="img" aria-label="recording">

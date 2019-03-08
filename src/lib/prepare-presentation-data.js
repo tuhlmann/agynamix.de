@@ -1,5 +1,5 @@
-import stripIndent from 'strip-indent'
-import slugify from '@sindresorhus/slugify'
+import stripIndent from "strip-indent"
+import slugify from "@sindresorhus/slugify"
 
 function preparePresentationData(presentation) {
   return {
@@ -7,9 +7,9 @@ function preparePresentationData(presentation) {
     ...presentation,
 
     // overrides
-    title: stripIndent(presentation.title || ''),
-    slug: slugify(presentation.title || ''),
-    description: stripIndent(presentation.description || ''),
+    title: stripIndent(presentation.title || ""),
+    slug: slugify(presentation.title || ""),
+    description: stripIndent(presentation.description || ""),
     resources: (presentation.resources || []).map(r => stripIndent(r)),
     deliveries: (presentation.deliveries || [])
       .map(delivery => ({
@@ -25,8 +25,8 @@ function preparePresentationData(presentation) {
 }
 
 function sortByPresentationDate(a, b) {
-  const mostRecentA = mostRecent(a.deliveries.map(({date}) => date))
-  const mostRecentB = mostRecent(b.deliveries.map(({date}) => date))
+  const mostRecentA = mostRecent(a.deliveries.map(({ date }) => date))
+  const mostRecentB = mostRecent(b.deliveries.map(({ date }) => date))
   return moreRecent(mostRecentA, mostRecentB) ? -1 : 1
 }
 
@@ -41,4 +41,4 @@ function moreRecent(a, b = new Date()) {
   return new Date(a).getTime() > new Date(b).getTime()
 }
 
-export {preparePresentationData, sortByPresentationDate}
+export { preparePresentationData, sortByPresentationDate }
