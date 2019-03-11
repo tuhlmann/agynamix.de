@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
 export default class HTML extends React.Component {
   render() {
@@ -20,7 +20,7 @@ export default class HTML extends React.Component {
           <div
             key="body"
             id="___gatsby"
-            dangerouslySetInnerHTML={{__html: this.props.body}}
+            dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
         </body>

@@ -281,13 +281,14 @@ export default function Index(dataWrapper: any) {
             <h1 css={{marginTop: 0}}>Hello, my name is Torsten.</h1>
             <p>
               I'm a Full Stack software developer working with Scala, Java, Clojure and Typescript,{" "}
-              <TextLink to="/skills">amongst others</TextLink>.
+              <TextLink to="/resume#skills">amongst others</TextLink>.
             </p>
             <p>
               I love developing <TextLink to="/products">new things</TextLink> and working with{" "}
-              <TextLink to="/clients">great teams</TextLink>; I taught <TextLink to="/teaching">courses</TextLink>,
-              spoke at <TextLink to="/teaching">conferences</TextLink> and wrote a{" "}
-              <TextLink to="/teaching">book</TextLink>.
+              <TextLink to="/clients">great teams</TextLink>; I taught{" "}
+              <TextLink to="/resume#training">courses</TextLink>, spoke at{" "}
+              <TextLink to="/resume#training">conferences</TextLink> and wrote a{" "}
+              <TextLink to="/resume#training">book</TextLink>.
             </p>
             <h2 style={{marginBottom: "10px"}}>More about me:</h2>
           </div>
@@ -308,8 +309,8 @@ export default function Index(dataWrapper: any) {
             />
             <RoundLink
               background={`linear-gradient(45deg, rgba(6, 19, 36, 0.75), rgba(6, 19, 36, 1)), url(${skillsImg})`}
-              link="/skills"
-              text="My Skills"
+              link="/consulting"
+              text="Consulting"
             />
             <RoundLink
               background={`linear-gradient(45deg, rgba(73, 115, 140, 0.75), rgba(73, 115, 140, 1)), url(${clientImg})`}

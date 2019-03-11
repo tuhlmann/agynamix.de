@@ -1,14 +1,14 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { css } from '@emotion/core'
-import styled from '@emotion/styled'
-import theme from '../../config/theme'
-import { fonts } from '../lib/typography'
+import React from "react"
+import { Link } from "gatsby"
+import { css } from "@emotion/core"
+import styled from "@emotion/styled"
+import theme from "../../config/theme"
+import { fonts } from "../lib/typography"
 
-import MobileNav from './MobileNav'
-import Container from './Container'
-import { bpMaxSM } from '../lib/breakpoints'
-import homeLinkLogo from '../images/hero/homeLinkLogo.png'
+import MobileNav from "./MobileNav"
+import Container from "./Container"
+import { bpMaxSM } from "../lib/breakpoints"
+import homeLinkLogo from "../images/hero/homeLinkLogo.png"
 
 function HeaderLink(props) {
   const { headerColor, ...myProps } = props
@@ -16,12 +16,12 @@ function HeaderLink(props) {
     <Link
       activeClassName="active"
       css={{
-        textDecoration: 'none',
+        textDecoration: "none",
         color: headerColor ? headerColor : theme.colors.black,
-        '&:hover,&:focus': {
+        "&:hover,&:focus": {
           color:
             headerColor === theme.colors.white
-              ? 'white'
+              ? "white"
               : theme.colors.link_color_hover,
         },
       }}
@@ -35,12 +35,13 @@ function ExternalLink(props) {
   return (
     <a
       css={{
-        textDecoration: 'none',
+        textDecoration: "none",
+        width: "fit-content",
         color: headerColor ? headerColor : theme.colors.black,
-        '&:hover,&:focus': {
+        "&:hover,&:focus": {
           color:
             headerColor === theme.colors.white
-              ? 'white'
+              ? "white"
               : theme.colors.link_color_hover,
         },
       }}
@@ -50,53 +51,53 @@ function ExternalLink(props) {
 }
 
 export const NavLink = styled(HeaderLink)({
-  margin: '8px',
-  background: 'transparent',
+  margin: "8px",
+  background: "transparent",
   opacity: 0.8,
-  '& + &': { marginLeft: 15 },
-  '&:hover': {
+  "& + &": { marginLeft: 15 },
+  "&:hover": {
     opacity: 1,
     boxShadow: `inset 0 -5px 0 ${theme.colors.link_hover_color_40}`,
-    transition: 'ease-in 0.5s border-bottom',
+    transition: "ease-in 0.5s border-bottom",
   },
   [bpMaxSM]: {
-    display: 'none',
+    display: "none",
   },
-  '&.active': {
+  "&.active": {
     boxShadow: `inset 0 -5px 0 ${theme.colors.link_hover_color_40}`
   },
 })
 
 export const TextLink = styled(HeaderLink)({
-  background: 'transparent',
+  background: "transparent",
   opacity: 1,
   boxShadow: `inset 0 -5px 0 ${theme.colors.link_hover_color_15}`,
-  transition: 'ease-in 0.5s border-bottom',
-  '&:hover': {
+  transition: "ease-in 0.5s border-bottom",
+  "&:hover": {
     opacity: 1,
     boxShadow: `inset 0 -5px 0 ${theme.colors.link_hover_color_40}`,
-    transition: 'ease-in 0.5s border-bottom',
+    transition: "ease-in 0.5s border-bottom",
   },
 })
 
 export const TextExtLink = styled(ExternalLink)({
-  background: 'transparent',
+  background: "transparent",
   opacity: 1,
   boxShadow: `inset 0 -5px 0 ${theme.colors.link_hover_color_15}`,
-  transition: 'ease-in 0.5s border-bottom',
-  '&:hover': {
+  transition: "ease-in 0.5s border-bottom",
+  "&:hover": {
     opacity: 1,
     boxShadow: `inset 0 -5px 0 ${theme.colors.link_hover_color_40}`,
-    transition: 'ease-in 0.5s border-bottom',
+    transition: "ease-in 0.5s border-bottom",
   },
 })
 
 const Header = ({
   dark,
-  bgColor = 'none',
+  bgColor = "none",
   /*siteTitle,*/
-  headerLink = '/',
-  headerColor = 'black',
+  headerLink = "/",
+  headerColor = "black",
   fixed = false,
 }) => (
     <header
@@ -108,9 +109,9 @@ const Header = ({
       ${bpMaxSM} {
         padding: 35px 0 0 0;
       }
-      background: ${dark ? '#090909' : `${bgColor}` || 'none'};
+      background: ${dark ? "#090909" : `${bgColor}` || "none"};
       z-index: 10;
-      position: ${fixed ? 'fixed' : 'absolute'};
+      position: ${fixed ? "fixed" : "absolute"};
       top: 0;
       font-family: ${fonts.regular};
     `}
@@ -118,10 +119,10 @@ const Header = ({
       <Container noVerticalPadding noHorizontalPadding maxWidth={1000}>
         <nav
           css={{
-            width: '100%',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
           <HeaderLink
@@ -132,7 +133,7 @@ const Header = ({
             <img
               src={homeLinkLogo}
               alt="Torsten Uhlmann"
-              css={{ maxWidth: '200px', marginBottom: 0, verticalAlign: 'bottom' }}
+              css={{ maxWidth: "200px", marginBottom: 0, verticalAlign: "bottom" }}
             />
           </HeaderLink>
           <div
@@ -154,10 +155,10 @@ const Header = ({
             <MobileNav color={headerColor} />
             <NavLink
               headerColor={headerColor}
-              to="/"
-              aria-label="View home page"
+              to="/consulting"
+              aria-label="View consulting page"
             >
-              Home
+              Consulting
           </NavLink>
             <NavLink
               headerColor={headerColor}

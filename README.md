@@ -1,5 +1,8 @@
-# Kent C. Dodds personal website
+# Torsten Uhlmann's personal website
 [![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors)
+
+This set is based on 
+[Kent C. Dodds personal website](https://github.com/kentcdodds/kentcdodds.com), all credit goes to him!
 
 This was bootstrapped via
 [egghead-gatsby-starter](https://github.com/eggheadio/gatsby-starter-egghead-blog)
@@ -12,6 +15,10 @@ https://github.com/jlengstorf/lengstorf.com
 
 A starter project in [Gatsby.js](https://www.gatsbyjs.org/) with
 [MDX](https://github.com/mdx-js/mdx).
+
+## Used Color Scheme:
+
+https://color.adobe.com/de/little-boy-playing-ice-hockey-1-color-theme-11989769/?showPublished=true
 
 ## Features
 

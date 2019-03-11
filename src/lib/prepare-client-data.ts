@@ -6,16 +6,36 @@ enum DateFormat {
   MonthAndYear = "MMM YYYY"
 }
 
+export enum Categories {
+  Client = "client",
+  Resume = "resume",
+  Product = "product",
+  Training = "training",
+  Publication = "publication",
+  Education = "education"
+}
+
+export interface Recommendation {
+  title: string
+  date: string
+  by: string
+  link?: string
+  description?: string
+}
+
 export interface ClientData {
   position: string
   client: string
   logo?: any
   start: string
   end: string
+  short?: string // short description
   description: string
   slug: string
-  url?: string
+  link?: string
   tags: string[]
+  categories: string[] // area of website
+  recommendations?: Recommendation[]
 }
 
 interface WithDate {
@@ -31,8 +51,19 @@ export function prepareData(client: ClientData) {
     position: stripIndent(client.position || ""),
     client: stripIndent(client.client || ""),
     slug: slugify(`${client.start}${client.client || ""}`),
+    short: client.short ? stripIndent(client.short) : undefined,
     description: stripIndent(client.description || ""),
-    tags: client.tags || []
+    tags: client.tags || [],
+    recommendations: (client.recommendations && client.recommendations.map(prepareRecommendations)) || undefined
+  }
+}
+
+function prepareRecommendations(recommendation: Recommendation): Recommendation {
+  return {
+    ...recommendation,
+
+    title: stripIndent(recommendation.title || ""),
+    description: stripIndent(recommendation.description || "")
   }
 }
 

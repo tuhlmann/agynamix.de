@@ -2,6 +2,12 @@
 title: Resume
 ---
 
+import {css} from "@emotion/core"
+import Container from "../components/Container"
+import clients from "../data/clients"
+import {ClientRenderer} from "../components/ClientRenderer"
+import {Categories} from "../lib/prepare-client-data"
+
 import photo from '../images/torsten.png'
 
 <div
@@ -26,6 +32,7 @@ import photo from '../images/torsten.png'
 </div>
 
 ## Summary 
+<div style={{backgroundColor: "#fff", borderRadius: "10px", padding: "40px", marginBottom: "20px"}}>
 My name is Torsten Uhlmann, I'm a german software developer with a passion to create 
 great and useful software.
 
@@ -50,14 +57,17 @@ Current technologies:
 - languages: Scala, Clojure, Clojurescript, Javascript, Typescript  
 - web frameworks: Liftweb, AngularJS, MarkoJS, ReactJS
 
-<hr style={{marginTop: 0, marginBottom: 0}}/>
+</div>
 
 ## Education
-> 1995: Diploma in Computer Science from the Technical University of Chemnitz-Zwickau
+<ClientRenderer 
+  clients={clients} 
+  withDescription
+  categories={[Categories.Education]} 
+/>
 
-<hr style={{marginTop: 0, marginBottom: 0}}/>
-
-## Skills
+## <a name="skills"></a>Skills
+<div style={{backgroundColor: "#fff", borderRadius: "10px", padding: "40px", marginBottom: "20px"}}>
 Some recent skills I aquired over the last year and I'm still practicing regularly are:
 - Scala, Java, GO, Clojure, Clojurescript, Javascript, Typescript, AngularJS, ReactJS, MongoDB
 
@@ -67,140 +77,26 @@ Some things I worked with for many years in the past (that I'm not afraid to men
 Things I have used for a short period:
 - Groovy, Ruby, Perl
 
-<hr style={{marginTop: 0, marginBottom: 0}}/>
+</div>
 
-## Training & Publications
 
-#### Java Trainer
-> ML Consulting, Sep 2011 → Dec 2011 (4 months)
+## <a name="training"></a>Training & Publications
 
-I was teaching several Java and programming basics courses at ML Consulting Dresden and Berlin. 
-I got very good ratings from my students and the manager of the consulting facility wants me back for more.
-
-#### Speaking about Scala and Lift3
-> Scala Days 2013 New York, Scala Exchange 2013, London
-
-I was giving talks at Scala conferences about my [Lift](https://liftweb.net), the Scala web framework I'm involved with for many years.
-
-#### Author of 'Lift Web Applications HowTo'
-
-Together with Pack Publishing I authored a small book about Lift, 
-the ['Lift Web Applications HowTo'](https://www.packtpub.com/web-development/instant-lift-web-applications-how-instant).
+<ClientRenderer 
+  clients={clients} 
+  withDescription
+  categories={[Categories.Training, Categories.Publication]} 
+/>
 
 <hr style={{marginTop: 0, marginBottom: 0}}/>
 
 ## My Story
 
-#### Software Developer Consultant
-> Ascendant Compliance Management, Jul 2013 → Feb 2019 (5 years, 8 months)
-
-> Tech: angularjs, scala, lift, mongodb, javascript
-
-In a small team of awesomely great developers we implement a suite of tools 
-using best of breed frameworks like AngularJS for the frontend. 
-The backend server is developed as a set of Scala applications on top 
-of the Lift web framework. We use the MongoDB database.
-
-#### Scala & Lift Consultant
-> Twisp Inc, Mar 2013 → Jul 2013 (5 months)
-
-> Tech: scala, lift, mysql, squeryl
-
-For a client I'm developing a Lift based information engine application.
-
-#### Scala & Lift Developer @ Underscore Consulting
-> Underscore Consulting, Nov 2012 → Apr 2013 (6 months)
-
-> Tech: scala, lift, mongodb, cloudbees
-
-I was in charge of developing part of a Scala/Lift client application 
-together with a really cool team of Underscore developers.
-
-#### Scala & Lift Senior Consultant
-> Sgrouples.com, Sep 2011 → Sep 2012 (1 year, 1 month)
-
-> Tech: Scala, Lift, Mongodb, Amazon EC2
-
-With a small bunch of other high profile developers we develop the social groups 
-platform https://sgrouples.com (now: https://mewe.com).
-
-We develop this site using Scala, Lift and MongoDB.
-
-#### Designer and Developer
-> AGYNAMIX, Oct 2008 → 2011
-
-> Tech: Java, SWT, JFace, Install4j
-
-I developed a small cross platform application that is used to copy your computers 
-clipboard contents, files or whole directories to connected machines.
-
-Simidude is a cross platform network clipboard and file sharing tool.
-When it starts up it automatically checks your local lan for other running instances 
-and connects to them. After that transmitting a file from one machine to another is 
-just a drag and drop operation with Simidude.
-
-Simidude runs on Windows, Linux and Mac computers, as well as in virtual machines.
-
-#### Project Manager, Developer, Marketer
-> AGYNAMIX, 2005 → 2015
-
-> Tech: Java, Eclipse RCP, Groovy, Grails, Jsf, J2ee
-
-I started AGYNAMIX by the end of 2004 to create a company where I could create great 
-software according to what I have learned in the past decade and not according to managers 
-that have never delivered a line of code.
-
-My first product was a monitoring software for water supply companies. 
-It was a pretty large project featuring a server side Java application written 
-using these technologies:
-
-the Spring framework
-a PostgreSql database
-Java COM connectivity to manage GSM modems to send warnings
-an OPC (Ole for Process Control) COM library to connect to existing software
-
-With these tools I developed an Eclipse RCP application that uses Eclipse GEF to 
-visualize the data (show a nice chart and current values).
-
-#### JSF Developer
-> 1822direct Sparkasse, 2009 → 2009
-
-> Tech: Java, JBoss, Tomcat, JSF
-
-Development of a JSF (Java Server Faces) front end for an in house application to manage correspondence to their customers. 
-We used Tomcat 5, JBoss and JSF 1.2 with MyFaces for development and deployment.
-
-#### Software Developer
-> T-Systems SL SI, 2005 - 2011
-
-As a contractor for T-Systems I was involved in numerous projects:
-
-__I maintained__ a mid sized Eclipse RCP application that is used in-house in the test department. 
-The application is developed using these technologies: Eclipse RCP EMF: Eclipse Modeling Framework Teneo: 
-Database persistence using Hibernate and Oracle for EMF models JDBC: 
-lower level JDBC programming for a number of features that need direct db access
-
-__I extended__ an already existing migration framework (which I helped develop some years ago) 
-which is designed for the transformation of mass data.
-
-One part of the assignment is to extend the core functionality of the framework to fit the current requirements.
-
-One of my other tasks was the creation of an Eclipse RCP application for the existing DSL (Domain Specific Language). 
-Eclipse Plugins had been written using the XText framework to lift the weight of writing XML files from the authors of the business rules. 
-They now get an updatable RCP application delivered to their machines which they use to write business rules in a domain specific 
-and environmentally clean language. The application will then generate the XML for them.
-
-__Create__ and extend a Perl based test framework. A complex framework allows quick creation of new test scenarios that will be executed 
-in a distributed manner on Unix machines. I also extended a number of test tools that were developed as Eclipse RCP applications 
-using the Eclipse EMF framework.
-
-__Design__ and development of a high performance data extraction application.
-The application would read data from multiple Oracle schemas, aggregates it and distributes it into multiple files and other databases.
-The application needs to process millions of records in just a few hours. 
-This level of performance was only possible with careful design and multi threading.
-
-__We developed__ a fairly complex application that would generate invoices using LaTeX and send them - optionally 
-signed and encrypted - by email to the customer. The application was designed to run in multiple processes, 
-possibly distributed across multiple machines. The distributed C++ components used Corba to communicate. 
-Data was stored in a Oracle database. There also was a self service website written Java and servlet (yuck) technology.
+<ClientRenderer 
+  clients={clients} 
+  withDescription
+  categories={[Categories.Resume]}
+  yearsBack={10}
+  moreHeader="Show older entries"
+/>
 

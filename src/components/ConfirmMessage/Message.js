@@ -1,9 +1,9 @@
-import React from 'react'
-import {css, keyframes} from '@emotion/core'
-import styled from '@emotion/styled'
-import Markdown from 'react-markdown'
-import Link from '../Link'
-import {bpMaxSM} from '../../lib/breakpoints'
+import React from "react"
+import { css, keyframes } from "@emotion/core"
+import styled from "@emotion/styled"
+import Markdown from "react-markdown"
+import Link from "../Link"
+import { bpMaxSM } from "../../lib/breakpoints"
 
 export default function Message({
   illustration,
@@ -17,7 +17,7 @@ export default function Message({
   return (
     <Center
       css={css`
-        min-height: ${fullscreen ? '70vh' : 'auto'};
+        min-height: ${fullscreen ? "70vh" : "auto"};
         ${bpMaxSM} {
           min-height: auto;
         }

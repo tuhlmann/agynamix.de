@@ -18,7 +18,7 @@ export default function Clients() {
           margin-top: 30px;
         `}
       >
-        <ClientRenderer clients={clients} categories={[Categories.Client]} />
+        <ClientRenderer clients={clients} categories={[Categories.Product]} withDescription />
       </Container>
     </Layout>
   )

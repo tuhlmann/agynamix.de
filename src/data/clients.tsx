@@ -1,7 +1,4 @@
-import {prepareData, sortByDate, ClientData} from "../lib/prepare-client-data"
-
-// import ascendant from "../images/clients/Ascendant.svg"
-// import mewe from "../images/clients/MeWe.png"
+import {prepareData, sortByDate, ClientData, Categories} from "../lib/prepare-client-data"
 
 // tslint:disable:no-require-imports
 export default ([
@@ -11,8 +8,10 @@ export default ([
     logo: require("../images/clients/Ascendant.svg"),
     start: "2013-07-01",
     end: "2019-02-28",
-    url: "https://www.ascendantcompliancemanager.com",
+    link: "https://www.ascendantcompliancemanager.com",
     tags: ["Scala", "Lift", "GO", "AngularJS", "Javascript", "MarkoJS", "Docker", "MongoDB"],
+    categories: [Categories.Client, Categories.Resume],
+    short: `*Compliance & Risk Management, Solved*`,
     description: `
      In a small team of awesomely great developers we implement a suite of tools 
      using best of breed frameworks like AngularJS for the frontend. 
@@ -27,6 +26,8 @@ export default ([
     start: "2013-03-01",
     end: "2013-07-01",
     tags: ["Scala", "Lift", "MySQL", "Squeryl"],
+    categories: [Categories.Client, Categories.Resume],
+    short: `*Scala, Lift & MySQL. Kind of a personalized wayback machine.*`,
     description: `
      For a client I'm developing a Lift based information engine application.
     `
@@ -37,8 +38,10 @@ export default ([
     logo: require("../images/clients/Underscore.png"),
     start: "2012-11-01",
     end: "2013-04-01",
-    url: "https://underscore.io",
+    link: "https://underscore.io",
     tags: ["Scala", "Lift", "MongoDB", "Cloudbees"],
+    categories: [Categories.Client, Categories.Resume],
+    short: `*Scala & Lift projects with the awesome folks at Underscore Consulting.*`,
     description: `
      I was in charge of developing part of a Scala / Lift client application
      together with a really cool team of Underscore developers.
@@ -50,11 +53,47 @@ export default ([
     logo: require("../images/clients/MeWe.png"),
     start: "2011-09-01",
     end: "2012-09-01",
-    url: "https://www.mewe.com",
+    link: "https://www.mewe.com",
     tags: ["Scala", "Lift", "Javascript", "MongoDB"],
+    categories: [Categories.Client, Categories.Resume],
+    recommendations: [
+      {
+        title: "Letter of Recommendation",
+        date: "2012-09-01",
+        by: "Jonathan Wolfe, Chief Scientist",
+        link: "/documents/sgrouples_rec_tuhlmann.pdf"
+      }
+    ],
+    short: `*Formerly sgrouples.com. Scala, Lift & Mongo DB. MeWe is a privacy conscious social network.*`,
     description: `
      With a small bunch of other high profile developers we develop the social groups 
      platform https://sgrouples.com (now: https://mewe.com).
+    `
+  },
+  {
+    position: "Software Supplier",
+    client: "B+N Automation",
+    logo: require("../images/clients/BN-Automation.gif"),
+    start: "2009-09-01",
+    end: "2009-09-01",
+    link: "https://www.bn-automation.com/de/startseite.html",
+    tags: ["Java", "AGYNAMIX"],
+    categories: [Categories.Client],
+    short: `
+     *B+N Automation uses AGYNAMIX' Net-Herald signal monitoring and broadcasting software.*
+    `
+  },
+  {
+    position: "Software Supplier",
+    client: "WKS Group",
+    logo: require("../images/clients/WKS-Group.png"),
+    start: "2011-09-01",
+    end: "2015-12-31",
+    link: "https://wksgroup.de/",
+    tags: ["Java", "AGYNAMIX"],
+    categories: [Categories.Client],
+    short: `
+     *WKS Group uses several AGYNAMIX' Net-Herald signal monitoring and broadcasting software installations.*
     `
   },
   {
@@ -63,21 +102,103 @@ export default ([
     logo: require("../images/clients/Sparkasse_1822.png"),
     start: "2009-04-01",
     end: "2009-07-01",
-    url: "https://www.1822direkt.de",
+    link: "https://www.1822direkt.de",
     tags: ["Java", "JBoss", "Tomcat", "JSF"],
+    categories: [Categories.Client, Categories.Resume],
+    short: `*Java & JSP. Wrote a frontend for processing customer printables.*`,
     description: `
       Development of a JSF(Java Server Faces) front end for an in house application to manage correspondence to their customers.
       We used Tomcat 5, JBoss and JSF 1.2 with MyFaces for development and deployment.    
     `
   },
   {
+    position: "AGYNAMIX Simidude",
+    client: "AGYNAMIX",
+    logo: require("../images/clients/Agynamix.png"),
+    start: "2008-10-01",
+    end: "2011-12-31",
+    link: "https://www.agynamix.de",
+    tags: ["Java", "SWT", "JFace", "Install4j", "Linux", "Windows", "MacOS"],
+    categories: [Categories.Product, Categories.Resume],
+    description: `
+      I developed a small cross platform application that is used to copy your computers
+      clipboard contents, files or whole directories to connected machines.
+
+      Simidude is a cross platform network clipboard and file sharing tool.
+      When it starts up it automatically checks your local lan for other running instances
+      and connects to them. After that transmitting a file from one machine to another is
+      just a drag and drop operation with Simidude.
+
+      Simidude runs on Windows, Linux and Mac computers, as well as in virtual machines. 
+    `
+  },
+  {
+    position: "AGYNAMIX Net-Herald",
+    client: "AGYNAMIX",
+    logo: require("../images/clients/Agynamix.png"),
+    start: "2005-07-01",
+    end: "2015-12-31",
+    link: "https://www.agynamix.de",
+    tags: ["Java", "Eclipse RCP", "PostgreSQL", "Spring", "OPC"],
+    categories: [Categories.Product, Categories.Resume],
+    description: `
+      I started AGYNAMIX by the end of 2004 to create a company where I could create great
+      software according to what I have learned in the past decade and not according to managers
+      that have never delivered a line of code.
+
+      My first product was a monitoring software for water supply companies.
+      It was a pretty large project featuring a server side Java application written
+      using these technologies:
+
+      the Spring framework
+      a PostgreSql database
+      Java COM connectivity to manage GSM modems to send warnings
+      an OPC (Ole for Process Control) COM library to connect to existing software
+
+      With these tools I developed an Eclipse RCP application that uses Eclipse GEF to
+      visualize the data (show a nice chart and current values).
+    `
+  },
+  {
     position: "Software Developer",
     client: "T-Systems SL SI",
     logo: require("../images/clients/T-Systems.png"),
-    start: "2005-07-01",
+    start: "2005-01-01",
     end: "2011-09-01",
-    url: "https://www.t-systems.com/de/de",
+    link: "https://www.t-systems.com/de/de",
     tags: ["Java", "JBoss", "Oracle"],
+    categories: [Categories.Client, Categories.Resume],
+    recommendations: [
+      {
+        title: `Projekt C++ und Java-Programmierung, 07/98 - 03/02`,
+        date: "2005-01-03",
+        by: "Projektleiter,  T-Systems",
+        description: `
+        Der Consultant kennt sich gut mit C++ und Java aus, er arbeitet souverän mit den Konzepten 
+        objektorientierter Programmierung. Alle Arbeiten wurden zu unserer vollsten Zufriedenheit termingerecht 
+        fertiggestellt. Über die konkrete Programmieraufgabe hinaus bewies der Consultant im Rahmen seiner Tätigkeit 
+        ein hohes Engagement. Durch ihn wurden Fehler und Verbesserungspotentiale in Anforderungen und Umsetzung aufgezeigt. 
+        Er unterstützte seine Kollegen auch über seinen Aufgabenbereich hinaus. Die Zusammenarbeit war sehr angenehm, 
+        der Consultant war eine Bereicherung für das Projektteam. Ich würde sehr gern 
+        wieder mit dem Consultant zusammenarbeiten.
+      `
+      },
+      {
+        title: "Projekt Verschiedene Projekte im Bereich C++ und Java, 11/96 - 01/05",
+        date: "2005-02-03",
+        by: "Project Center Team Leiter, T-Systems GEI GmbH",
+        description: `
+          Der Freiberufler verfügt über ein sehr breites Spektrum technologischen Wissens.
+          Als Architekt und Entwickler arbeitete er souverän mit den Konzepten objektorientierter Programmierung.
+          Alle Arbeiten wurden zu unserer vollsten Zufriedenheit termingerecht fertiggestellt.
+          Über die konkrete Programmieraufgabe hinaus bewies er im Rahmen seiner Tätigkeit ein sehr hohes Engagement.
+          Durch ihn wurden Fehler und Verbesserungspotentiale in Anforderungen und Umsetzung aufgezeigt.
+          Er unterstützte seine Kollegen auch über seinen Aufgabenbereich hinaus. Die Zusammenarbeit war sehr angenehm.
+          Er war eine Bereicherung für das Projektteam.
+        `
+      }
+    ],
+    short: `*Lots of projects, lots of experience. Java, Oracle & large servers.*`,
     description: `
       As a contractor for T-Systems I was involved in numerous projects:
 
@@ -109,6 +230,134 @@ export default ([
       signed and encrypted - by email to the customer. The application was designed to run in multiple processes, 
       possibly distributed across multiple machines. The distributed C++ components used Corba to communicate. 
       Data was stored in a Oracle database. There also was a self service website written Java and servlet (yuck) technology.
+    `
+  },
+  {
+    position: "Java Trainer",
+    client: "ML Consulting",
+    logo: require("../images/clients/ML-Consulting.svg"),
+    start: "2011-09-01",
+    end: "2011-12-31",
+    link: "https://www.mlgruppe.de/startseite.html",
+    tags: ["Java", "Speaking"],
+    categories: [Categories.Training],
+    description: `
+     I was teaching several Java and programming basics courses at ML Consulting Dresden and Berlin. 
+     I got very good ratings from my students and the manager of the consulting facility wants me back for more.
+    `
+  },
+  {
+    position: "Speaking about Scala and Lift3",
+    client: "Scala Days 2013 New York",
+    logo: require("../images/clients/ScalaDays2013.png"),
+    start: "2013-06-10",
+    end: "2013-06-12",
+    link: "https://scaladays.org/assets/archive/ny2013/index.html",
+    tags: ["Scala", "Speaking"],
+    categories: [Categories.Training],
+    description: `
+     I was giving talks at Scala conferences about my[Lift](https://liftweb.net), the Scala web framework I'm involved with for many years.
+    `
+  },
+  {
+    position: "Speaking about Scala and Lift3",
+    client: "Scala Exchange 2013 London",
+    logo: require("../images/clients/ScalaExchange.png"),
+    start: "2013-12-02",
+    end: "2013-12-03",
+    link: "https://skillsmatter.com/conferences/1765-scala-exchange-2013#program",
+    tags: ["Scala", "Speaking"],
+    categories: [Categories.Training],
+    description: `
+     I was giving talks at Scala conferences about my[Lift](https://liftweb.net), the Scala web framework I'm involved with for many years.
+    `
+  },
+  {
+    position: "Author of 'Lift Web Applications HowTo'",
+    client: "Packt Publishing",
+    logo: require("../images/clients/LiftWebAppsHowTo.png"),
+    start: "2012-05-01",
+    end: "2013-01-31",
+    link: "https://www.packtpub.com/web-development/instant-lift-web-applications-how-instant",
+    tags: ["Scala", "Authoring"],
+    categories: [Categories.Publication],
+    description: `
+      Together with Pack Publishing I authored a small book about Lift,
+      the ['Lift Web Applications HowTo'](https://www.packtpub.com/web-development/instant-lift-web-applications-how-instant).
+    `
+  },
+  {
+    position: "Diploma (master equivalent)",
+    client: "TU Chemnitz-Zwickau, Germany",
+    logo: require("../images/clients/TU-Chemnitz-Zwickau.png"),
+    start: "1991-09-01",
+    end: "1996-03-31",
+    link: "https://www.tu-chemnitz.de/",
+    tags: ["Computer Science", "Databases", "Algorithm"],
+    categories: [Categories.Education],
+    description: `
+      I only studied once, so there's not much here. Since I got that programmable calculater in 8th grade 
+      I wanted to do something with computers.
+
+      Well and this is what I did. I started computer science at this university and finished it 
+      quite successfully 4,5 years later. I started at a big telco company shortly before I finished my study. 
+      I never was a fan of just hanging around...    
+    `
+  },
+  {
+    position: "Software Developer",
+    client: "T-Systems GEI GmbH",
+    logo: require("../images/clients/T-Systems.png"),
+    start: "1996-03-01",
+    end: "1998-04-31",
+    link: "https://www.t-systems.com/de/de",
+    tags: ["OS/2", "Windows NT", "C++", "PHP", "Cobol", "Java"],
+    categories: [Categories.Resume],
+    description: `
+      Cobol software to convert customer invoices for AFP printer consumption.
+      Java based GUI applications to generate specifications for invoice layouts.
+    `
+  },
+  {
+    position: "Software Developer",
+    client: "G & K Datensysteme GmbH",
+    logo: require("../images/clients/GKSoftware.svg"),
+    start: "1995-04-01",
+    end: "1996-04-31",
+    link: "https://www.gk-software.com",
+    tags: ["MS-DOS", "C", "Pascal"],
+    categories: [Categories.Client, Categories.Resume],
+    description: `
+      Development of drivers and associated software for retail cash registers,
+      scanners and printers used in combination with the client's software.
+    `
+  },
+  {
+    position: "Software Developer",
+    client: "Leicher GmbH",
+    logo: require("../images/clients/Leicher.jpg"),
+    start: "1994-02-01",
+    end: "1994-04-31",
+    link: "https://www.leicher.de/",
+    tags: ["MS-DOS", "C++"],
+    categories: [Categories.Client, Categories.Resume],
+    description: `
+      Development of a converter software that converts between the Datanorm standard
+      and an in house used softwae standard.
+    `
+  },
+  {
+    position: "Software Developer",
+    client: "Jahn Büroorganisation",
+    logo: require("../images/clients/JahnBueroorganisation.png"),
+    start: "1993-03-01",
+    end: "1993-06-31",
+    link: "https://www.jahn-gmbh.de/",
+    tags: ["MS-DOS", "Pascal"],
+    categories: [Categories.Client, Categories.Resume],
+    description: `
+      Development of a management software for printers / copiers leased by the client
+      to its customers.
     `
   }
 ] as ClientData[])

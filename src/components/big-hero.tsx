@@ -1,13 +1,13 @@
-import React from 'react'
-import { css } from '@emotion/core'
-import theme from '../../config/theme'
-import { bpMaxMD, bpMaxSM } from '../lib/breakpoints'
-import { rhythm } from '../lib/typography'
-import Container from './Container'
+import React from "react"
+import {css} from "@emotion/core"
+import theme from "../../config/theme"
+import {bpMaxMD, bpMaxSM} from "../lib/breakpoints"
+import {rhythm} from "../lib/typography"
+import Container from "./Container"
 
 // import heroImageRight from '../images/hero/path-right.svg'
 // import heroImageLeft from '../images/hero/path-left.svg'
-import photoOfTorsten from '../images/hero/torsten.png'
+import photoOfTorsten from "../images/hero/torsten.png"
 
 /*
 background-image: url(${heroImageRight}), url(${heroImageLeft}),
@@ -22,7 +22,7 @@ interface IProps {
 const BigHero: React.SFC<IProps> = ({
   children,
   message = `Hi, I'm AGYNAMIX. I'm a passionate full stack software developer,
-  here to help you and your team deliver outstanding products.`,
+  here to help you and your team deliver outstanding products.`
 }) => {
   return (
     <section
@@ -102,20 +102,16 @@ const BigHero: React.SFC<IProps> = ({
         </h1>
         <div
           css={{
-            marginRight: '-160px',
+            marginRight: "-160px",
             width: 380,
             height: 336,
             [bpMaxMD]: {
-              display: 'none',
-              visibility: 'hidden',
-            },
+              display: "none",
+              visibility: "hidden"
+            }
           }}
         >
-          <img
-            src={photoOfTorsten}
-            alt="Torsten Uhlmann"
-            css={{ maxWidth: '90%', marginBottom: 0 }}
-          />
+          <img src={photoOfTorsten} alt="Torsten Uhlmann" css={{maxWidth: "90%", marginBottom: 0}} />
         </div>
       </Container>
     </section>

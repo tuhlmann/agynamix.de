@@ -1,9 +1,9 @@
-import React from 'react'
-import Container from 'components/Container'
-import SEO from 'components/SEO'
-import Layout from 'components/Layout'
-import BigHero from 'components/big-hero'
-import theme from '../../config/theme'
+import React from "react"
+import Container from "components/Container"
+import SEO from "components/SEO"
+import Layout from "components/Layout"
+import BigHero from "components/big-hero"
+import theme from "../../config/theme"
 
 function MarkdownPage({ children, pageContext: { frontmatter } }) {
   return (

@@ -1,18 +1,18 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-import SEO from 'components/SEO'
-import { css } from '@emotion/core'
-import Container from 'components/Container'
-import Layout from 'components/Layout'
-import Share from 'components/Share'
-import SubscribeForm from 'components/Forms/Subscribe'
-import Markdown from 'react-markdown'
-import { fonts } from '../lib/typography'
-import config from '../../config/website'
-import { bpMaxSM } from '../lib/breakpoints'
-import { get } from 'lodash'
+import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+import MDXRenderer from "gatsby-mdx/mdx-renderer"
+import SEO from "components/SEO"
+import { css } from "@emotion/core"
+import Container from "components/Container"
+import Layout from "components/Layout"
+import Share from "components/Share"
+import SubscribeForm from "components/Forms/Subscribe"
+import Markdown from "react-markdown"
+import { fonts } from "../lib/typography"
+import config from "../../config/website"
+import { bpMaxSM } from "../lib/breakpoints"
+import { get } from "lodash"
 
 export default function Post({ data: { site, mdx } }) {
   const {
@@ -37,7 +37,7 @@ export default function Post({ data: { site, mdx } }) {
     >
       <SEO
         frontmatter={mdx.fields}
-        metaImage={get(mdx, 'fields.banner.childImageSharp.fluid.src')}
+        metaImage={get(mdx, "fields.banner.childImageSharp.fluid.src")}
         isBlogPost
       />
       <article
@@ -96,7 +96,7 @@ export default function Post({ data: { site, mdx } }) {
             >
               <Img
                 sizes={banner.childImageSharp.fluid}
-                alt={site.siteMetadata.keywords.join(', ')}
+                alt={site.siteMetadata.keywords.join(", ")}
               />
               {bannerCredit ? <Markdown>{bannerCredit}</Markdown> : null}
             </div>
