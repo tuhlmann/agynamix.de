@@ -1,12 +1,12 @@
-import React from 'react'
-import {graphql} from 'gatsby'
-import Layout from '../components/Layout'
-import Message from '../components/ConfirmMessage/Message'
+import React from "react"
+import {graphql} from "gatsby"
+import Layout from "../components/Layout"
+import Message from "../components/ConfirmMessage/Message"
 import {
   PleaseConfirmIllustration,
   ThankYouIllustration,
   UnsubscribeIllustration,
-} from '../components/ConfirmMessage/Illustrations'
+} from "../components/ConfirmMessage/Illustrations"
 
 export default function Messages({data: {latestArticle}}) {
   return (
@@ -44,7 +44,7 @@ export default function Messages({data: {latestArticle}}) {
       </div>
     </Layout>
   )
-}
+} 
 
 export const latestArticle = graphql`
   query {

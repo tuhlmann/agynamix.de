@@ -1,12 +1,12 @@
-import React from 'react'
-import Img from 'gatsby-image'
-import { css } from '@emotion/core'
-import Container from 'components/Container'
-import SEO from '../components/SEO'
-import Layout from '../components/Layout'
-import Link from '../components/Link'
-import { bpMaxSM } from '../lib/breakpoints'
-import theme from '../../config/theme'
+import React from "react"
+import Img from "gatsby-image"
+import { css } from "@emotion/core"
+import Container from "components/Container"
+import SEO from "../components/SEO"
+import Layout from "../components/Layout"
+import Link from "../components/Link"
+import { bpMaxSM } from "../lib/breakpoints"
+import theme from "../../config/theme"
 
 const Blog = ({ data: { allMdx }, pageContext: { pagination }, subscribeForm }) => {
   const { page, nextPagePath, previousPagePath } = pagination
@@ -16,7 +16,7 @@ const Blog = ({ data: { allMdx }, pageContext: { pagination }, subscribeForm }) 
       allMdx.edges.find(
         edge =>
           edge.node.id === id &&
-          edge.node.parent.sourceInstanceName !== 'pages',
+          edge.node.parent.sourceInstanceName !== "pages",
       ),
     )
     .filter(post => post !== undefined)

@@ -1,7 +1,7 @@
-const path = require('path')
-const slugify = require('@sindresorhus/slugify')
-const { createFilePath } = require('gatsby-source-filesystem')
-const _ = require('lodash')
+const path = require("path")
+const slugify = require("@sindresorhus/slugify")
+const { createFilePath } = require("gatsby-source-filesystem")
+const _ = require("lodash")
 
 const PAGINATION_OFFSET = 7
 
@@ -24,7 +24,7 @@ const createPosts = (createPage, createRedirect, edges) => {
 
     createPage({
       path: pagePath,
-      component: path.resolve(`./src/templates/post.js`),
+      component: path.resolve("./src/templates/post.js"),
       context: {
         id: node.id,
         prev,
@@ -36,7 +36,7 @@ const createPosts = (createPage, createRedirect, edges) => {
 
 function createBlogPages({ blogPath, data, paginationTemplate, actions }) {
   if (_.isEmpty(data.edges)) {
-    throw new Error('There are no posts!')
+    throw new Error("There are no posts!")
   }
 
   const { edges } = data
@@ -102,9 +102,9 @@ exports.createPages = async ({ actions, graphql }) => {
   const { blog } = data
 
   createBlogPages({
-    blogPath: '/blog',
+    blogPath: "/blog",
     data: blog,
-    paginationTemplate: path.resolve(`src/templates/blog.js`),
+    paginationTemplate: path.resolve("src/templates/blog.js"),
     actions,
   })
 }
@@ -112,9 +112,9 @@ exports.createPages = async ({ actions, graphql }) => {
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
-      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+      modules: [path.resolve(__dirname, "src"), "node_modules"],
       alias: {
-        $components: path.resolve(__dirname, 'src/components'),
+        $components: path.resolve(__dirname, "src/components"),
       },
     },
   })
@@ -164,99 +164,99 @@ function createPaginatedPages(
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `Mdx`) {
+  if (node.internal.type === "Mdx") {
     const parent = getNode(node.parent)
     let slug =
       node.frontmatter.slug ||
-      createFilePath({ node, getNode, basePath: `pages` })
+      createFilePath({ node, getNode, basePath: "pages" })
 
-    if (node.fileAbsolutePath.includes('content/blog/')) {
+    if (node.fileAbsolutePath.includes("content/blog/")) {
       slug = `/blog/${node.frontmatter.slug || slugify(parent.name)}`
     }
 
     createNodeField({
-      name: 'id',
+      name: "id",
       node,
       value: node.id,
     })
 
     createNodeField({
-      name: 'published',
+      name: "published",
       node,
       value: node.frontmatter.published,
     })
 
     createNodeField({
-      name: 'title',
+      name: "title",
       node,
       value: node.frontmatter.title,
     })
 
     createNodeField({
-      name: 'author',
+      name: "author",
       node,
-      value: node.frontmatter.author || 'Torsten Uhlmann',
+      value: node.frontmatter.author || "Torsten Uhlmann",
     })
 
     createNodeField({
-      name: 'description',
+      name: "description",
       node,
       value: node.frontmatter.description,
     })
 
     createNodeField({
-      name: 'slug',
+      name: "slug",
       node,
       value: slug,
     })
 
     createNodeField({
-      name: 'date',
+      name: "date",
       node,
-      value: node.frontmatter.date ? node.frontmatter.date.split(' ')[0] : '',
+      value: node.frontmatter.date ? node.frontmatter.date.split(" ")[0] : "",
     })
 
     createNodeField({
-      name: 'banner',
+      name: "banner",
       node,
       value: node.frontmatter.banner,
     })
 
     createNodeField({
-      name: 'bannerCredit',
+      name: "bannerCredit",
       node,
       value: node.frontmatter.bannerCredit,
     })
 
     createNodeField({
-      name: 'categories',
+      name: "categories",
       node,
       value: node.frontmatter.categories || [],
     })
 
     createNodeField({
-      name: 'keywords',
+      name: "keywords",
       node,
       value: node.frontmatter.keywords || [],
     })
 
     createNodeField({
-      name: 'redirects',
+      name: "redirects",
       node,
       value: node.frontmatter.redirects,
     })
 
     createNodeField({
-      name: 'editLink',
+      name: "editLink",
       node,
       value: `https://github.com/tuhlmann/agynamix.de/edit/master${node.fileAbsolutePath.replace(
         __dirname,
-        '',
+        "",
       )}`,
     })
 
     createNodeField({
-      name: 'noFooter',
+      name: "noFooter",
       node,
       value: node.frontmatter.noFooter || false,
     })

@@ -1,6 +1,6 @@
-import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import Blog from 'components/blog'
+import React from "react"
+import { graphql, StaticQuery } from "gatsby"
+import Blog from "components/blog"
 
 function CodingBlog(props) {
   return <Blog {...props} />
@@ -27,7 +27,7 @@ export default function CodingBlogWithData(props) {
                   slug
                   date
                 }
-                parent {
+                parent { 
                   ... on File {
                     sourceInstanceName
                   }
