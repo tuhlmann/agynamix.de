@@ -24,6 +24,9 @@ export default class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
         </body>
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" />
+        <script src="/cookieconsent_custom.js" />
       </html>
     )
   }

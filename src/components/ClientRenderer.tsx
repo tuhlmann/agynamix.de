@@ -65,6 +65,7 @@ function renderRecommendations(recommendations?: Recommendation[]) {
                 css={css`
                   display: flex;
                   flex-direction: column;
+                  width: 100%;
                 `}
               >
                 {renderRecommendation(r)}
@@ -177,7 +178,7 @@ export const ClientRenderer: React.FC<IProps> = ({clients, withDescription = fal
                   background: white;
                   border: 1px solid #f1f1f1;
                   border-radius: 15px;
-                  font-size: 16px;
+                  font-size: 12px;
                   margin: 2.5px;
                   background-color: ${theme.colors.background_color};
                   ${bpMaxSM} {

@@ -10,8 +10,6 @@ import website from "../../config/website"
 import styled from "@emotion/styled"
 import { ContactIcon, FollowIcon, CopyrightIcon, CallIcon } from "./ConfirmMessage/Illustrations"
 
-// import Signature from '../images/signature.png'
-
 function FooterLink({ ...props }) {
   const footerColor = theme.colors.white
   return (
@@ -156,15 +154,6 @@ const Footer = () => (
         <GitHub />
         <LinkedIn />
 
-        {/* <Link to="/" aria-label="Return to homepage">
-          <img
-            src={Signature}
-            alt="Kent C. Dodds" 
-            css={css`
-              max-width: 100px;
-            `}
-          />
-        </Link> */}
       </div>
       <div css={css`
           display: flex;
@@ -177,7 +166,7 @@ const Footer = () => (
           <NavLink css={{ marginLeft: 10 }} to="/imprint">Imprint</NavLink>{" / "}<NavLink to="/privacy-policy">Privacy Policy</NavLink>
           <Paragraph>
             © 2019 by Torsten Uhlmann.
-          <br />
+            <br />
             Built with {" "} <span dangerouslySetInnerHTML={{ __html: "\u2764" }} /> in Thalheim.
           </Paragraph>
         </div>

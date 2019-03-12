@@ -1,4 +1,4 @@
-const {URL} = require('url')
+const { URL } = require("url")
 // eslint-disable-next-line
 const fetch = require('node-fetch')
 
@@ -7,10 +7,10 @@ function shouldTransform(string) {
 }
 
 function getUrl(string) {
-  if (!string.includes('twitter')) {
+  if (!string.includes("twitter")) {
     return null
   }
-  if (!string.startsWith('http')) {
+  if (!string.startsWith("http")) {
     string = `https://${string}`
   }
   let url
@@ -19,7 +19,7 @@ function getUrl(string) {
   } catch (error) {
     return null
   }
-  if (!url.host.endsWith('twitter.com') || !url.pathname.includes('/status/')) {
+  if (!url.host.endsWith("twitter.com") || !url.pathname.includes("/status/")) {
     return null
   }
   return url
@@ -32,9 +32,9 @@ function getTwitterHtml(string) {
     .then(r => r.json())
     .then(r => {
       return [r.html]
-        .map(s => s.replace(/\?ref_src=twsrc.*?fw/g, ''))
-        .map(s => s.replace(/<br>/g, '<br />'))
-        .join('')
+        .map(s => s.replace(/\?ref_src=twsrc.*?fw/g, ""))
+        .map(s => s.replace(/<br>/g, "<br />"))
+        .join("")
         .trim()
     })
 }

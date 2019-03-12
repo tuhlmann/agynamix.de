@@ -1,6 +1,7 @@
 const path = require("path")
 const slugify = require("@sindresorhus/slugify")
 const { createFilePath } = require("gatsby-source-filesystem")
+const { format } = require("date-fns")
 const _ = require("lodash")
 
 const PAGINATION_OFFSET = 7
@@ -171,7 +172,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       createFilePath({ node, getNode, basePath: "pages" })
 
     if (node.fileAbsolutePath.includes("content/blog/")) {
-      slug = `/blog/${node.frontmatter.slug || slugify(parent.name)}`
+      const permalink = node.frontmatter.date && node.frontmatter.slug
+        ?
+        `${format(node.frontmatter.date, "YYYY-MM-DD")}-${node.frontmatter.slug}`
+        :
+        slugify(parent.name)
+      slug = `/blog/${permalink}`
     }
 
     createNodeField({

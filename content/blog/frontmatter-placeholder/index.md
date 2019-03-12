@@ -2,7 +2,7 @@
 slug: invisible-post
 date: 2019-01-01
 title: 'this post is a ghost'
-author: 'Torsten Uhlmann'
+author: 'Kent C. Dodds'
 description: 'this post has all of the right fields'
 categories: ['test']
 keywords: ['test']

@@ -1,14 +1,14 @@
-const {URL} = require('url')
+const { URL } = require("url")
 
 function shouldTransform(string) {
   return getUrl(string) !== null
 }
 
 function getUrl(string) {
-  if (!string.includes('youtu')) {
+  if (!string.includes("youtu")) {
     return null
   }
-  if (!string.startsWith('http')) {
+  if (!string.startsWith("http")) {
     string = `https://${string}`
   }
   let url
@@ -17,7 +17,7 @@ function getUrl(string) {
   } catch (error) {
     return null
   }
-  if (!url.host.endsWith('youtube.com') && !url.host.endsWith('youtu.be')) {
+  if (!url.host.endsWith("youtube.com") && !url.host.endsWith("youtu.be")) {
     return null
   }
   return url
@@ -30,17 +30,17 @@ function getYouTubeHTML(string) {
 
 function getYouTubeIFrameSrc(string) {
   const url = getUrl(string)
-  let id = url.searchParams.get('v')
-  if (url.host === 'youtu.be') {
+  let id = url.searchParams.get("v")
+  if (url.host === "youtu.be") {
     id = url.pathname.slice(1)
   }
   const embedUrl = new URL(`https://www.youtube-nocookie.com/embed/${id}?rel=0`)
   url.searchParams.forEach((value, name) => {
-    if (name === 'v') {
+    if (name === "v") {
       return
     }
-    if (name === 't') {
-      name = 'start'
+    if (name === "t") {
+      name = "start"
       value = getTimeValueInSeconds(value)
     }
     embedUrl.searchParams.append(name, value)
@@ -52,7 +52,7 @@ function getTimeValueInSeconds(timeValue) {
   if (Number(timeValue).toString() === timeValue) {
     return timeValue
   }
-  const {2: hours = '0', 4: minutes = '0', 6: seconds = '0'} =
+  const { 2: hours = "0", 4: minutes = "0", 6: seconds = "0" } =
     timeValue.match(/((\d*)h)?((\d*)m)?((\d*)s)?/) || []
   return String((Number(hours) * 60 + Number(minutes)) * 60 + Number(seconds))
 }

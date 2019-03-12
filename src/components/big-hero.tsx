@@ -5,14 +5,7 @@ import {bpMaxMD, bpMaxSM} from "../lib/breakpoints"
 import {rhythm} from "../lib/typography"
 import Container from "./Container"
 
-// import heroImageRight from '../images/hero/path-right.svg'
-// import heroImageLeft from '../images/hero/path-left.svg'
 import photoOfTorsten from "../images/hero/torsten.png"
-
-/*
-background-image: url(${heroImageRight}), url(${heroImageLeft}),
-          linear-gradient(-213deg, #3f3f3f 0%, #7487cc 100%);
-*/
 
 interface IProps {
   children?: JSX.Element[]

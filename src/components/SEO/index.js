@@ -1,13 +1,13 @@
-import path from 'path'
-import React from 'react'
-import Helmet from 'react-helmet'
-import {StaticQuery, graphql} from 'gatsby'
-import PropTypes from 'prop-types'
-import SchemaOrg from './SchemaOrg'
-import config from '../../../config/website'
-import defaultMetaImage from '../../../static/images/metaImage.jpg'
+import path from "path"
+import React from "react"
+import Helmet from "react-helmet"
+import { StaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
+import SchemaOrg from "./SchemaOrg"
+import config from "../../../config/website"
+import defaultMetaImage from "../../../static/images/metaImage.jpg"
 
-const SEO = ({postData, frontmatter = {}, metaImage, isBlogPost}) => (
+const SEO = ({ postData, frontmatter = {}, metaImage, isBlogPost }) => (
   <StaticQuery
     query={graphql`
       {
@@ -33,7 +33,7 @@ const SEO = ({postData, frontmatter = {}, metaImage, isBlogPost}) => (
         }
       }
     `}
-    render={({site: {siteMetadata: seo}}) => {
+    render={({ site: { siteMetadata: seo } }) => {
       const postMeta =
         frontmatter || postData.childMarkdownRemark.frontmatter || {}
       const title = isBlogPost ? postMeta.title : config.siteTitle
@@ -100,7 +100,7 @@ SEO.propTypes = {
 
 SEO.defaultProps = {
   isBlogPost: false,
-  postData: {childMarkdownRemark: {}},
+  postData: { childMarkdownRemark: {} },
   metaImage: null,
 }
 

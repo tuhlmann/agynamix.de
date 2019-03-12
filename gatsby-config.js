@@ -15,7 +15,7 @@ module.exports = {
     title: config.siteTitle,
     twitterHandle: config.twitterHandle,
     description: config.siteDescription,
-    keywords: ["Video Blogger"],
+    keywords: ["AGYNAMIX", "Blogger", "Java", "Scala", "Javascript", "Typescript", "ReactJS"],
     canonicalUrl: config.siteUrl,
     image: config.siteLogo,
     author: {
@@ -55,6 +55,13 @@ module.exports = {
         },
         extensions: [".mdx", ".md", ".markdown"],
         gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              username: "tuhlmann",
+              includeDefaultCss: true
+            }
+          },
           { resolve: "gatsby-remark-copy-linked-files" },
           {
             resolve: "gatsby-remark-images",
@@ -64,7 +71,7 @@ module.exports = {
               sizeByPixelDensity: true,
             },
           },
-          { resolve: require.resolve("./plugins/remark-embedder") },
+          { resolve: require.resolve("./plugins/remark-embedder") }
         ],
       },
     },
@@ -100,7 +107,7 @@ module.exports = {
     // {
     //   resolve: "gatsby-plugin-google-analytics",
     //   options: {
-    //     trackingId: "UA-62924965-1",
+    //     trackingId: "UA-",
     //   },
     // },
     getBlogFeed({

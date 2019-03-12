@@ -1,14 +1,14 @@
-import { css } from '@emotion/core'
-import theme from '../../config/theme'
-import typography, { fonts } from '../lib/typography'
+import { css } from "@emotion/core"
+import theme from "../../config/theme"
+import typography, { fonts } from "../lib/typography"
 
 const reset = css`
   form {
     margin: 0;
   }
   ul, ol {
-    list-style-position: inside;
-    margin-left: 0;
+    list-style-position: outside;
+    margin-left: 1em;
     font-size: ${typography.baseFontSize};
   }
   *,
