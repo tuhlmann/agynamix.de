@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: ["bug-tracking", "business", "java", "programming", "wiki"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 

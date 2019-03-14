@@ -1,17 +1,17 @@
-import React from 'react'
-import {Formik, Field, Form, ErrorMessage} from 'formik'
-import * as Yup from 'yup'
-import {css} from '@emotion/core'
-import styled from '@emotion/styled'
-import {rhythm} from '../../lib/typography'
-import {bpMaxSM} from '../../lib/breakpoints'
-import Message from '../ConfirmMessage/Message'
-import {PleaseConfirmIllustration} from '../ConfirmMessage/Illustrations'
+import React from "react"
+import {Formik, Field, Form, ErrorMessage} from "formik"
+import * as Yup from "yup"
+import {css} from "@emotion/core"
+import styled from "@emotion/styled"
+import {rhythm} from "../../lib/typography"
+import {bpMaxSM} from "../../lib/breakpoints"
+import Message from "../ConfirmMessage/Message"
+import {PleaseConfirmIllustration} from "../ConfirmMessage/Illustrations"
 
 const SubscribeSchema = Yup.object().shape({
   email_address: Yup.string()
-    .email('Invalid email address')
-    .required('Required'),
+    .email("Invalid email address")
+    .required("Required"),
   first_name: Yup.string(),
 })
 
@@ -35,13 +35,13 @@ function PostSubmissionMessage() {
 }
 
 const SubscribeFormWrapper = styled.div({
-  color: 'white',
-  maxWidth: '350px',
-  padding: '40px',
-  background: '#231c42',
+  color: "white",
+  maxWidth: "350px",
+  padding: "40px",
+  background: "#231c42",
   backgroundImage:
-    'linear-gradient(-213deg, #5e31dc 0%, #3155dc 100%), linear-gradient(32deg, rgba(255, 255, 255, 0.25) 33%, rgba(0, 0, 0, 0.25) 100%)',
-  borderRadius: '5px',
+    "linear-gradient(-213deg, #5e31dc 0%, #3155dc 100%), linear-gradient(32deg, rgba(255, 255, 255, 0.25) 33%, rgba(0, 0, 0, 0.25) 100%)",
+  borderRadius: "5px",
 })
 
 const StyledForm = styled(Form)`
@@ -88,9 +88,9 @@ export function TinyLetterSubscribe() {
         target="popupwindow"
         onSubmit={() => {
           window.open(
-            'https://tinyletter.com/shurlan',
-            'popupwindow',
-            'scrollbars=yes,width=800,height=600',
+            "https://tinyletter.com/shurlan",
+            "popupwindow",
+            "scrollbars=yes,width=800,height=600",
           )
           return true
         }}
@@ -131,15 +131,15 @@ function Subscribe({style}) {
   async function handleSubmit(values) {
     setSubmitted(false)
     setLoading(true)
-    try {
+    try { 
       const responseJson = await fetch(
-        `https://app.convertkit.com/forms/827139/subscriptions`,
+        "https://app.convertkit.com/forms/827139/subscriptions",
         {
-          method: 'post',
+          method: "post",
           body: JSON.stringify(values, null, 2),
           headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
+            Accept: "application/json",
+            "Content-Type": "application/json",
           },
         },
       ).then(r => r.json())
@@ -148,12 +148,12 @@ function Subscribe({style}) {
       setErrorMessage(null)
     } catch (error) {
       setSubmitted(false)
-      setErrorMessage('Something went wrong!')
+      setErrorMessage("Something went wrong!")
     }
     setLoading(false)
   }
 
-  const successful = response && response.status === 'success'
+  const successful = response && response.status === "success"
 
   return (
     <SubscribeFormWrapper style={style}>
@@ -172,8 +172,8 @@ function Subscribe({style}) {
       {!successful && (
         <Formik
           initialValues={{
-            email_address: '',
-            first_name: '',
+            email_address: "",
+            first_name: "",
           }}
           validationSchema={SubscribeSchema}
           onSubmit={values => handleSubmit(values)}
@@ -226,8 +226,8 @@ function Subscribe({style}) {
                 />
               </label>
               <button data-element="submit" type="submit">
-                {!loading && 'Subscribe'}
-                {loading && 'Submitting...'}
+                {!loading && "Subscribe"}
+                {loading && "Submitting..."}
               </button>
             </StyledForm>
           )}

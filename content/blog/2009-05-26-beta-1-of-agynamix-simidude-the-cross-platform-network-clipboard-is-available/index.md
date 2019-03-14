@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: ["it", "marketing", "newsletter"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 
@@ -21,10 +21,10 @@ Hi everybody, thanks for waiting so long! Today I release the first beta of Simi
 
 So here we go. I do not yet add the beta release to the update notifier. If you want to try it out please download the beta from here.
 
--   [Simidude 1.3.0b1 for Windows 32bit](/img/uploads/2009/05/simidude-win32-1_3_0b1.exe)
--   [Simidude 1.3.0b1 for Windows 64bit](/img/uploads/2009/05/simidude-win64-1_3_0b11.exe)
--   [Simidude 1.3.0b1 for Mac OS X](/img/uploads/2009/05/simidude-osx-1_3_0b1.dmg)
--   [Simidude 1.3.0b1 for Linux 32bit](/img/uploads/2009/05/simidude-linux_x86-1_3_0b1.sh)
--   [Simidude 1.3.0b1 for Linux 64bit](/img/uploads/2009/05/simidude-linux_x86_64-1_3_0b1.sh)
+-   [Simidude 1.3.0b1 for Windows 32bit](./simidude-win32-1_3_0b1.exe)
+-   [Simidude 1.3.0b1 for Windows 64bit](./simidude-win64-1_3_0b11.exe)
+-   [Simidude 1.3.0b1 for Mac OS X](./simidude-osx-1_3_0b1.dmg)
+-   [Simidude 1.3.0b1 for Linux 32bit](./simidude-linux_x86-1_3_0b1.sh)
+-   [Simidude 1.3.0b1 for Linux 64bit](./simidude-linux_x86_64-1_3_0b1.sh)
 
 Please send your suggestions or bug reports to <contact@agynamix.de> or better yet use the [web form](http://helpdesk.agynamix.de/index.php?pg=request)- thanks!

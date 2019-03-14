@@ -4,9 +4,9 @@ import Layout from "../components/Layout"
 import Container from "../components/Container"
 import SEO from "../components/SEO"
 import theme from "../../config/theme"
-import clients from "../data/clients"
-import {ClientRenderer} from "../components/ClientRenderer"
-import {Categories} from "../lib/prepare-client-data"
+import story from "../data/story"
+import {StoryRenderer} from "../components/StoryRenderer"
+import {Categories} from "../lib/prepare-story-data"
 
 export default function Clients() {
   return (
@@ -18,7 +18,7 @@ export default function Clients() {
           margin-top: 30px;
         `}
       >
-        <ClientRenderer clients={clients} categories={[Categories.Client]} />
+        <StoryRenderer story={story} categories={[Categories.Client]} />
       </Container>
     </Layout>
   )

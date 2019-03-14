@@ -6,11 +6,11 @@ author: "Torsten Uhlmann"
 categories: ["business", "english"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 
-[![IMG\_2444](/img/uploads/2008/05/img-2444-thumb.jpg)](/img/uploads/2008/05/img-2444.jpg) Last year in October we went shopping for a construction company for our new home. Currently I have rented office space and I'd rather have living and working space together.
+[![IMG\_2444](./img-2444.jpg)](./img-2444.jpg) Last year in October we went shopping for a construction company for our new home. Currently I have rented office space and I'd rather have living and working space together.
 
 Since we life in a [mountainous area](http://maps.google.de/maps?f=q&hl=de&geocode=&q=tannenstr,+09380+thalheim&sll=51.623025,12.27574&sspn=0.010577,0.015621&ie=UTF8&t=h&z=16) houses are usually build here with brick and mortar. Now I don't know how it is in your area but here there are probably more construction companies per village than... than... well, actually I don't know. But there are many. You can choose your flavor from a vast variety. Do you want to build with sand stone, bricks, gas concrete- whatever you like there's always a dozen companies that tell you that there solution is best.
 
@@ -20,7 +20,7 @@ The thing is it probably doesn't matter if you use Java to build a system or Rub
 
 What is most important though is that the people who build your system or house know what they're doing. It saves you a lot of trouble if you hire real experts. Not just marketing guys that know how to draw bubbles and present them to you as your nearly finished system ("We just need to generate the code...") but people who know of the technical details, who know how to communicate between teams so that the work flow does not get interrupted and, most of all, who you can trust.
 
-[![IMG\_2455](/img/uploads/2008/05/img-2455-thumb.jpg)](/img/uploads/2008/05/img-2455.jpg)Trust goes a long way. Now how did we come to choose the architect and construction company for our house? And they haven't been the cheapest of all the options we had!
+[![IMG\_2455](./img-2455.jpg)](./img-2455.jpg)Trust goes a long way. Now how did we come to choose the architect and construction company for our house? And they haven't been the cheapest of all the options we had!
 
 Several reasons: First and probably most important they have an excellent reputation in our area. I spoke to a dozen of home owners and they all recommended [that company](http://www.gerlachbau.de/). That started to build my trust and in the end I believe it was a big weight in their favor.
 
@@ -30,7 +30,7 @@ Third they brought in their own ideas. I had a basic type of building in mind wh
 
 Another very important thing is the proximity to us. The short distance makes it pretty easy for us to just drop by at their office and talk about things that are not yet clear. Or for them to meet with us at the site. As [Ian](http://www.userscape.com/products/helpspot/) has [written in his blog](http://www.userscape.com/blog/index.php/site/comments/talking_to_the_owner/) it is so important to have a fast and easy way to talk to the one in charge (the one who really can make decisions).
 
-[![IMG\_1860-2](/img/uploads/2008/05/img-1860-2-thumb.jpg)](/img/uploads/2008/05/img-1860-2.jpg) Now that the construction is going along I can say I'm very pleased. They started in mid March (There is a lot of daunting paperwork involved before you are allowed to build a house on your own ground.). Next week we'll have the topping out ceremony (that's basically when the beams of the roof are in place).
+[![IMG\_1860-2](./img-1860-2.jpg)](./img-1860-2.jpg) Now that the construction is going along I can say I'm very pleased. They started in mid March (There is a lot of daunting paperwork involved before you are allowed to build a house on your own ground.). Next week we'll have the topping out ceremony (that's basically when the beams of the roof are in place).
 
 There is a fantastic coordination between the different teams at the construction site. All the material they needed was delivered right on time- nobody had to wait. They call in right on time when things need to be discussed in order to maintain a smooth work flow.
 
@@ -42,7 +42,7 @@ First they life and thrive in a very crowded market. They are located in an area
 
 Their greatest bonus is their reputation. of course they need to maintain it with each new customer which in turn builds a better reputation. They respond to our needs and wishes which gives them a great customer service.
 
-[![IMG\_2447](/img/uploads/2008/05/img-2447-thumb.jpg)](/img/uploads/2008/05/img-2447.jpg) All in all a lot of attitudes that you as a successful software company would want to copy.
+[![IMG\_2447](./img-2447.jpg)](./img-2447.jpg) All in all a lot of attitudes that you as a successful software company would want to copy.
 
 Stick to the things you know and build your expertise in your area of interest. Then when customers approach you you have the chance to exceed their expectations by using your honesty and knowledge. Compared with a great customer service you will build a reputation for you and your company that soon will attract new customers.
 

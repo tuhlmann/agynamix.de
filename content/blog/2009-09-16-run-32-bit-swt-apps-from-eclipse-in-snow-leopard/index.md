@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: ["it"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 
@@ -16,6 +16,6 @@ java.lang.UnsatisfiedLinkError: Cannot load 32-bit SWT libraries on 64-bit JVM a
 
 Turns out that Snow Leopard tries to start Java applications by default with the 64 bit virtual machine which does not work with Simidude because I bundle it with the 32 bit libraries. Interesting enough when Simidude is launched from the Finder everything works fine... Now, drum roll please, the solution to this problem is pretty simple: Open up the Java JRE definition in Eclipse-&gt;Settings-&gt;Java-&gt;Installed JRE edit your standard Java VM and add the following to the "Default VM Arguments": *-d32*
 
-[![](/img/uploads/2009/09/edit_jre_32bit.jpg "Set the VM to 32 bit")](http://www.agynamix.de/wp-content/uploads/2009/09/edit_jre_32bit.jpg)
+[![](./edit_jre_32bit.jpg "Set the VM to 32 bit")](http://www.agynamix.de/wp-content/uploads/2009/09/edit_jre_32bit.jpg)
 
 Happy Snow Leopard-ing...

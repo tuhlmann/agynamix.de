@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: ["english", "fritzbox-snom-phone", "mac", "telefonie"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 

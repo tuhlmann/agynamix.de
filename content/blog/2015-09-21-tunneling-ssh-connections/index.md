@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: []
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 
@@ -30,9 +30,9 @@ I found it easiest to use with Firefox and the FoxyProxy plugin. You can give th
 Here are my settings for the SOCKS proxy within FoxyProxy:
 
 
-![FoxyProxy SOCKS Config](/img/posts/2015-09-21/foxyproxy_1.png)
+![FoxyProxy SOCKS Config](./foxyproxy_1.png)
 
-![FoxyProxy Details](/img/posts/2015-09-21/foxyproxy_2.png)
+![FoxyProxy Details](./foxyproxy_2.png)
 
 __Update 7.5.2016:__ As [Richard](https://twitter.com/d6y) reports, if you are on a Mac you can configure its on board socks proxy like so:
 

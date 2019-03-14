@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: ["business", "english", "mac", "mac"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 
@@ -17,9 +17,9 @@ When using your Mac in a busy environment it might be important to shield it aga
 
 When the Mac starts it usually shows your desktop right away. This is convinient but also very insecure- especially if you leave your box unattended. Do the following to make OS X behave more appropriate:
 
--   Start your settings dialog and open "user settings"[![](/img/uploads/2009/03/benutzer.jpg "benutzer")](/img/uploads/2009/03/benutzer.jpg)
+-   Start your settings dialog and open "user settings"[![](./benutzer.jpg "benutzer")](./benutzer.jpg)
 -   Click on "Login Settings" (you may need to unlock that screen by clicking on the lock in the left corner of that screen"
--   Choose "Automatic Login deactivated"[![](/img/uploads/2009/03/benutzer-auto-login.jpg "benutzer-auto-login")](/img/uploads/2009/03/benutzer-auto-login.jpg)
+-   Choose "Automatic Login deactivated"[![](./benutzer-auto-login.jpg "benutzer-auto-login")](./benutzer-auto-login.jpg)
 -   Lock the screen and close.
 
 2- Lock your screen when you're away
@@ -27,9 +27,9 @@ When the Mac starts it usually shows your desktop right away. This is convinient
 
 I found two possible ways to lock the screen of my Mac. There first one is to enable "quickly change user". You can set this up on the same screen as "Automatic Login deactivated". You can set it up to display a small user icon in the menu bar. When you click on it you get the option to change to the login window which effectively asks for your password before it would let you see your desktop again. Unfortunately this one also separates UMTS connections and possibly other things. Another way is to go through your keychain manager:
 
--   Open the keychain manager[![](/img/uploads/2009/03/dienstprogramme.jpg "dienstprogramme")](/img/uploads/2009/03/dienstprogramme.jpg)
--   Choose settings and enable "Show status in menu bar"[![](/img/uploads/2009/03/einstellungen.jpg "einstellungen")](/img/uploads/2009/03/einstellungen.jpg)
--   This will show you a little lock symbol in the menu bar. Clicking it gives you the option to lock your screen. You need to enter your password to get back to your desktop. I like this option better- it looks more appealing and doesn't seem to separate any connections.[![](/img/uploads/2009/03/lock_screen.jpg "lock_screen")](/img/uploads/2009/03/lock_screen.jpg)
+-   Open the keychain manager[![](./dienstprogramme.jpg "dienstprogramme")](./dienstprogramme.jpg)
+-   Choose settings and enable "Show status in menu bar"[![](./einstellungen.jpg "einstellungen")](./einstellungen.jpg)
+-   This will show you a little lock symbol in the menu bar. Clicking it gives you the option to lock your screen. You need to enter your password to get back to your desktop. I like this option better- it looks more appealing and doesn't seem to separate any connections.[![](./lock_screen.jpg "lock_screen")](./lock_screen.jpg)
 
 Do you know any other security tips? Let me and others know be commenting here! Have a great day!
 

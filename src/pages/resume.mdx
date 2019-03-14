@@ -4,9 +4,9 @@ title: Resume
 
 import {css} from "@emotion/core"
 import Container from "../components/Container"
-import clients from "../data/clients"
-import {ClientRenderer} from "../components/ClientRenderer"
-import {Categories} from "../lib/prepare-client-data"
+import story from "../data/story"
+import {StoryRenderer} from "../components/StoryRenderer"
+import {Categories} from "../lib/prepare-story-data"
 
 import photo from '../images/torsten.png'
 
@@ -60,8 +60,8 @@ Current technologies:
 </div>
 
 ## Education
-<ClientRenderer 
-  clients={clients} 
+<StoryRenderer 
+  story={story} 
   withDescription
   categories={[Categories.Education]} 
 />
@@ -82,8 +82,8 @@ Things I have used for a short period:
 
 ## <a name="training"></a>Training & Publications
 
-<ClientRenderer 
-  clients={clients} 
+<StoryRenderer 
+  story={story} 
   withDescription
   categories={[Categories.Training, Categories.Publication]} 
 />
@@ -92,11 +92,13 @@ Things I have used for a short period:
 
 ## My Story
 
-<ClientRenderer 
-  clients={clients} 
+<StoryRenderer 
+  story={story} 
   withDescription
+  withImages={false}
   categories={[Categories.Resume]}
   yearsBack={10}
-  moreHeader="Show older entries"
+  more="Wait, there's more..."
+  less="Come on, hide that old crap"
 />
 

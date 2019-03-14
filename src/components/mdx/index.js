@@ -4,14 +4,14 @@ import Title from "./Title"
 import Subtitle from "./Subtitle"
 import Paragraph from "./Paragraph"
 import Code from "./Code"
-import Anchor from "./Anchor"
 import { preToCodeBlock } from "mdx-utils"
+import { TextExtLink } from "../Header";
 
 export default {
   h1: props => <Title {...props} />,
   h2: props => <Subtitle {...props} />,
   p: props => <Paragraph {...props} />,
-  a: props => <Anchor {...props} />,
+  a: props => <TextExtLink {...props} />,
   pre: preProps => {
     const props = preToCodeBlock(preProps)
     // if there's a codeString and some props, we passed the test

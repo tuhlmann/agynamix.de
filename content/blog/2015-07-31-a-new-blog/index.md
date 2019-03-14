@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: ["Cryogen"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 ---
 
 After torching my old site

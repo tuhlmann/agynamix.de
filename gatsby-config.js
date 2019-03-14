@@ -55,13 +55,6 @@ module.exports = {
         },
         extensions: [".mdx", ".md", ".markdown"],
         gatsbyRemarkPlugins: [
-          {
-            resolve: "gatsby-remark-embed-gist",
-            options: {
-              username: "tuhlmann",
-              includeDefaultCss: true
-            }
-          },
           { resolve: "gatsby-remark-copy-linked-files" },
           {
             resolve: "gatsby-remark-images",
@@ -71,7 +64,13 @@ module.exports = {
               sizeByPixelDensity: true,
             },
           },
-          { resolve: require.resolve("./plugins/remark-embedder") }
+          { resolve: require.resolve("./plugins/remark-embedder") },
+          // {
+          //   resolve: "gatsby-remark-embed-gist",
+          //   options: {
+          //     username: "tuhlmann"
+          //   }
+          // }
         ],
       },
     },

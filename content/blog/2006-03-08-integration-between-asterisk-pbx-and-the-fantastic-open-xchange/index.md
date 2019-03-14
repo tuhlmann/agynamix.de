@@ -6,11 +6,11 @@ author: "Torsten Uhlmann"
 categories: ["business", "news", "programming"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 
-We have created a small perl script that integrates OX with an Asterisk PBX. It uses Asterisk's Manager API which means OX and Asterisk can run on different machines. [![OX Click2Dial](/img/uploads/2006/04/OX_Click2Dial.jpg)](/img/uploads/2006/04/OX_Click2Dial.jpg "OX Click2Dial")
+We have created a small perl script that integrates OX with an Asterisk PBX. It uses Asterisk's Manager API which means OX and Asterisk can run on different machines. [![OX Click2Dial](./OX_Click2Dial.jpg)](./OX_Click2Dial.jpg "OX Click2Dial")
 
 Requirements:
 -------------
@@ -50,4 +50,4 @@ You must set `faxEnabled=link` in order to activate the links. You must activate
 -   If it has collected all data without error it will use the Asterisk Manager to originate a call.
 -   After the user phone rings, the user picks up the phone and Asterisk will then dial the given number.
 
-I hope you find this script useful. Resources: <span id="p33">[ax\_asterisk.zip](/img/uploads/2006/04/ax_asterisk.zip)</span>
+I hope you find this script useful. Resources: <span id="p33">[ax\_asterisk.zip](./ax_asterisk.zip)</span>

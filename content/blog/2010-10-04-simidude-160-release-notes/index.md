@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: ["business", "english", "it", "marketing", "newsletter", "release-notes", "simidude", "simidude"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 

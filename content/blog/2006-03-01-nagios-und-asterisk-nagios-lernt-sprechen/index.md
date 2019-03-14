@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: ["news", "programming"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 
@@ -16,7 +16,7 @@ Da wir ja bei uns eine [Asterisk](http://www.asterisk.org)-Telefonanlage im Eins
 
 Das Skript asterisk\_call.sh ist ein einfaches Shellskript, das zuerst einen Textstring erzeugt, diesen dann durch Festival jagt (erzeugt eine Wav-Datei) und anschließend eine Asterisk-Call-Datei erzeugt, die dann in das outgoing-Verzeichnis von Asterisk kopiert wird. Asterisk nimmt die Datei, generiert einen Anruf und spielt die wav-Datei ab.
 
-![103-0391\_img.jpg](/img/uploads/2006/03/103-0391_img.jpg "103-0391_img.jpg")
+![103-0391\_img.jpg](./103-0391_img.jpg "103-0391_img.jpg")
 
 Die Lösung funktioniert auf unserem System. Damit sie auch woanders läuft müssen noch ein paar Einstellungen vorgenommen werden:
 

@@ -98,7 +98,12 @@ const Blog = ({ data: { allMdx }, pageContext: { pagination }, subscribeForm }) 
                 {post.frontmatter.title}
               </Link>
             </h2>
-            {/* <small>{post.frontmatter.date}</small> */}
+            <small css={css`
+              opacity: 0.6;
+              font-weight: 600;
+            `}>
+              {post.frontmatter.date}
+            </small>
             <p
               css={css`
                 margin-top: 10px;

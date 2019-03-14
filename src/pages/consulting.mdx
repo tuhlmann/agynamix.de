@@ -1,0 +1,72 @@
+---
+title: Consulting Services
+---
+
+import { TextExtLink } from "../components/Header"
+import website from "../../config/website"
+
+import logo from "../images/hero/homeLinkLogo.png"
+import contactMe from "../images/consulting/undraw_contact_us_15o2.svg"
+
+<div
+  style={{display: 'flex', justifyContent: 'space-between', marginBottom: 25}}
+>
+  <div>
+    <h1 style={{marginTop: 0, marginBottom: 0}}>Working with me</h1>
+  </div>  
+  <div>
+    <img
+      alt="AGYNAMIX"
+      style={{maxWidth: 300, display: 'block', marginBottom: 4, borderRadius: '5px'}}
+      src={logo}
+    />
+  </div>
+</div>
+
+I'm a full stack software developer with more than 20 years of experience in numerous fields and with numerous languages.
+
+I have developed software for all of my professional life and even [before](/about), and I didn't really want to do anything else.
+Languages change, developer roles change, but the desire to create something useful always stays strong.
+
+I love learning new things and meeting new people. 
+Over the years I have worked with a plethora of different programming languages.
+I worked with Cobol, C++, Java, Groovy, Ruby and Perl.
+
+Since 2009 I have transitioned into using Scala, Javascript, Clojure and Typescript, with a sprinkle of GO.
+
+I worked with numerous web frameworks including Lift, AngularJS, MarkoJS and my favorite, ReactJS.
+
+I use to keep my application's data in SQL databases like PostgreSQL and NoSQL stores, mostly MongoDB.
+
+I developed and sold several applications, some of them are available now on my [github account](https://github.com/tuhlmann).
+
+Over the years I have worked with a large number of [clients](/clients), including:
+
+- German Telekom
+- the german bank 1822 Sparkasse
+- the social network sgrouples, now mewe.com
+- Underscore Consulting
+- Ascendant, Inc.
+
+<div
+  style={{display: 'flex', justifyContent: 'space-between', marginBottom: 25, marginTop: 20}}
+>
+  <div>
+    <div style={{height: "100%", display: "flex", flexDirection: "column", justifyContent: 'space-between'}}>
+      <p style={{justifySelf: "flex-start"}}>
+        If you think I could be great fit for your team I'd like to <TextExtLink href={website.contactEmail}><strong>hear from you</strong></TextExtLink>!
+      </p>
+      <h4 style={{justifySelf: "flex-end"}}>Torsten.</h4>
+    </div>
+  </div>  
+  <div css={{marginLeft: 20}}>
+    <a href={website.contactEmail}>
+      <img
+        alt="Call me!"
+        style={{maxHeight: 300, display: 'block', marginBottom: 4, borderRadius: '5px'}}
+        src={contactMe}
+      />
+    </a>
+  </div>
+</div>
+

@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: ["Windows", "Clojure", "Scala"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 ---
 
 Oh I was so desperately waiting for a new Macbook Pro to be released in 2017. And it was. And I was so disappointed, like many others were. I wasn't looking for a super thin designer laptop, what I need is a work horse.

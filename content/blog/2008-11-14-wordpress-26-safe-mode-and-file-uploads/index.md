@@ -6,7 +6,7 @@ author: "Torsten Uhlmann"
 categories: ["english", "programming"]
 keywords: []
 description:
-banner: "./banner.jpg"
+banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
 ---
 
@@ -28,7 +28,7 @@ Since I'm running a real root server with ssh access I went to the server and to
 
 Then I realized the following:
 
-[![](http://blog.agynamix.de/wp-content/uploads/2008/11/linstow_006-224x300.jpg "linstow_006")](/img/uploads/2008/11/linstow_006.jpg)
+[![](http://blog.agynamix.de/wp-content/uploads/2008/11/linstow_006-224x300.jpg "linstow_006")](./linstow_006.jpg)
 
 The uploads directory was owned by web4.www-data. web4 is my user account on the machine, www-data is the user and group of the Apache server (standard on Debian based systems).
 
