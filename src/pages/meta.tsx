@@ -1,25 +1,25 @@
-import {css} from "@emotion/core"
+import { css } from "@emotion/core"
 import styled from "@emotion/styled"
-import {graphql} from "gatsby"
+import { graphql } from "gatsby"
 import React from "react"
 import ReactDOM from "react-dom"
 import theme from "../../config/theme"
 import website from "../../config/website"
-import {SimpleHero} from "../components/simple-hero"
-import Container, {FullWidthContainer} from "../components/Container"
+import { SimpleHero } from "../components/simple-hero"
+import { Container, FullWidthContainer } from "../components/Container"
 import Layout from "../components/Layout"
-import Link from "../components/Link"
+import { Link } from "../components/Link"
 import SEO from "../components/SEO"
-import {bpMaxMD, bpMaxSM} from "../lib/breakpoints"
+import { bpMaxMD, bpMaxSM } from "../lib/breakpoints"
 import parseQueryString from "../lib/parse-query-string"
-import {fonts, rhythm} from "../lib/typography"
+import { fonts, rhythm } from "../lib/typography"
 
 import resumeImg from "../images/resume.svg"
 import skillsImg from "../images/skills.svg"
 import clientImg from "../images/client.svg"
 
 import photoOfTorsten from "../images/hero/torsten.png"
-import {NavLink, TextLink, TextExtLink} from "../components/Header"
+import { NavLink, TextLink } from "../components/Header"
 
 interface IProps {
   backgroundColor: string

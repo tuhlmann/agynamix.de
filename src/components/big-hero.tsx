@@ -1,9 +1,9 @@
 import React from "react"
-import {css} from "@emotion/core"
+import { css } from "@emotion/core"
 import theme from "../../config/theme"
-import {bpMaxMD, bpMaxSM} from "../lib/breakpoints"
-import {rhythm} from "../lib/typography"
-import Container from "./Container"
+import { bpMaxMD, bpMaxSM } from "../lib/breakpoints"
+import { rhythm } from "../lib/typography"
+import { Container } from "./Container"
 
 import photoOfTorsten from "../images/hero/torsten.png"
 

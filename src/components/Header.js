@@ -1,12 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link } from "./Link"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import theme from "../../config/theme"
 import { fonts } from "../lib/typography"
 
-import MobileNav from "./MobileNav"
-import Container from "./Container"
+import { MobileNav } from "./MobileNav"
+import { Container } from "./Container"
 import { bpMaxSM } from "../lib/breakpoints"
 import homeLinkLogo from "../images/hero/homeLinkLogo.png"
 
@@ -15,25 +15,6 @@ function HeaderLink(props) {
   return (
     <Link
       activeClassName="active"
-      css={{
-        textDecoration: "none",
-        color: headerColor ? headerColor : theme.colors.black,
-        "&:hover,&:focus": {
-          color:
-            headerColor === theme.colors.white
-              ? "white"
-              : theme.colors.link_color_hover,
-        },
-      }}
-      {...myProps}
-    />
-  )
-}
-
-function ExternalLink(props) {
-  const { headerColor, children, ...myProps } = props
-  return (
-    <a
       css={{
         textDecoration: "none",
         width: "fit-content",
@@ -46,7 +27,7 @@ function ExternalLink(props) {
         },
       }}
       {...myProps}
-    >{children}</a>
+    />
   )
 }
 
@@ -69,18 +50,6 @@ export const NavLink = styled(HeaderLink)({
 })
 
 export const TextLink = styled(HeaderLink)({
-  background: "transparent",
-  opacity: 1,
-  boxShadow: `inset 0 -5px 0 ${theme.colors.link_hover_color_15}`,
-  transition: "ease-in 0.5s border-bottom",
-  "&:hover": {
-    opacity: 1,
-    boxShadow: `inset 0 -5px 0 ${theme.colors.link_hover_color_40}`,
-    transition: "ease-in 0.5s border-bottom",
-  },
-})
-
-export const TextExtLink = styled(ExternalLink)({
   background: "transparent",
   opacity: 1,
   boxShadow: `inset 0 -5px 0 ${theme.colors.link_hover_color_15}`,

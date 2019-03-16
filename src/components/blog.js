@@ -1,10 +1,10 @@
 import React from "react"
 import Img from "gatsby-image"
 import { css } from "@emotion/core"
-import Container from "components/Container"
+import { Container } from "components/Container"
 import SEO from "../components/SEO"
 import Layout from "../components/Layout"
-import Link from "../components/Link"
+import { Link } from "../components/Link"
 import { bpMaxSM } from "../lib/breakpoints"
 import theme from "../../config/theme"
 

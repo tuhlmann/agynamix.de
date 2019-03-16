@@ -1,8 +1,8 @@
-import {css, keyframes} from "@emotion/core"
+import { css, keyframes } from "@emotion/core"
 import React from "react"
 import theme from "../../../config/theme"
-import {fonts} from "../../lib/typography"
-import { bpTabletOnly } from "../../lib/breakpoints";
+import { fonts } from "../../lib/typography"
+import { bpTabletOnly } from "../../lib/breakpoints"
 
 // PleaseConfirmIllustration
 const PaperRollOut = keyframes`
@@ -76,114 +76,177 @@ const NotificationFadeIn = keyframes`
 `
 // SVG
 export const ContactIcon = (
-  <div css={css`
-    width: 40px;
-    fill-opacity: 1;
-    stroke-width: 0;
-    stroke: rgba(0, 0, 0, 1);
-    stroke-opacity: 1;
-    fill: ${theme.colors.background_color};
-    ${bpTabletOnly} {
-      display: none;
-      visibility: hidden;
-    }
-  `}>
+  <div
+    css={css`
+      width: 40px;
+      fill-opacity: 1;
+      stroke-width: 0;
+      stroke: rgba(0, 0, 0, 1);
+      stroke-opacity: 1;
+      fill: ${theme.colors.background_color};
+      ${bpTabletOnly} {
+        display: none;
+        visibility: hidden;
+      }
+    `}
+  >
     <svg
-      css={css`stroke-width: 0px;`}
-      preserveAspectRatio="xMidYMid meet" 
-      xmlns="http://www.w3.org/2000/svg" 
-      viewBox="-0.30000001192092896 0.10000000149011612 200 200" 
-      role="img">
+      css={css`
+        stroke-width: 0px;
+      `}
+      preserveAspectRatio="xMidYMid meet"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="-0.30000001192092896 0.10000000149011612 200 200"
+      role="img"
+    >
       <g>
-        <path d="M46 75.2l54.5 25.2 52.5-24V67H46v8.2z"></path>
-        <path d="M101.9 108.2c-.1 0-.2.4-.3.4-.3.1-.6.4-1 .4-.3 0-.6-.3-.9-.4-.1 0-.1-.2-.2-.2s-.4-.1-.5-.2L46 83.7V134h107V84.8L102.1 108c-.1.1-.1.2-.2.2z"></path>
-        <path d="M99.7.1C44.5.1-.3 44.9-.3 100.1s44.8 100 100 100 100-44.8 100-100S155 .1 99.7.1zM161 138.2c0 2.1-1.7 3.8-3.8 3.8H42.8c-2.1 0-3.8-1.7-3.8-3.8V62.8c0-2.1 1.7-3.8 3.8-3.8h114.3c2.1 0 3.8 1.7 3.8 3.8v75.4z"></path>
+        <path d="M46 75.2l54.5 25.2 52.5-24V67H46v8.2z" />
+        <path d="M101.9 108.2c-.1 0-.2.4-.3.4-.3.1-.6.4-1 .4-.3 0-.6-.3-.9-.4-.1 0-.1-.2-.2-.2s-.4-.1-.5-.2L46 83.7V134h107V84.8L102.1 108c-.1.1-.1.2-.2.2z" />
+        <path d="M99.7.1C44.5.1-.3 44.9-.3 100.1s44.8 100 100 100 100-44.8 100-100S155 .1 99.7.1zM161 138.2c0 2.1-1.7 3.8-3.8 3.8H42.8c-2.1 0-3.8-1.7-3.8-3.8V62.8c0-2.1 1.7-3.8 3.8-3.8h114.3c2.1 0 3.8 1.7 3.8 3.8v75.4z" />
       </g>
     </svg>
   </div>
 )
 
 export const FollowIcon = (
-  <div css={css`
-    width: 40px;
-    fill-opacity: 1;
-    stroke-width: 0;
-    stroke: rgba(255, 255, 255, 1);
-    stroke-opacity: 1;
-    fill: ${theme.colors.background_color};
-    ${bpTabletOnly} {
-      display: none;
-      visibility: hidden;
-    }
-  `}>
-      <svg 
-        css={css`stroke-width: 0px;`}
-        preserveAspectRatio="xMidYMid meet" 
-        xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 200 200" 
-        role="img">
-        <g>
-         <path d="M100 0C44.8 0 0 44.8 0 100s44.8 100 100 100 100-44.8 100-100S155.2 0 100 0zm49.7 105H106v43.8c0 2.7-1.8 4.9-4.5 4.9s-4.5-2.2-4.5-4.9V105H51c-2.7 0-4.9-2.3-4.9-5s2.2-5 4.9-5h46V50.1c0-2.7 1.8-4.9 4.5-4.9s4.5 2.2 4.5 4.9V95h43.7c2.7 0 4.9 2.3 4.9 5s-2.2 5-4.9 5z"></path>
-        </g>
-      </svg>
-    </div>
+  <div
+    css={css`
+      width: 40px;
+      fill-opacity: 1;
+      stroke-width: 0;
+      stroke: rgba(255, 255, 255, 1);
+      stroke-opacity: 1;
+      fill: ${theme.colors.background_color};
+      ${bpTabletOnly} {
+        display: none;
+        visibility: hidden;
+      }
+    `}
+  >
+    <svg
+      css={css`
+        stroke-width: 0px;
+      `}
+      preserveAspectRatio="xMidYMid meet"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 200 200"
+      role="img"
+    >
+      <g>
+        <path d="M100 0C44.8 0 0 44.8 0 100s44.8 100 100 100 100-44.8 100-100S155.2 0 100 0zm49.7 105H106v43.8c0 2.7-1.8 4.9-4.5 4.9s-4.5-2.2-4.5-4.9V105H51c-2.7 0-4.9-2.3-4.9-5s2.2-5 4.9-5h46V50.1c0-2.7 1.8-4.9 4.5-4.9s4.5 2.2 4.5 4.9V95h43.7c2.7 0 4.9 2.3 4.9 5s-2.2 5-4.9 5z" />
+      </g>
+    </svg>
+  </div>
 )
 
 export const CopyrightIcon = (
-  <div css={css`
-    width: 40px;
-    fill-opacity: 1;
-    stroke-width: 0;
-    stroke: rgba(255, 255, 255, 1);
-    stroke-opacity: 1;
-    fill: ${theme.colors.background_color};
-    ${bpTabletOnly} {
-      display: none;
-      visibility: hidden;
-    }
-  `}>
-    <svg 
-      css={css`stroke-width: 0px;`}
-      preserveAspectRatio="xMidYMid meet" 
-      xmlns="http://www.w3.org/2000/svg" 
-      viewBox="0 0 200 200" 
-      role="img">
+  <div
+    css={css`
+      width: 40px;
+      fill-opacity: 1;
+      stroke-width: 0;
+      stroke: rgba(255, 255, 255, 1);
+      stroke-opacity: 1;
+      fill: ${theme.colors.background_color};
+      ${bpTabletOnly} {
+        display: none;
+        visibility: hidden;
+      }
+    `}
+  >
+    <svg
+      css={css`
+        stroke-width: 0px;
+      `}
+      preserveAspectRatio="xMidYMid meet"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 200 200"
+      role="img"
+    >
       <g>
-        <path d="M100 41.4c-32.3 0-58.6 26.3-58.6 58.6s26.3 58.6 58.6 58.6 58.6-26.3 58.6-58.6-26.3-58.6-58.6-58.6zm29.4 43.3c-2.1 1.4-4.9.9-6.4-1.2-5.5-8.1-14.2-12.8-23.7-12.8-16 0-29 13.1-29 29.3s13.2 29.3 29.4 29.3c8.1 0 15.8-3.3 21.4-9.2 1.7-1.8 4.6-1.9 6.5-.2 1.8 1.7 1.9 4.6.2 6.5-7.2 7.6-17.4 12-28 12-21.3 0-38.6-17.2-38.6-38.4s17.1-38.4 38.2-38.4c12.6 0 24 6.1 31.2 16.8 1.4 2.1.9 4.9-1.2 6.3z"></path>
-        <path d="M100 0C44.8 0 0 44.8 0 100s44.8 100 100 100 100-44.8 100-100S155.2 0 100 0zm0 167.7c-37.3 0-67.7-30.4-67.7-67.7S62.7 32.3 100 32.3c37.3 0 67.7 30.4 67.7 67.7s-30.4 67.7-67.7 67.7z"></path>
+        <path d="M100 41.4c-32.3 0-58.6 26.3-58.6 58.6s26.3 58.6 58.6 58.6 58.6-26.3 58.6-58.6-26.3-58.6-58.6-58.6zm29.4 43.3c-2.1 1.4-4.9.9-6.4-1.2-5.5-8.1-14.2-12.8-23.7-12.8-16 0-29 13.1-29 29.3s13.2 29.3 29.4 29.3c8.1 0 15.8-3.3 21.4-9.2 1.7-1.8 4.6-1.9 6.5-.2 1.8 1.7 1.9 4.6.2 6.5-7.2 7.6-17.4 12-28 12-21.3 0-38.6-17.2-38.6-38.4s17.1-38.4 38.2-38.4c12.6 0 24 6.1 31.2 16.8 1.4 2.1.9 4.9-1.2 6.3z" />
+        <path d="M100 0C44.8 0 0 44.8 0 100s44.8 100 100 100 100-44.8 100-100S155.2 0 100 0zm0 167.7c-37.3 0-67.7-30.4-67.7-67.7S62.7 32.3 100 32.3c37.3 0 67.7 30.4 67.7 67.7s-30.4 67.7-67.7 67.7z" />
       </g>
     </svg>
   </div>
 )
 
 export const CallIcon = (
-  <div css={css`
-    width: 40px;
-    fill-opacity: 1;
-    stroke-width: 0;
-    stroke: rgba(255, 255, 255, 1);
-    stroke-opacity: 1;
-    fill: ${theme.colors.background_color};
-    ${bpTabletOnly} {
-      display: none;
-      visibility: hidden;
-    }
-  `}>
-    <svg 
-      css={css`stroke-width: 0px;`}
-      preserveAspectRatio="xMidYMid meet" 
-      xmlns="http://www.w3.org/2000/svg" 
-      viewBox="0.30000001192092896 0.10000000149011612 200 200" 
-      role="img">
+  <div
+    css={css`
+      width: 40px;
+      fill-opacity: 1;
+      stroke-width: 0;
+      stroke: rgba(255, 255, 255, 1);
+      stroke-opacity: 1;
+      fill: ${theme.colors.background_color};
+      ${bpTabletOnly} {
+        display: none;
+        visibility: hidden;
+      }
+    `}
+  >
+    <svg
+      css={css`
+        stroke-width: 0px;
+      `}
+      preserveAspectRatio="xMidYMid meet"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0.30000001192092896 0.10000000149011612 200 200"
+      role="img"
+    >
       <g>
-        <path d="M86.9 74.6c1.8-1.8 1.6-6.2-.4-8.2L71 50.9c-1.8-1.8-5.5-1.5-7.4.4l-3.9 3.9L83 78.5l3.9-3.9z"></path>
-        <path d="M102.7 125.8c-7.1 0-14.6-2.6-20.5-8.4-10-10-9.8-24.9-3.6-34L55.4 60.1c-4 6.2-4.9 15.3-2.5 25.9C56 99.4 64 113 75.3 124.4c11.2 11.2 25.4 19.5 38.8 22.8 10.7 2.6 20 1.8 26.2-2.1L117 121.7c-3.9 2.6-9 4.1-14.3 4.1z"></path>
-        <path d="M100.3.1C45.1.1.3 44.9.3 100.1s44.8 100 100 100 100-44.8 100-100S155.5.1 100.3.1zm53.5 141.4l-6.2 6.2c-.2.2-.3.3-.5.4-5.2 4.7-12.6 7.1-21.3 7.1-4.2 0-8.6-.6-13.3-1.7-14.8-3.6-29.7-12.3-41.9-24.5s-20.7-26.9-24.1-41.6c-3.3-14.3-1.1-26.7 6-34.3.1-.1.2-.2.2-.3l6.2-6.2c2.3-2.3 5.5-3.6 8.8-3.6 3.1 0 5.9 1.1 7.9 3.2l15.5 15.5c4.6 4.6 4.8 13.1.4 17.5l-5.9 5.9c-6.2 6.3-7 19.4 1.2 27.6 8.5 8.5 22.2 8.1 28.4 2l5.8-5.8c2.3-2.3 5.5-3.6 8.8-3.6 3.1 0 5.9 1.1 7.9 3.2l15.5 15.5c4.8 4.5 5 13 .6 17.5z"></path>
-        <path d="M133.2 113c-1.8-1.8-5.5-1.5-7.4.4l-3.9 3.9 23.3 23.3 3.9-3.9c1.8-1.8 1.6-6.2-.4-8.2L133.2 113z"></path>
+        <path d="M86.9 74.6c1.8-1.8 1.6-6.2-.4-8.2L71 50.9c-1.8-1.8-5.5-1.5-7.4.4l-3.9 3.9L83 78.5l3.9-3.9z" />
+        <path d="M102.7 125.8c-7.1 0-14.6-2.6-20.5-8.4-10-10-9.8-24.9-3.6-34L55.4 60.1c-4 6.2-4.9 15.3-2.5 25.9C56 99.4 64 113 75.3 124.4c11.2 11.2 25.4 19.5 38.8 22.8 10.7 2.6 20 1.8 26.2-2.1L117 121.7c-3.9 2.6-9 4.1-14.3 4.1z" />
+        <path d="M100.3.1C45.1.1.3 44.9.3 100.1s44.8 100 100 100 100-44.8 100-100S155.5.1 100.3.1zm53.5 141.4l-6.2 6.2c-.2.2-.3.3-.5.4-5.2 4.7-12.6 7.1-21.3 7.1-4.2 0-8.6-.6-13.3-1.7-14.8-3.6-29.7-12.3-41.9-24.5s-20.7-26.9-24.1-41.6c-3.3-14.3-1.1-26.7 6-34.3.1-.1.2-.2.2-.3l6.2-6.2c2.3-2.3 5.5-3.6 8.8-3.6 3.1 0 5.9 1.1 7.9 3.2l15.5 15.5c4.6 4.6 4.8 13.1.4 17.5l-5.9 5.9c-6.2 6.3-7 19.4 1.2 27.6 8.5 8.5 22.2 8.1 28.4 2l5.8-5.8c2.3-2.3 5.5-3.6 8.8-3.6 3.1 0 5.9 1.1 7.9 3.2l15.5 15.5c4.8 4.5 5 13 .6 17.5z" />
+        <path d="M133.2 113c-1.8-1.8-5.5-1.5-7.4.4l-3.9 3.9 23.3 23.3 3.9-3.9c1.8-1.8 1.6-6.2-.4-8.2L133.2 113z" />
       </g>
     </svg>
   </div>
 )
+
+export const PlayIcon = (props: any) => (
+  <div
+    css={css`
+      width: 40px;
+      fill-opacity: 1;
+      stroke-width: 0;
+      stroke: rgba(255, 255, 255, 1);
+      stroke-opacity: 1;
+      fill: ${theme.colors.background_color};
+      cursor: pointer;
+      ${bpTabletOnly} {
+        display: none;
+        visibility: hidden;
+      }
+    `}
+    onClick={props.onClick}
+  >
+    <svg
+      css={css`
+        stroke-width: 0px;
+      `}
+      preserveAspectRatio="xMidYMid meet"
+      xmlns="http://www.w3.org/2000/svg"
+      height="96"
+      width="96"
+      viewBox="0 0 24 24"
+    >
+      <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
+    </svg>
+  </div>
+)
+
+// export const playSVG = (
+//   <svg
+//     xmlns="http://www.w3.org/2000/svg"
+//     fillRule="evenodd"
+//     clipRule="evenodd"
+//     viewBox="0.30000001192092896 0.10000000149011612 200 200"
+//   >
+//     <path d="M23 12l-22 12v-24l22 12zm-21 10.315l18.912-10.315-18.912-10.315v20.63z" />
+//   </svg>
+// )
 
 export const PleaseConfirmIllustration = (
   <div

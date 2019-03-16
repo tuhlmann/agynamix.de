@@ -1,18 +1,16 @@
-import React from 'react'
-import { css } from '@emotion/core'
-import theme from '../../config/theme'
-import { bpMaxMD, bpMaxSM } from '../lib/breakpoints'
-import { rhythm } from '../lib/typography'
-import Container, { FullWidthContainer } from './Container'
+import React from "react"
+import { css } from "@emotion/core"
+import theme from "../../config/theme"
+import { bpMaxMD, bpMaxSM } from "../lib/breakpoints"
+import { rhythm } from "../lib/typography"
+import { Container, FullWidthContainer } from "./Container"
 
 interface IProps {
   children?: JSX.Element[]
   message?: string
 }
 
-export const SimpleHero: React.SFC<IProps> = ({
-  children
-}) => {
+export const SimpleHero: React.SFC<IProps> = ({children}) => {
   return (
     <section
       css={css`
@@ -73,21 +71,18 @@ export const SimpleHero: React.SFC<IProps> = ({
             align-self: center;
             padding-bottom: 40px;
           `}
-        >
-        </h1>
+        />
         <div
           css={{
-            marginRight: '-160px',
+            marginRight: "-160px",
             width: 380,
             [bpMaxMD]: {
-              display: 'none',
-              visibility: 'hidden',
-            },
+              display: "none",
+              visibility: "hidden"
+            }
           }}
-        >
-        </div>
+        />
       </Container>
     </section>
   )
 }
-

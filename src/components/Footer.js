@@ -1,10 +1,10 @@
 import React from "react"
-import Link from "../components/Link"
+import { Link } from "../components/Link"
 import { css } from "@emotion/core"
 import { bpMaxSM } from "../lib/breakpoints"
 // import SubscribeForm from './Forms/Subscribe'
 import { Twitter, GitHub, LinkedIn, Facebook } from "./Social"
-import Container from "./Container"
+import { Container } from "./Container"
 import theme from "../../config/theme"
 import website from "../../config/website"
 import styled from "@emotion/styled"
@@ -28,35 +28,6 @@ function FooterLink({ ...props }) {
 }
 
 const NavLink = styled(FooterLink)({
-  padding: "8px",
-  borderRadius: "3px",
-  background: "transparent",
-  opacity: 0.8,
-  "&:hover": {
-    opacity: 1,
-  },
-  "&.active": {
-    background: "rgba(40, 28, 77, 0.7)",
-  },
-})
-
-function FooterExtLink({ children, ...props }) {
-  const footerColor = theme.colors.white
-  return (
-    <a
-      css={{
-        textDecoration: "none",
-        color: footerColor,
-        "&:hover,&:focus": {
-          color: "white",
-        },
-      }}
-      {...props}
-    >{children}</a>
-  )
-}
-
-const ExternalLink = styled(FooterExtLink)({
   padding: "8px",
   borderRadius: "3px",
   background: "transparent",
@@ -118,7 +89,7 @@ const Footer = () => (
         {CallIcon}
         <Paragraph>
           0049 3721 273445<br />
-          <ExternalLink css={css`opacity: 1; padding: 0;`} href={website.contactEmail}>tuhlmann@agynamix.de</ExternalLink>
+          <NavLink css={css`opacity: 1; padding: 0;`} href={website.contactEmail}>tuhlmann@agynamix.de</NavLink>
         </Paragraph>
       </div>
       <div css={css`

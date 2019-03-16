@@ -32,5 +32,5 @@ module.exports = {
   facebook: "https://facebook.com/agynamix/",
   github: "https://github.com/tuhlmann/",
   linkedin: "https://www.linkedin.com/in/torstenuhlmann/",
-  // youtube: 'https://www.youtube.com/channel/channel-identifier',
+  youtube: "https://www.youtube.com/channel/UCmVW4CIyubgbygTJ-fysc0g",
 }

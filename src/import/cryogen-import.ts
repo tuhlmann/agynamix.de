@@ -1,8 +1,8 @@
 import fs from "fs"
 import path from "path"
 import stripIndent from "strip-indent"
-import {string} from "prop-types"
-import {math} from "polished"
+import { string } from "prop-types"
+import { math } from "polished"
 
 const BANNER_PATH = "/entw/www/banner2/out"
 const IMPORT_FROM = "/entw/www/tuhlmann.github.io/resources/templates/md/posts/"

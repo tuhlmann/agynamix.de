@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/tuhlmann
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.agynamix.de
+  * I am tuhlmann (https://keybase.io/tuhlmann) on keybase.
+  * I have a public key with fingerprint 6BB0 B2B1 B082 51D6 0B5D  D1E3 3AE5 C98C 3996 38E5
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017fbb7faea2ef42b76519fe4899fdae55237a7f7718c2b7af6ec6696d5181f37a0a",
+            "fingerprint": "6bb0b2b1b08251d60b5dd1e33ae5c98c399638e5",
+            "host": "keybase.io",
+            "key_id": "3ae5c98c399638e5",
+            "kid": "01017fbb7faea2ef42b76519fe4899fdae55237a7f7718c2b7af6ec6696d5181f37a0a",
+            "uid": "679fe10eaea250f4f07f3dd11a201319",
+            "username": "tuhlmann"
+        },
+        "revoke": {
+            "sig_ids": [
+                "cfee73a14a6c68d1238e7b0d3a71d8b4f6494d7fcc9e9e9f1db6f158ec7eca9e0f"
+            ]
+        },
+        "service": {
+            "hostname": "www.agynamix.de",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1458800925,
+    "expire_in": 157680000,
+    "prev": "01b7dddf8fa1f01f2688fa3e99a9eb60f3adb06ba74a66af11241bdfed6ff9b5",
+    "seqno": 14,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMJxAnicrZJdaFRHFMd3o1WyRht8qKLY2iukWpZk5n7M3LtKC1aKFAt+QIIb03Xm
+zpndy8Z71703u4nW0hahDdLW6oOl9EFBjSDiR4IRGouf5MGGBlJFLW1qH6oRfImK
+sS3q3EXffCzzMB/nf/7nN2fm0uxpiVRyYsGDX89M9C9OXjn/qCvRer930XaNB6JH
+y2zXilCboFNAGOWKntAyGsIIU8k5lQyYDtLUOSUWdiSYtuNIwcCydIMyKinFtqui
+TBJwCXGIsLCNpYohpqU16fl5KJfKnh8pW8I54jrHHNm6hQVB3BICg2EoP9exXcNx
+iGGDpRILQRhnKDjOQmj2AnWmNrka3kv0/zN3V82OUJWJEcRmFpKmRFQaihgzHWED
+O7EwhLLPtoBSR12Fzi3M97Udaa0MlaAIcV9DL6+gQy3TrrkSgBoMm4y4xBZYV+yU
+I2EwioXNTUlMxxRUuq4DakgsOJHYssGl4DIHkNQ6lLeqWPHcmnncpefVq9VqM8v3
+qJ3X3SxAoZXKQRS4QacKFqKoFGZisKinVFMDzz33yXHPF+qZVEYFyqEX+FoGK6Ub
+ebExNi3bRsjRrbQG3SWvDDkvVliUqGOE4jpQqfWeUyGEtCXDEmGpE1stDXAchc4J
+kgYTHBHOqLo/YRJj3cRcSBBESofHjxjCVj+ISypOlleeqnk+i7rKoO24cG7T9EQy
+lZjxSl38fxOp+sYXv/rk5pn/1M09Xcj+1fvWL/+1LV/+ya2gYenI7HferrQ5DcNT
+Q9f++PPYp/yNdYOdd+997n91eM8AM/5e8zA18/L8lXJ6VfTj71qvZvuOnnvzvTMP
+V3zWcKh5Xsvk6+3J0cXtPy+afDWXH+vfM3qnsTiw8bX1HT+EA+HWGzNORo9WfTux
+68rYVN/1dQvnP770xfhHS949YrWhncnf99Pbu0/d+yZ9ZN+autTHQzuL8PWsit87
+3riifu/FjlJu8snB7vO5ufe3/fj+gbM3hv49nm0qDm4cbdqWXH2n/gIeaRlvotcv
+f7Cr+8uxiyPDLdXWqfSD8cHbhYMd2d9ObPjwp1vZpcvmbL75/Qn2VJxeuWrttOFn
+djllhA==
+=v+x7
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tuhlmann
+
+==================================================================
+

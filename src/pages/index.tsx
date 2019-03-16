@@ -1,25 +1,28 @@
-import {css} from "@emotion/core"
+import { css } from "@emotion/core"
 import styled from "@emotion/styled"
-import {graphql} from "gatsby"
-import React from "react"
+import { graphql } from "gatsby"
+import React, { useState } from "react"
 import ReactDOM from "react-dom"
 import theme from "../../config/theme"
 import website from "../../config/website"
-import {SimpleHero} from "../components/simple-hero"
-import Container, {FullWidthContainer} from "../components/Container"
+import { SimpleHero } from "../components/simple-hero"
+import { Container, FullWidthContainer } from "../components/Container"
 import Layout from "../components/Layout"
-import Link from "../components/Link"
+import { Link } from "../components/Link"
 import SEO from "../components/SEO"
-import {bpMaxMD, bpMaxSM} from "../lib/breakpoints"
+import { bpMaxMD, bpMaxSM } from "../lib/breakpoints"
 import parseQueryString from "../lib/parse-query-string"
-import {fonts, rhythm} from "../lib/typography"
+import { fonts, rhythm } from "../lib/typography"
 
 import resumeImg from "../images/resume.svg"
 import skillsImg from "../images/skills.svg"
 import clientImg from "../images/client.svg"
 
 import photoOfTorsten from "../images/hero/torsten.png"
-import {NavLink, TextLink, TextExtLink} from "../components/Header"
+import { NavLink, TextLink } from "../components/Header"
+
+import { PlayIcon } from "../components/ConfirmMessage/Illustrations"
+import { SimpleModal } from "../components/SimpleModal"
 
 interface IProps {
   backgroundColor: string
@@ -229,6 +232,7 @@ const RoundLink: React.SFC<IRoundLinkProps> = ({background, link, text}) => {
 }
 
 export default function Index(dataWrapper: any) {
+  const [showModal, setShowModal] = useState(false)
   const {
     data: {allMdx}
   } = dataWrapper
@@ -269,12 +273,64 @@ export default function Index(dataWrapper: any) {
               }
             }}
           >
-            <img
-              src={photoOfTorsten}
-              alt="Torsten Uhlmann"
-              css={{maxWidth: "90%", marginBottom: 0, borderRadius: "50%"}}
-            />
+            <div
+              css={css`
+                position: relative;
+                display: inline-block;
+                transition: transform 150ms ease-in-out;
+
+                img {
+                  display: block;
+                  max-width: 100%;
+                  height: auto;
+                }
+
+                svg {
+                  position: absolute;
+                  top: calc(50% - 40px);
+                  left: calc(50% - 40px);
+                  opacity: 0.2;
+                }
+
+                :hover {
+                  opacity: 0.8;
+                  svg {
+                    opacity: 1;
+                  }
+                }
+              `}
+            >
+              <img
+                src={photoOfTorsten}
+                alt="Torsten Uhlmann"
+                css={{
+                  maxWidth: "90%",
+                  marginBottom: 0,
+                  borderRadius: "50%"
+                }}
+              />
+              <PlayIcon onClick={() => setShowModal(true)} />
+            </div>
           </div>
+          {showModal && (
+            <SimpleModal onCloseRequest={() => setShowModal(false)}>
+              <div
+                css={{
+                  padding: 0,
+                  "& video": {
+                    display: "block",
+                    maxWidth: "100%",
+                    height: "auto"
+                  }
+                }}
+              >
+                <video controls autoPlay>
+                  <source src="/media/Intro_Torsten_Uhlmann.mp4" type="video/mp4" />
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+            </SimpleModal>
+          )}
         </div>
         <div css={{flexGrow: 1, maxWidth: 600}}>
           <div>
@@ -321,7 +377,7 @@ export default function Index(dataWrapper: any) {
           <div>
             <p style={{marginTop: 10}}>
               If you're looking for an accomplished software engineer you've come to the right place,{" "}
-              <TextExtLink href={website.contactEmail}>let's get in touch!</TextExtLink>
+              <TextLink href={website.contactEmail}>let's get in touch!</TextLink>
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
-import {css} from "@emotion/core"
+import { css } from "@emotion/core"
 import React from "react"
-import {UnsubscribeIllustration} from "../components/ConfirmMessage/Illustrations"
+import { UnsubscribeIllustration } from "../components/ConfirmMessage/Illustrations"
 
 function FourOFour() {
   return (

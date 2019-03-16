@@ -1,4 +1,4 @@
-import {prepareData, sortByDate, StoryData, Categories} from "../lib/prepare-story-data"
+import { prepareData, sortByDate, StoryData, Categories } from "../lib/prepare-story-data"
 
 // tslint:disable:no-require-imports
 export default ([
@@ -45,7 +45,21 @@ export default ([
     description: `
      I was in charge of developing part of a Scala / Lift client application
      together with a really cool team of Underscore developers.
-    `
+    `,
+    recommendations: [
+      {
+        title: "Senior Software Consultant for the TagTrail project",
+        by: "Richard Dallaway, Partner Underscore Consulting LLP",
+        description: `
+We worked with Torsten in on an innovative real-time interactive NFC platform
+for a US corporation. It was a pleasure to work with him. 
+He brought technical knowledge, especially with Lift, Scala, and Angular. 
+He worked with the customer to understand their needs. As well as generally 
+contributing to the project, he took on responsibility for (and delivered) 
+a rich reporting tool.        
+        `
+      }
+    ]
   },
   {
     position: "Senior Software Developer",

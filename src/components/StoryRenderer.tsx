@@ -1,13 +1,13 @@
 import React from "react"
-import {css} from "@emotion/core"
-import {isEmpty} from "lodash"
+import { css } from "@emotion/core"
+import { isEmpty } from "lodash"
 import styled from "@emotion/styled"
 import Markdown from "react-markdown"
-import {bpMaxSM} from "../lib/breakpoints"
-import {StoryData, formatDate, Categories, Recommendation, ImageElement, Alignment} from "../lib/prepare-story-data"
+import { bpMaxSM } from "../lib/breakpoints"
+import { StoryData, formatDate, Categories, Recommendation, ImageElement, Alignment } from "../lib/prepare-story-data"
 import theme from "../../config/theme"
-import {TextExtLink} from "./Header"
-import {subYears, compareAsc} from "date-fns"
+import { TextLink } from "./Header"
+import { subYears, compareAsc } from "date-fns"
 
 interface IProps {
   story: StoryData[]
@@ -47,9 +47,9 @@ function renderClientImage(url?: string, img?: any) {
 function renderRecommendation(recommendation: Recommendation) {
   const {title, link, by, date, description} = recommendation
   const titleElem = link ? (
-    <TextExtLink href={link}>
+    <TextLink href={link}>
       <RecommendationStrong>{title}</RecommendationStrong>
-    </TextExtLink>
+    </TextLink>
   ) : (
     <RecommendationStrong>{title}</RecommendationStrong>
   )

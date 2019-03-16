@@ -1,5 +1,5 @@
 import React from "react"
-import Container from "components/Container"
+import { Container } from "components/Container"
 import SEO from "components/SEO"
 import Layout from "components/Layout"
 import BigHero from "components/big-hero"

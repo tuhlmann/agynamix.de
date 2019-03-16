@@ -130,7 +130,8 @@
       "check-operator",
       "check-typecast",
       "check-separator",
-      "check-preblock"
+      "check-preblock",
+      "check-module"
     ],
     "max-classes-per-file": [true, 5],
     "no-consecutive-blank-lines": [
