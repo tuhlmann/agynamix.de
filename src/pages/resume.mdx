@@ -7,14 +7,32 @@ import {Container} from "../components/Container"
 import story from "../data/story"
 import {StoryRenderer} from "../components/StoryRenderer"
 import {Categories} from "../lib/prepare-story-data"
+import { bpMaxSM } from "../lib/breakpoints"
 
-import photo from '../images/torsten.png'
+import photo from '../images/torsten_square.jpg'
 
 <div
-  style={{display: 'flex', justifyContent: 'space-between', marginBottom: 15}}
+  css={{
+    display: 'flex', 
+    justifyContent: 'space-between', 
+    marginBottom: 15,
+    [bpMaxSM]: {
+      flexDirection: "column-reverse",
+      alignItems: "center"
+    }
+  }}
 >
-  <div>
-    <h1 style={{marginTop: 0}}>Resume of Torsten Uhlmann</h1>
+  <div css={{
+    [bpMaxSM]: {
+      textAlign: "center"
+    }
+  }}>
+    <h1 css={{
+      marginTop: 0,
+      [bpMaxSM]: {
+        marginTop: 10
+      }
+    }}>Resume of Torsten Uhlmann</h1>
     <p>
       Torsten Uhlmann<br/>
       Buchenweg 5<br/>
@@ -25,7 +43,7 @@ import photo from '../images/torsten.png'
   <div>
     <img
       alt="Torsten's photo"
-      style={{maxHeight: 200, display: 'block', marginBottom: 4, borderRadius: '5px'}}
+      css={{maxHeight: 200, display: 'block', marginBottom: 4, borderRadius: '5px'}}
       src={photo}
     />
   </div>

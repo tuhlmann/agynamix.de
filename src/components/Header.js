@@ -8,7 +8,7 @@ import { fonts } from "../lib/typography"
 import { MobileNav } from "./MobileNav"
 import { Container } from "./Container"
 import { bpMaxSM } from "../lib/breakpoints"
-import homeLinkLogo from "../images/hero/homeLinkLogo.png"
+import logo from "../images/logo.png"
 
 function HeaderLink(props) {
   const { headerColor, ...myProps } = props
@@ -100,7 +100,7 @@ const Header = ({
             headerColor={headerColor}
           >
             <img
-              src={homeLinkLogo}
+              src={logo}
               alt="Torsten Uhlmann"
               css={{ maxWidth: "200px", marginBottom: 0, verticalAlign: "bottom" }}
             />

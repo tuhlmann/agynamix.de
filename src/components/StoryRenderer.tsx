@@ -30,16 +30,20 @@ const RecommendationStrong = styled.span`
 `
 
 function renderClientImage(url?: string, img?: any) {
+  const divCss = {
+    [bpMaxSM]: {alignSelf: "center"}
+  }
+
   if (img) {
     const i = <img css={{maxWidth: 200}} src={img} />
     if (url) {
       return (
-        <div>
+        <div css={divCss}>
           <a href={url}>{i}</a>
         </div>
       )
     }
-    return <div>{i}</div>
+    return <div css={divCss}>{i}</div>
   }
   return null
 }
@@ -292,13 +296,26 @@ export const StoryRenderer: React.FC<IProps> = ({
                   }
                 `}
               >
-                <div css={{alignSelf: "flex-start"}}>
-                  <h2>
+                <div
+                  css={{
+                    alignSelf: "flex-start",
+                    [bpMaxSM]: {alignSelf: "center"}
+                  }}
+                >
+                  <h2
+                    css={{
+                      [bpMaxSM]: {textAlign: "center"}
+                    }}
+                  >
                     <a href={`#${slug}`} id={slug}>
                       {position}
                     </a>
                   </h2>
-                  <h4>
+                  <h4
+                    css={{
+                      [bpMaxSM]: {textAlign: "center"}
+                    }}
+                  >
                     {client};
                     <small>
                       {" "}

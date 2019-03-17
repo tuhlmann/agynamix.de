@@ -18,7 +18,7 @@ import resumeImg from "../images/resume.svg"
 import skillsImg from "../images/skills.svg"
 import clientImg from "../images/client.svg"
 
-import photoOfTorsten from "../images/hero/torsten.png"
+import photoOfTorsten from "../images/torsten_portrait.jpg"
 import { NavLink, TextLink } from "../components/Header"
 
 import { PlayIcon } from "../components/ConfirmMessage/Illustrations"
@@ -198,7 +198,12 @@ interface IRoundLinkProps {
 
 const RoundLink: React.SFC<IRoundLinkProps> = ({background, link, text}) => {
   return (
-    <Link to={link}>
+    <Link
+      css={{
+        [bpMaxSM]: {alignSelf: "stretch"}
+      }}
+      to={link}
+    >
       <div
         css={{
           width: 130,
@@ -210,7 +215,13 @@ const RoundLink: React.SFC<IRoundLinkProps> = ({background, link, text}) => {
           backgroundSize: "contain",
           borderRadius: "50%",
           justifyItems: "center",
-          padding: 10
+          padding: 10,
+          [bpMaxSM]: {
+            width: "inherit",
+            borderRadius: 10,
+            height: 70,
+            backgroundSize: "cover"
+          }
         }}
       >
         <span
@@ -281,14 +292,16 @@ export default function Index(dataWrapper: any) {
 
                 img {
                   display: block;
-                  max-width: 100%;
+                  max-width: 90%;
                   height: auto;
+                  margin-bottom: 0;
+                  border-radius: 5px;
                 }
 
                 svg {
                   position: absolute;
                   top: calc(50% - 40px);
-                  left: calc(50% - 40px);
+                  left: calc(50% - 60px);
                   opacity: 0.2;
                 }
 
@@ -300,15 +313,7 @@ export default function Index(dataWrapper: any) {
                 }
               `}
             >
-              <img
-                src={photoOfTorsten}
-                alt="Torsten Uhlmann"
-                css={{
-                  maxWidth: "90%",
-                  marginBottom: 0,
-                  borderRadius: "50%"
-                }}
-              />
+              <img src={photoOfTorsten} alt="Torsten Uhlmann" />
               <PlayIcon onClick={() => setShowModal(true)} />
             </div>
           </div>

@@ -4,20 +4,30 @@ title: Consulting Services
 
 import { TextLink } from "../components/Header"
 import website from "../../config/website"
+import { bpMaxSM } from "../lib/breakpoints"
+import { css } from "@emotion/core"
 
-import logo from "../images/hero/homeLinkLogo.png"
+import logo from "../images/logo.png"
 import contactMe from "../images/consulting/undraw_contact_us_15o2.svg"
 
 <div
-  style={{display: 'flex', justifyContent: 'space-between', marginBottom: 25}}
+  css={{
+    display: 'flex', 
+    justifyContent: 'space-between', 
+    marginBottom: 25,
+    [bpMaxSM]: {
+      flexDirection: "column-reverse",
+      alignItems: "center"
+    } 
+  }}
 >
   <div>
-    <h1 style={{marginTop: 0, marginBottom: 0}}>Working with me</h1>
+    <h1 css={{marginTop: 0, marginBottom: 0}}>Working with me</h1>
   </div>  
   <div>
     <img
       alt="AGYNAMIX"
-      style={{maxWidth: 300, display: 'block', marginBottom: 4, borderRadius: '5px'}}
+      css={{maxWidth: 300, display: 'block', marginBottom: 4, borderRadius: '5px'}}
       src={logo}
     />
   </div>

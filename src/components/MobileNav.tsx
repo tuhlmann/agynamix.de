@@ -98,11 +98,17 @@ export const MobileNav = ({color = "white"}) => {
             <Link aria-label="View home page" to="/" activeClassName="active">
               Home
             </Link>
+            <Link aria-label="View resume page" to="/resume" activeClassName="active">
+              Resume
+            </Link>
+            <Link aria-label="View consulting page" to="/consulting" activeClassName="active">
+              Consulting
+            </Link>
             <Link aria-label="View clients page" to="/clients" activeClassName="active">
               Clients
             </Link>
-            <Link aria-label="View workshops page" to="/workshops" activeClassName="active">
-              Workshops
+            <Link aria-label="View products page" to="/products" activeClassName="active">
+              Products
             </Link>
             <Link aria-label="View blog page" to="/blog" activeClassName="active">
               Blog

@@ -14,12 +14,7 @@ import { bpMaxMD, bpMaxSM } from "../lib/breakpoints"
 import parseQueryString from "../lib/parse-query-string"
 import { fonts, rhythm } from "../lib/typography"
 
-import resumeImg from "../images/resume.svg"
-import skillsImg from "../images/skills.svg"
-import clientImg from "../images/client.svg"
-
-import photoOfTorsten from "../images/hero/torsten.png"
-import { NavLink, TextLink } from "../components/Header"
+import photoOfTorsten from "../images/torsten_square.jpg"
 
 interface IProps {
   backgroundColor: string
@@ -254,7 +249,15 @@ export default function Index(dataWrapper: any) {
         `}
       >
         <div css={{alignSelf: "center", maxWidth: "220px"}}>
-          <img src={photoOfTorsten} alt="Torsten Uhlmann" css={{marginBottom: 0, borderRadius: "50%"}} />
+          <img
+            src={photoOfTorsten}
+            alt="Torsten Uhlmann"
+            css={{
+              marginBottom: 0,
+              borderRadius: 5,
+              maxWidth: "90%"
+            }}
+          />
         </div>
         <div css={{maxWidth: 400, alignContent: "center"}}>
           <div>

@@ -17,6 +17,11 @@ declare module "*.png" {
   export default content
 }
 
+declare module "*.jpg" {
+  const content: any
+  export default content
+}
+
 declare module "@sindresorhus/slugify" {
   function slugify(name: string): string
   export default slugify

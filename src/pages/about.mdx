@@ -2,22 +2,39 @@
 title: About Torsten Uhlmann
 ---
 
-import photo from '../images/torsten.png'
+import {css} from "@emotion/core"
+import { bpMaxSM } from "../lib/breakpoints"
+
+import photo from '../images/torsten_square.jpg'
 import bread from '../images/about/sourdough_bread.jpg'
 import translating from '../images/about/translating.jpg'
 import espresso from '../images/about/cup_o_beans.jpg'
 
 <div
-  style={{display: 'flex', justifyContent: 'space-between', marginBottom: 15}}
+  css={{
+    display: 'flex', 
+    justifyContent: 'space-between', 
+    marginBottom: 15,
+    [bpMaxSM]: {
+      flexDirection: "column-reverse",
+      alignItems: "center"
+    }
+  }}
 >
   <div>
-    <h1 style={{marginTop: 0, marginBottom: 0}}>Hi! I'm Torsten</h1>
+    <h1 css={{
+      marginTop: 0, 
+      marginBottom: 0,
+      [bpMaxSM]: {
+        marginTop: 10
+      }
+    }}>Hi! I'm Torsten</h1>
     <p>I grew up in the beautiful Ore Mountains of Germany where I still live. I'm married to my wife Silvia, we have two kids.</p>
   </div>  
   <div>
     <img
       alt="Torsten's photo"
-      style={{maxHeight: 200, display: 'block', marginBottom: 4, borderRadius: '5px'}}
+      css={{maxHeight: 200, display: 'block', marginBottom: 4, borderRadius: '5px'}}
       src={photo}
     />
   </div>

@@ -5,7 +5,7 @@ import { bpMaxMD, bpMaxSM } from "../lib/breakpoints"
 import { rhythm } from "../lib/typography"
 import { Container } from "./Container"
 
-import photoOfTorsten from "../images/hero/torsten.png"
+import photoOfTorsten from "../images/torsten_square.jpg"
 
 interface IProps {
   children?: JSX.Element[]
