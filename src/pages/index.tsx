@@ -260,7 +260,7 @@ export default function Index(dataWrapper: any) {
           padding-bottom: 0;
           background: ${theme.colors.background_color};
           border-radius: 5px;
-          padding: 100px 120px 60px 120px;
+          padding: 75px 120px 60px 120px;
           margin-bottom: ${rhythm(1)};
           ${bpMaxMD} {
             padding: auto;

@@ -46,7 +46,6 @@ function preToCodeBlock(preProps) {
       ...props,
     }
   }
-
-  return null
 }
-/* eslint react/display-name:0 */
+/* eslint react/display-name:0, consistent-return:0 */
+

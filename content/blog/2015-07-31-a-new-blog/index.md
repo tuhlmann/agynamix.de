@@ -32,7 +32,7 @@ I want to dive in deeper that seems the perfect fit for me.
 To start a new website with cryogen, first install [Leiningen](http://leiningen.org/),
 the Clojure build tool, and then type:
 
-```
+```bash
 $ lein new cryogen my-site
 $ lein ring server
 ```

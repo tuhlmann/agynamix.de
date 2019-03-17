@@ -1,1 +1,2 @@
-User-agent: * Disallow: /manual/ Disallow: /blog/
+User-agent: * 
+Disallow: /manual/
