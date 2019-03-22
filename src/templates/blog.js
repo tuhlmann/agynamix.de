@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
-import Blog from "components/blog"
+import Blog from "../components/blog"
 
-function CodingBlog(props) {
+const CodingBlog = props => {
   return <Blog {...props} />
 }
 
-export default function CodingBlogWithData(props) {
+const CodingBlogWithData = props => {
   return (
     <StaticQuery
       query={graphql`
@@ -27,7 +27,7 @@ export default function CodingBlogWithData(props) {
                   slug
                   date
                 }
-                parent { 
+                parent {
                   ... on File {
                     sourceInstanceName
                   }
@@ -43,7 +43,7 @@ export default function CodingBlogWithData(props) {
                     }
                   }
                   slug
-                  keywords
+                  tags
                 }
               }
             }
@@ -54,3 +54,5 @@ export default function CodingBlogWithData(props) {
     />
   )
 }
+
+export default CodingBlogWithData

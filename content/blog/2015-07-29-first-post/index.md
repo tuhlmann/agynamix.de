@@ -3,8 +3,8 @@ slug: first-post
 date: 2015-07-29
 title: "A First Post"
 author: "Torsten Uhlmann"
+tags: []
 categories: []
-keywords: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

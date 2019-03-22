@@ -3,8 +3,8 @@ slug: initialize-swt-action-accelerators-in-swt-34
 date: 2008-11-11
 title: "Initialize SWT Action accelerators in SWT 3.4"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

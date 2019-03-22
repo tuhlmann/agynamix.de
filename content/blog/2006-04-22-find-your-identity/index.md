@@ -3,8 +3,8 @@ slug: find-your-identity
 date: 2006-04-22
 title: "Find your identity"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: dopus-091-is-out
 date: 2006-11-24
 title: "Dopus 0.9.1 is out"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

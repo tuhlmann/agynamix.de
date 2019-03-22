@@ -3,8 +3,8 @@ slug: simidude-132-withdrawn-again
 date: 2009-07-16
 title: "Simidude 1.3.2 withdrawn - again"
 author: "Torsten Uhlmann"
-categories: ["it"]
-keywords: []
+tags: ["it"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

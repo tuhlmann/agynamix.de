@@ -3,8 +3,8 @@ slug: dopus-094-out-the-door
 date: 2006-12-01
 title: "Dopus 0.9.4 out the door"
 author: "Torsten Uhlmann"
-categories: ["business", "news", "programming"]
-keywords: []
+tags: ["business", "news", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

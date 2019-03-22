@@ -3,8 +3,8 @@ slug: images-with-windows-live-writer
 date: 2006-08-27
 title: "Images with Windows Live Writer"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: ein-linux-small-business-server
 date: 2006-02-09
 title: "Ein Linux Small Business Server"
 author: "Torsten Uhlmann"
-categories: ["business", "news"]
-keywords: []
+tags: ["business", "news"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

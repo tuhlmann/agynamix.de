@@ -3,8 +3,8 @@ slug: a-simple-and-free-mp3-tag-editor
 date: 2009-03-17
 title: "A simple and free MP3 Tag Editor"
 author: "Torsten Uhlmann"
-categories: ["english", "it", "programming"]
-keywords: []
+tags: ["english", "it", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

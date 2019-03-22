@@ -3,8 +3,8 @@ slug: getting-things-done-again
 date: 2006-05-16
 title: "Getting Things Done (again)"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

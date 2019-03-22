@@ -3,8 +3,8 @@ slug: valuable-business-resources-for-geeks
 date: 2006-05-08
 title: "Valuable Business resources for Geeks"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

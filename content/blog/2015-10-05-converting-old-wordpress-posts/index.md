@@ -3,8 +3,8 @@ slug: converting-old-wordpress-posts
 date: 2015-10-05
 title: "Converting my old Wordpress posts to Markdown"
 author: "Torsten Uhlmann"
-categories: ["Clojure"]
-keywords: []
+tags: ["Clojure"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

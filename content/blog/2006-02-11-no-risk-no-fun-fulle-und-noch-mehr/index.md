@@ -3,8 +3,8 @@ slug: no-risk-no-fun-fulle-und-noch-mehr
 date: 2006-02-11
 title: "No Risk No F.U.N (Fülle und Noch mehr)"
 author: "Torsten Uhlmann"
+tags: []
 categories: []
-keywords: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

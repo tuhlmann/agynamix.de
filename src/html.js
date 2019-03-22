@@ -33,10 +33,10 @@ export default class HTML extends React.Component {
 }
 
 HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
   body: PropTypes.string,
+  bodyAttributes: PropTypes.object,
+  headComponents: PropTypes.array,
+  htmlAttributes: PropTypes.object,
   postBodyComponents: PropTypes.array,
+  preBodyComponents: PropTypes.array,
 }

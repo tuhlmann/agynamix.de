@@ -1,4 +1,4 @@
-import { prepareData, sortByDate, StoryData, Categories } from "../lib/prepare-story-data"
+import { prepareData, sortByDate, StoryData, AllowedCategories } from "../lib/prepare-story-data"
 
 // tslint:disable:no-require-imports
 export default ([
@@ -10,14 +10,22 @@ export default ([
     end: "2019-02-28",
     link: "https://www.ascendantcompliancemanager.com",
     tags: ["Scala", "Lift", "GO", "AngularJS", "Javascript", "MarkoJS", "Docker", "MongoDB"],
-    categories: [Categories.Client, Categories.Resume],
+    categories: [AllowedCategories.Client, AllowedCategories.Resume],
     short: `*Compliance & Risk Management, Solved*`,
     description: `
      In a small team of awesomely great developers we implement a suite of tools 
      using best of breed frameworks like AngularJS for the frontend. 
      The backend server is developed as a set of Scala applications on top 
      of the Lift web framework. We use the MongoDB database.
-    `
+    `,
+    recommendations: [
+      {
+        title: "Letter of Recommendation",
+        date: "2019-03-18",
+        by: "Neil Visnapuu, Managing Director, Ascendant",
+        link: "/documents/ascendant_rec_tuhlmann.pdf"
+      }
+    ]
   },
   {
     position: "Scala & Lift Consultant",
@@ -26,7 +34,7 @@ export default ([
     start: "2013-03-01",
     end: "2013-07-01",
     tags: ["Scala", "Lift", "MySQL", "Squeryl"],
-    categories: [Categories.Client, Categories.Resume],
+    categories: [AllowedCategories.Client, AllowedCategories.Resume],
     short: `*Scala, Lift & MySQL. Kind of a personalized wayback machine.*`,
     description: `
      For a client I'm developing a Lift based information engine application.
@@ -40,7 +48,7 @@ export default ([
     end: "2013-04-01",
     link: "https://underscore.io",
     tags: ["Scala", "Lift", "MongoDB", "Cloudbees"],
-    categories: [Categories.Client, Categories.Resume],
+    categories: [AllowedCategories.Client, AllowedCategories.Resume],
     short: `*Scala & Lift projects with the awesome folks at Underscore Consulting.*`,
     description: `
      I was in charge of developing part of a Scala / Lift client application
@@ -69,7 +77,7 @@ a rich reporting tool.
     end: "2012-09-01",
     link: "https://www.mewe.com",
     tags: ["Scala", "Lift", "Javascript", "MongoDB"],
-    categories: [Categories.Client, Categories.Resume],
+    categories: [AllowedCategories.Client, AllowedCategories.Resume],
     recommendations: [
       {
         title: "Letter of Recommendation",
@@ -92,7 +100,7 @@ a rich reporting tool.
     end: "2009-09-01",
     link: "https://www.bn-automation.com/de/startseite.html",
     tags: ["Java", "AGYNAMIX"],
-    categories: [Categories.Client],
+    categories: [AllowedCategories.Client],
     short: `
      *B+N Automation uses AGYNAMIX' Net-Herald signal monitoring and broadcasting software.*
     `
@@ -105,7 +113,7 @@ a rich reporting tool.
     end: "2015-12-31",
     link: "https://wksgroup.de/",
     tags: ["Java", "AGYNAMIX"],
-    categories: [Categories.Client],
+    categories: [AllowedCategories.Client],
     short: `
      *WKS Group uses several AGYNAMIX' Net-Herald signal monitoring and broadcasting software installations.*
     `
@@ -118,7 +126,7 @@ a rich reporting tool.
     end: "2009-07-01",
     link: "https://www.1822direkt.de",
     tags: ["Java", "JBoss", "Tomcat", "JSF"],
-    categories: [Categories.Client, Categories.Resume],
+    categories: [AllowedCategories.Client, AllowedCategories.Resume],
     short: `*Java & JSP. Wrote a frontend for processing customer printables.*`,
     description: `
       Development of a JSF(Java Server Faces) front end for an in house application to manage correspondence to their customers.
@@ -133,7 +141,7 @@ a rich reporting tool.
     end: "2017-12-31",
     link: "https://github.com/tuhlmann/numerix",
     tags: ["Clojure", "Clojurescript", "MongoDB", "Reagent", "re-frame", "re-com"],
-    categories: [Categories.Product, Categories.Resume],
+    categories: [AllowedCategories.Product, AllowedCategories.Resume],
     description: `
       Numerix was planned as a multi tenant tool for freelancers or small companies. It contains modules for
 
@@ -164,7 +172,7 @@ a rich reporting tool.
     end: "2016-12-31",
     link: "https://github.com/tuhlmann/gartenverein",
     tags: ["Scala", "Lift", "Javascript", "MongoDB"],
-    categories: [Categories.Product, Categories.Resume],
+    categories: [AllowedCategories.Product, AllowedCategories.Resume],
     description: `
 Gartenverein is an attempt to create a hosted application to manage small garden communities in Germany.
 
@@ -192,7 +200,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "2011-12-31",
     link: "https://github.com/tuhlmann/simidude",
     tags: ["Java", "SWT", "JFace", "Install4j", "Linux", "Windows", "MacOS"],
-    categories: [Categories.Product, Categories.Resume],
+    categories: [AllowedCategories.Product, AllowedCategories.Resume],
     description: `
       I developed a small cross platform application that is used to copy your computers
       clipboard contents, files or whole directories to connected machines.
@@ -227,7 +235,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "2015-12-31",
     link: "https://www.agynamix.de",
     tags: ["Java", "Eclipse RCP", "PostgreSQL", "Spring", "OPC"],
-    categories: [Categories.Product, Categories.Resume],
+    categories: [AllowedCategories.Product, AllowedCategories.Resume],
     description: `
       I started AGYNAMIX by the end of 2004 to create a company where I could create great
       software according to what I have learned in the past decade and not according to managers
@@ -261,7 +269,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "2011-09-01",
     link: "https://www.t-systems.com/de/de",
     tags: ["Java", "JBoss", "Oracle"],
-    categories: [Categories.Client, Categories.Resume],
+    categories: [AllowedCategories.Client, AllowedCategories.Resume],
     recommendations: [
       {
         title: `Projekt C++ und Java-Programmierung, 07/98 - 03/02`,
@@ -334,7 +342,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "2011-12-31",
     link: "https://www.mlgruppe.de/startseite.html",
     tags: ["Java", "Speaking"],
-    categories: [Categories.Training],
+    categories: [AllowedCategories.Training],
     description: `
      I was teaching several Java and programming basics courses at ML Consulting Dresden and Berlin. 
      I got very good ratings from my students and the manager of the consulting facility wants me back for more.
@@ -348,7 +356,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "2013-06-12",
     link: "https://scaladays.org/assets/archive/ny2013/index.html",
     tags: ["Scala", "Speaking"],
-    categories: [Categories.Training],
+    categories: [AllowedCategories.Training],
     description: `
      I was giving talks at Scala conferences about my[Lift](https://liftweb.net), the Scala web framework I'm involved with for many years.
     `
@@ -361,7 +369,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "2013-12-03",
     link: "https://skillsmatter.com/conferences/1765-scala-exchange-2013#program",
     tags: ["Scala", "Speaking"],
-    categories: [Categories.Training],
+    categories: [AllowedCategories.Training],
     description: `
      I was giving talks at Scala conferences about my[Lift](https://liftweb.net), the Scala web framework I'm involved with for many years.
     `
@@ -374,7 +382,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "2013-01-31",
     link: "https://www.packtpub.com/web-development/instant-lift-web-applications-how-instant",
     tags: ["Scala", "Authoring"],
-    categories: [Categories.Publication],
+    categories: [AllowedCategories.Publication],
     description: `
       Together with Pack Publishing I authored a small book about Lift,
       the ['Lift Web Applications HowTo'](https://www.packtpub.com/web-development/instant-lift-web-applications-how-instant).
@@ -388,7 +396,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "1996-03-31",
     link: "https://www.tu-chemnitz.de/",
     tags: ["Computer Science", "Databases", "Algorithm"],
-    categories: [Categories.Education],
+    categories: [AllowedCategories.Education],
     description: `
       I only studied once, so there's not much here. Since I got that programmable calculater in 8th grade 
       I wanted to do something with computers.
@@ -406,7 +414,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "1998-04-31",
     link: "https://www.t-systems.com/de/de",
     tags: ["OS/2", "Windows NT", "C++", "PHP", "Cobol", "Java"],
-    categories: [Categories.Resume],
+    categories: [AllowedCategories.Resume],
     description: `
       Cobol software to convert customer invoices for AFP printer consumption.
       Java based GUI applications to generate specifications for invoice layouts.
@@ -420,7 +428,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "1996-04-31",
     link: "https://www.gk-software.com",
     tags: ["MS-DOS", "C", "Pascal"],
-    categories: [Categories.Client, Categories.Resume],
+    categories: [AllowedCategories.Client, AllowedCategories.Resume],
     description: `
       Development of drivers and associated software for retail cash registers,
       scanners and printers used in combination with the client's software.
@@ -434,7 +442,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "1994-04-31",
     link: "https://www.leicher.de/",
     tags: ["MS-DOS", "C++"],
-    categories: [Categories.Client, Categories.Resume],
+    categories: [AllowedCategories.Client, AllowedCategories.Resume],
     description: `
       Development of a converter software that converts between the Datanorm standard
       and an in house used softwae standard.
@@ -448,7 +456,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     end: "1993-06-31",
     link: "https://www.jahn-gmbh.de/",
     tags: ["MS-DOS", "Pascal"],
-    categories: [Categories.Client, Categories.Resume],
+    categories: [AllowedCategories.Client, AllowedCategories.Resume],
     description: `
       Development of a management software for printers / copiers leased by the client
       to its customers.

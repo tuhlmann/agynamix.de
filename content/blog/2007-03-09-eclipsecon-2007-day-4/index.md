@@ -3,8 +3,8 @@ slug: eclipsecon-2007-day-4
 date: 2007-03-09
 title: "EclipseCon 2007: Day 4"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

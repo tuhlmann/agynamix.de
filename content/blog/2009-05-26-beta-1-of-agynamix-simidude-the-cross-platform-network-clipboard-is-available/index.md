@@ -3,8 +3,8 @@ slug: beta-1-of-agynamix-simidude-the-cross-platform-network-clipboard-is-availa
 date: 2009-05-26
 title: "Beta 1 of AGYNAMIX Simidude, the cross platform network clipboard is available"
 author: "Torsten Uhlmann"
-categories: ["it", "marketing", "newsletter"]
-keywords: []
+tags: ["it", "marketing", "newsletter"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

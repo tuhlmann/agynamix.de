@@ -6,7 +6,7 @@ import SEO from "../components/SEO"
 import theme from "../../config/theme"
 import story from "../data/story"
 import { StoryRenderer } from "../components/StoryRenderer"
-import { Categories } from "../lib/prepare-story-data"
+import { AllowedCategories } from "../lib/prepare-story-data"
 
 export default function Clients() {
   return (
@@ -18,7 +18,7 @@ export default function Clients() {
           margin-top: 30px;
         `}
       >
-        <StoryRenderer story={story} categories={[Categories.Client]} />
+        <StoryRenderer story={story} categories={[AllowedCategories.Client]} />
       </Container>
     </Layout>
   )

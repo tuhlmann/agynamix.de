@@ -3,8 +3,8 @@ slug: google-collections-api
 date: 2008-03-13
 title: "Google Collections API"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

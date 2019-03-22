@@ -3,8 +3,8 @@ slug: nagios-und-asterisk-nagios-lernt-sprechen
 date: 2006-03-01
 title: "Nagios und Asterisk (Nagios lernt sprechen)"
 author: "Torsten Uhlmann"
-categories: ["news", "programming"]
-keywords: []
+tags: ["news", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

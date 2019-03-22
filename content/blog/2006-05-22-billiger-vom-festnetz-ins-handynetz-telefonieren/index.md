@@ -3,8 +3,8 @@ slug: billiger-vom-festnetz-ins-handynetz-telefonieren
 date: 2006-05-22
 title: "Billiger vom Festnetz ins Handynetz telefonieren"
 author: "Torsten Uhlmann"
-categories: ["telefonie"]
-keywords: []
+tags: ["telefonie"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: announce-dopus-renamed-to-dobudish
 date: 2008-07-19
 title: "Announce: Dopus renamed to DobuDish"
 author: "Torsten Uhlmann"
-categories: ["docbook", "english", "programming"]
-keywords: []
+tags: ["docbook", "english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: simidude-170-release-notes
 date: 2014-10-05
 title: "Simidude 1.7.0 Release Notes"
 author: "Torsten Uhlmann"
-categories: ["business", "marketing", "simidude"]
-keywords: []
+tags: ["business", "marketing", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

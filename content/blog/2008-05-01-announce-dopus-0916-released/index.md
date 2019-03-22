@@ -3,8 +3,8 @@ slug: announce-dopus-0916-released
 date: 2008-05-01
 title: "Announce: Dopus 0.9.16 released"
 author: "Torsten Uhlmann"
-categories: ["docbook", "dopus", "english", "programming"]
-keywords: []
+tags: ["docbook", "dopus", "english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

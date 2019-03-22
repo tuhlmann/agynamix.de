@@ -3,8 +3,8 @@ slug: developing-on-windows-10
 date: 2017-02-27
 title: "Developing Web Applications on Windows 10"
 author: "Torsten Uhlmann"
-categories: ["Windows", "Clojure", "Scala"]
-keywords: []
+tags: ["Windows", "Clojure", "Scala"]
+categories: []
 description:
 banner: banner.jpg
 ---

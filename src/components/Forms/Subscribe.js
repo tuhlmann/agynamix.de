@@ -83,12 +83,12 @@ export function TinyLetterSubscribe() {
   return (
     <SubscribeFormWrapper>
       <StyledForm
-        action="https://tinyletter.com/shurlan"
+        action="https://tinyletter.com/agynamix"
         method="post"
         target="popupwindow"
         onSubmit={() => {
           window.open(
-            "https://tinyletter.com/shurlan",
+            "https://tinyletter.com/agynamix",
             "popupwindow",
             "scrollbars=yes,width=800,height=600",
           )

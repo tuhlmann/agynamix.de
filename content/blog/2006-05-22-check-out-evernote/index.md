@@ -3,8 +3,8 @@ slug: check-out-evernote
 date: 2006-05-22
 title: "Check out Evernote"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

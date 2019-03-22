@@ -3,8 +3,8 @@ slug: version-13-beta-of-the-network-clipboard-agynamix-simidude-is-coming
 date: 2009-05-21
 title: "Version 1.3 Beta of the Network Clipboard AGYNAMIX Simidude is coming"
 author: "Torsten Uhlmann"
-categories: ["it", "marketing", "newsletter", "simidude"]
-keywords: []
+tags: ["it", "marketing", "newsletter", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

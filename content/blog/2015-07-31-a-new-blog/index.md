@@ -3,8 +3,8 @@ slug: a-new-blog
 date: 2015-07-31
 title: "A New Time, a New Blog"
 author: "Torsten Uhlmann"
-categories: ["Cryogen"]
-keywords: []
+tags: ["Cryogen"]
+categories: []
 description:
 banner: banner.jpg
 ---

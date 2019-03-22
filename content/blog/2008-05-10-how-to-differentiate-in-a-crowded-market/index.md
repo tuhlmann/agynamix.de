@@ -3,8 +3,8 @@ slug: how-to-differentiate-in-a-crowded-market
 date: 2008-05-10
 title: "How to differentiate in a crowded market"
 author: "Torsten Uhlmann"
-categories: ["business", "english"]
-keywords: []
+tags: ["business", "english"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

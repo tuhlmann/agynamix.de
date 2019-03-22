@@ -3,8 +3,8 @@ slug: our-new-website-is-up-and-running
 date: 2006-09-05
 title: "Our new website is up and running"
 author: "Torsten Uhlmann"
-categories: ["business", "news", "programming"]
-keywords: []
+tags: ["business", "news", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: simidude-easy-to-use-cross-platform-drag-drop
 date: 2008-11-06
 title: "Simidude- Easy to use cross platform drag & drop"
 author: "Torsten Uhlmann"
-categories: ["newsletter"]
-keywords: []
+tags: ["newsletter"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

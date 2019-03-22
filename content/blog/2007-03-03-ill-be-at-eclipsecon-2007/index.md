@@ -3,8 +3,8 @@ slug: ill-be-at-eclipsecon-2007
 date: 2007-03-03
 title: "I'll be at EclipseCon 2007"
 author: "Torsten Uhlmann"
-categories: ["business", "english", "programming"]
-keywords: []
+tags: ["business", "english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

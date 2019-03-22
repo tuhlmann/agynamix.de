@@ -3,8 +3,8 @@ slug: macify-a-swt-application-in-a-cross-platform-way
 date: 2008-12-27
 title: "Macify a SWT application in a cross platform way"
 author: "Torsten Uhlmann"
-categories: ["it"]
-keywords: []
+tags: ["it"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

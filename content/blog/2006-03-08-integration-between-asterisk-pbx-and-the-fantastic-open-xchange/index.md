@@ -3,8 +3,8 @@ slug: integration-between-asterisk-pbx-and-the-fantastic-open-xchange
 date: 2006-03-08
 title: "Integration between Asterisk PBX and the fantastic Open-Xchange"
 author: "Torsten Uhlmann"
-categories: ["business", "news", "programming"]
-keywords: []
+tags: ["business", "news", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

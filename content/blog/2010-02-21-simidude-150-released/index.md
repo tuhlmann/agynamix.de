@@ -3,8 +3,8 @@ slug: simidude-150-released
 date: 2010-02-21
 title: "Simidude 1.5.0 released"
 author: "Torsten Uhlmann"
-categories: ["business", "newsletter", "simidude"]
-keywords: []
+tags: ["business", "newsletter", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

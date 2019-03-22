@@ -3,8 +3,8 @@ slug: apologies-for-the-messed-up-news-feed
 date: 2010-07-05
 title: "Apologies for the messed up news feed"
 author: "Torsten Uhlmann"
-categories: ["newsletter", "simidude"]
-keywords: []
+tags: ["newsletter", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

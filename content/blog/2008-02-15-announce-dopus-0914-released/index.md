@@ -3,8 +3,8 @@ slug: announce-dopus-0914-released
 date: 2008-02-15
 title: "Announce: Dopus 0.9.14 released"
 author: "Torsten Uhlmann"
-categories: ["programming"]
-keywords: []
+tags: ["programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: java-tip-find-the-call-path-stack-trace-of-a-method
 date: 2009-05-13
 title: "Java Tip: Find the call path (stack trace) of a method"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

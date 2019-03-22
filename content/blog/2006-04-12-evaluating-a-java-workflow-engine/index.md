@@ -3,8 +3,8 @@ slug: evaluating-a-java-workflow-engine
 date: 2006-04-12
 title: "Evaluating a Java Workflow engine"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

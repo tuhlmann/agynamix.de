@@ -309,7 +309,7 @@ export const PleaseConfirmIllustration = (
           />
         </g>
         <circle className="notification" cx="80" cy="9.5" r="9.5" fill="#E86C60" fillRule="nonzero" />
-        <text fill="#FFF" fontFamily={fonts.bold} fontSize="10" fontWeight="600" letterSpacing="1">
+        <text fill="#FFF" fontFamily={fonts.semibold} fontSize="10" fontWeight="600" letterSpacing="1">
           <tspan x="77.63" y="12.308">
             1
           </tspan>

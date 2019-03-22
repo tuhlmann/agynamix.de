@@ -3,8 +3,8 @@ slug: simidude-140-release-notes
 date: 2009-09-23
 title: "Simidude 1.4.0 Release Notes"
 author: "Torsten Uhlmann"
-categories: ["release-notes"]
-keywords: []
+tags: ["release-notes"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

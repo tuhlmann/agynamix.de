@@ -3,8 +3,8 @@ slug: java-tip-how-to-find-the-location-of-a-class-being-executed
 date: 2009-07-29
 title: "Java Tip: How to find the location of a class being executed"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

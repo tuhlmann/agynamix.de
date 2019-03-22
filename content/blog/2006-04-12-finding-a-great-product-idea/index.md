@@ -3,8 +3,8 @@ slug: finding-a-great-product-idea
 date: 2006-04-12
 title: "Finding a Great Product Idea"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

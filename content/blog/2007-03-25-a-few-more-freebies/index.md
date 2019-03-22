@@ -3,8 +3,8 @@ slug: a-few-more-freebies
 date: 2007-03-25
 title: "A few more freebies"
 author: "Torsten Uhlmann"
-categories: ["business", "english", "news", "programming"]
-keywords: []
+tags: ["business", "english", "news", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

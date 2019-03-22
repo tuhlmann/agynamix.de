@@ -3,8 +3,8 @@ slug: you-need-to-know-whos-boss
 date: 2007-05-10
 title: "You need to know who's boss"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

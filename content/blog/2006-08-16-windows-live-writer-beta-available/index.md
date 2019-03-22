@@ -3,8 +3,8 @@ slug: windows-live-writer-beta-available
 date: 2006-08-16
 title: "Windows Live Writer Beta available"
 author: "Torsten Uhlmann"
-categories: ["business", "programming"]
-keywords: []
+tags: ["business", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

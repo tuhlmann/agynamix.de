@@ -3,8 +3,8 @@ slug: dependent-so-much
 date: 2006-08-02
 title: "Dependent so much"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

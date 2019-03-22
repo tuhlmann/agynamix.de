@@ -3,8 +3,8 @@ slug: system-update-killed-my-helpdesk
 date: 2009-07-07
 title: "System Update killed my Helpdesk"
 author: "Torsten Uhlmann"
-categories: ["it"]
-keywords: []
+tags: ["it"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

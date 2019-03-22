@@ -3,8 +3,8 @@ slug: dopus-099-released
 date: 2007-03-22
 title: "Dopus 0.9.9 released"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

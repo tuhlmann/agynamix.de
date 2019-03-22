@@ -4,7 +4,7 @@ import theme from "../../config/theme"
 
 import { TwitterShareButton, FacebookShareButton } from "react-share"
 
-export const Share = ({url, title, twitterHandle}) => (
+export const Share: React.FC<any> = ({url, title, twitterHandle}) => (
   <div
     css={css`
       display: flex;

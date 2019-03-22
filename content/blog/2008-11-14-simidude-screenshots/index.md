@@ -3,8 +3,8 @@ slug: simidude-screenshots
 date: 2008-11-14
 title: "Simidude Screenshots"
 author: "Torsten Uhlmann"
-categories: ["newsletter"]
-keywords: []
+tags: ["newsletter"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

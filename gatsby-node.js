@@ -55,6 +55,39 @@ function createBlogPages({ blogPath, data, paginationTemplate, actions }) {
   return null
 }
 
+function createTagPages({ tagPath, data, paginationTemplate, actions }) {
+  if (_.isEmpty(data.edges)) {
+    throw new Error("There are no posts!")
+  }
+
+  const { createPage } = actions
+  const { edges } = data
+
+  // Tag pages:
+  let tags = []
+  // Iterate through each post, putting all found tags into `tags`
+  _.each(edges, edge => {
+    if (_.get(edge, "node.frontmatter.tags")) {
+      tags = tags.concat(edge.node.frontmatter.tags)
+    }
+  })
+  // Eliminate duplicate tags
+  tags = _.uniq(tags)
+
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `${tagPath}/${_.kebabCase(tag)}/`,
+      component: paginationTemplate,
+      context: {
+        tag,
+      },
+    })
+  })
+
+  return null
+}
+
 // eslint-disable-next-line consistent-return
 exports.createPages = async ({ actions, graphql }) => {
   const { data, errors } = await graphql(`
@@ -77,6 +110,9 @@ exports.createPages = async ({ actions, graphql }) => {
       code {
         scope
       }
+      frontmatter {
+        tags
+      }
     }
 
     query {
@@ -90,7 +126,7 @@ exports.createPages = async ({ actions, graphql }) => {
         edges {
           node {
             ...PostDetails
-          }
+          }          
         }
       }
     }
@@ -108,6 +144,14 @@ exports.createPages = async ({ actions, graphql }) => {
     paginationTemplate: path.resolve("src/templates/blog.js"),
     actions,
   })
+
+  createTagPages({
+    tagPath: "/tags",
+    data: blog,
+    paginationTemplate: path.resolve("src/templates/tags.js"),
+    actions,
+  })
+
 }
 
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -241,9 +285,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
 
     createNodeField({
-      name: "keywords",
+      name: "tags",
       node,
-      value: node.frontmatter.keywords || [],
+      value: node.frontmatter.tags || [],
     })
 
     createNodeField({

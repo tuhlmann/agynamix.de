@@ -3,8 +3,8 @@ slug: simidude-120-released
 date: 2009-01-24
 title: "Simidude 1.2.0 released"
 author: "Torsten Uhlmann"
-categories: ["newsletter"]
-keywords: []
+tags: ["newsletter"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

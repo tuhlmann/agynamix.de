@@ -3,8 +3,8 @@ slug: nested-properties-in-ant
 date: 2008-04-29
 title: "Nested properties in Ant"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

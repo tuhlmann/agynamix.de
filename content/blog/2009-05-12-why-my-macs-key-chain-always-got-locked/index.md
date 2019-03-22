@@ -3,8 +3,8 @@ slug: why-my-macs-key-chain-always-got-locked
 date: 2009-05-12
 title: "Why my Mac's key chain always got locked"
 author: "Torsten Uhlmann"
-categories: ["english", "mac"]
-keywords: []
+tags: ["english", "mac"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

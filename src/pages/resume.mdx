@@ -2,11 +2,11 @@
 title: Resume
 ---
 
-import {css} from "@emotion/core"
-import {Container} from "../components/Container"
+import { css } from "@emotion/core"
+import { Container } from "../components/Container"
 import story from "../data/story"
-import {StoryRenderer} from "../components/StoryRenderer"
-import {Categories} from "../lib/prepare-story-data"
+import { StoryRenderer } from "../components/StoryRenderer"
+import { AllowedCategories } from "../lib/prepare-story-data"
 import { bpMaxSM } from "../lib/breakpoints"
 
 import photo from '../images/torsten_square.jpg'
@@ -81,7 +81,7 @@ Current technologies:
 <StoryRenderer 
   story={story} 
   withDescription
-  categories={[Categories.Education]} 
+  categories={[AllowedCategories.Education]} 
 />
 
 ## <a name="skills"></a>Skills
@@ -103,7 +103,7 @@ Things I have used for a short period:
 <StoryRenderer 
   story={story} 
   withDescription
-  categories={[Categories.Training, Categories.Publication]} 
+  categories={[AllowedCategories.Training, AllowedCategories.Publication]} 
 />
 
 <hr style={{marginTop: 0, marginBottom: 0}}/>
@@ -114,7 +114,7 @@ Things I have used for a short period:
   story={story} 
   withDescription
   withImages={false}
-  categories={[Categories.Resume]}
+  categories={[AllowedCategories.Resume]}
   yearsBack={10}
   more="Wait, there's more..."
   less="Come on, hide that old crap"

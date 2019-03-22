@@ -3,8 +3,8 @@ slug: nice-developers-blog
 date: 2008-04-24
 title: "Nice Developer's blog"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

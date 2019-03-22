@@ -3,8 +3,8 @@ slug: installing-eclipse-plugins-the-smart-way
 date: 2006-04-11
 title: "Installing Eclipse plugins the smart way"
 author: "Torsten Uhlmann"
-categories: ["business", "programming"]
-keywords: []
+tags: ["business", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

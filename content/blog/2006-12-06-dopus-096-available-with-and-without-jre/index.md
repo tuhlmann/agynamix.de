@@ -3,8 +3,8 @@ slug: dopus-096-available-with-and-without-jre
 date: 2006-12-06
 title: "Dopus (0.9.6) available with and without JRE"
 author: "Torsten Uhlmann"
-categories: ["programming"]
-keywords: []
+tags: ["programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

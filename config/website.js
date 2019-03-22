@@ -6,8 +6,7 @@ module.exports = {
   siteUrl: "https://www.agynamix.de", // Domain of your site. No trailing slash!
   siteLanguage: "en", // Language Tag on <html> element
   siteLogo: "images/logo.png", // Used for SEO and manifest, path to your image you placed in the 'static' folder
-  siteDescription:
-    "Full stack software developer with 20+ years of experience.",
+  siteDescription: "Full stack software developer with 20+ years of experience.",
   minibio: `
     <strong>Torsten Uhlmann</strong> is a full stack software developer with 20+ years of experience. 
     He juggles Java, Scala, Clojure, Clojurescript, Javascript, Typescript, GO, 
@@ -20,7 +19,7 @@ module.exports = {
   userTwitter: "@agynamix", // Twitter Username
   ogSiteName: "agynamix", // Facebook Site Name
   ogLanguage: "en_US",
-  // googleAnalyticsID: 'UA-62924965-1',
+  googleAnalyticsID: "UA-4384583-3",
 
   // Manifest and Progress color
   themeColor: "#4147DC",
@@ -32,5 +31,5 @@ module.exports = {
   facebook: "https://facebook.com/agynamix/",
   github: "https://github.com/tuhlmann/",
   linkedin: "https://www.linkedin.com/in/torstenuhlmann/",
-  youtube: "https://www.youtube.com/channel/UCmVW4CIyubgbygTJ-fysc0g",
+  youtube: "https://www.youtube.com/channel/UCmVW4CIyubgbygTJ-fysc0g"
 }

@@ -3,8 +3,8 @@ slug: nice-words-for-dopus
 date: 2007-09-29
 title: "Nice words for Dopus"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

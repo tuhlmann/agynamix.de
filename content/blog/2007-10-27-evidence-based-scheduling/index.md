@@ -3,8 +3,8 @@ slug: evidence-based-scheduling
 date: 2007-10-27
 title: "Evidence Based Scheduling"
 author: "Torsten Uhlmann"
-categories: ["business", "english", "programming"]
-keywords: []
+tags: ["business", "english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

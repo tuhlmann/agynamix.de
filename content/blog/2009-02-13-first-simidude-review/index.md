@@ -3,8 +3,8 @@ slug: first-simidude-review
 date: 2009-02-13
 title: "First Simidude Review"
 author: "Torsten Uhlmann"
-categories: ["business", "english", "simidude"]
-keywords: []
+tags: ["business", "english", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

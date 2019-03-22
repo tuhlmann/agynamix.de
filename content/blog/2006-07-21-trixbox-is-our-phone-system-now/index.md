@@ -3,8 +3,8 @@ slug: trixbox-is-our-phone-system-now
 date: 2006-07-21
 title: "Trixbox is our phone system now"
 author: "Torsten Uhlmann"
-categories: ["business", "telefonie"]
-keywords: []
+tags: ["business", "telefonie"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

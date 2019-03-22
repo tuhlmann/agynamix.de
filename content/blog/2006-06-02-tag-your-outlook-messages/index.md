@@ -3,8 +3,8 @@ slug: tag-your-outlook-messages
 date: 2006-06-02
 title: "Tag your Outlook messages"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

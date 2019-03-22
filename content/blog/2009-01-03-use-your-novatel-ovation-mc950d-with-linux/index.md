@@ -3,8 +3,8 @@ slug: use-your-novatel-ovation-mc950d-with-linux
 date: 2009-01-03
 title: "Use your Novatel Ovation MC950D with Linux"
 author: "Torsten Uhlmann"
-categories: ["business", "english"]
-keywords: []
+tags: ["business", "english"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: keep-wordpress-up-to-date-with-subversion
 date: 2008-05-12
 title: "Keep Wordpress up to date with Subversion"
 author: "Torsten Uhlmann"
-categories: ["business", "english", "subversion", "wordpress"]
-keywords: []
+tags: ["business", "english", "subversion", "wordpress"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

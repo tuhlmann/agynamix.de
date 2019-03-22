@@ -3,8 +3,8 @@ slug: grails-and-maven-rants
 date: 2007-06-07
 title: "Grails and Maven rants"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

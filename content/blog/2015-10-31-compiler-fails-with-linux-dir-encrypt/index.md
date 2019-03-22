@@ -3,8 +3,8 @@ slug: compiler-fails-with-linux-dir-encrypt
 date: 2015-10-31
 title: "Scala compiler fails with Linux directory encryption"
 author: "Torsten Uhlmann"
-categories: ["Scala", "Linux", "Ubuntu"]
-keywords: []
+tags: ["Scala", "Linux", "Ubuntu"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

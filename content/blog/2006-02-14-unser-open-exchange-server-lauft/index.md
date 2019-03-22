@@ -3,8 +3,8 @@ slug: unser-open-exchange-server-lauft
 date: 2006-02-14
 title: "Unser Open Exchange Server läuft"
 author: "Torsten Uhlmann"
-categories: ["business", "news", "programming"]
-keywords: []
+tags: ["business", "news", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

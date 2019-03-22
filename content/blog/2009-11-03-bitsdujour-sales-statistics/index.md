@@ -3,8 +3,8 @@ slug: bitsdujour-sales-statistics
 date: 2009-11-03
 title: "BitsDuJour Sales Statistics"
 author: "Torsten Uhlmann"
-categories: ["marketing"]
-keywords: []
+tags: ["marketing"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

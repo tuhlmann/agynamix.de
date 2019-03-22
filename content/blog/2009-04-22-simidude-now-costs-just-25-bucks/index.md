@@ -3,8 +3,8 @@ slug: simidude-now-costs-just-25-bucks
 date: 2009-04-22
 title: "Simidude now costs just 25 bucks"
 author: "Torsten Uhlmann"
-categories: ["marketing", "newsletter", "simidude"]
-keywords: []
+tags: ["marketing", "newsletter", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

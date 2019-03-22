@@ -3,8 +3,8 @@ slug: dramatical-performance-improvements-with-zend-optimizer
 date: 2006-04-25
 title: "Dramatical performance improvements with Zend Optimizer"
 author: "Torsten Uhlmann"
-categories: ["programming"]
-keywords: []
+tags: ["programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

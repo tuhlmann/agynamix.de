@@ -3,8 +3,8 @@ slug: how-to-migrate-your-thunderbird-mail-to-outlook
 date: 2006-08-15
 title: "How to migrate your Thunderbird mail to Outlook"
 author: "Torsten Uhlmann"
-categories: ["business", "programming"]
-keywords: []
+tags: ["business", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

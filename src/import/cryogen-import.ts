@@ -65,8 +65,8 @@ slug: ${slug}
 date: ${date}
 title: ${title}
 author: "Torsten Uhlmann"
-categories: ${tags}
-keywords: []
+tags: ${tags}
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

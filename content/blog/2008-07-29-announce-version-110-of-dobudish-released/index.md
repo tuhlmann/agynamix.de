@@ -3,8 +3,8 @@ slug: announce-version-110-of-dobudish-released
 date: 2008-07-29
 title: "Announce: Version 1.1.0 of DobuDish released"
 author: "Torsten Uhlmann"
-categories: ["docbook", "english", "programming"]
-keywords: []
+tags: ["docbook", "english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

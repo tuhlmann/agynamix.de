@@ -7,22 +7,22 @@
 // And to shim assets, use (one file extension per `declare`):
 // declare module "*.png"
 
-declare module "*.svg" {
-  const content: any
-  export default content
-}
-
-declare module "*.png" {
-  const content: any
-  export default content
-}
-
-declare module "*.jpg" {
-  const content: any
-  export default content
-}
+declare module "*.svg"
+declare module "*.png"
+declare module "*.jpg"
+declare module "*.gif"
 
 declare module "@sindresorhus/slugify" {
   function slugify(name: string): string
   export default slugify
 }
+
+declare module "gatsby-mdx/mdx-renderer" {
+  export default class MDXRenderer extends React.Component<any> {}
+}
+
+declare module "@mdx-js/tag" {
+  export class MDXProvider extends React.Component<any> {}
+}
+
+declare module "react-share"

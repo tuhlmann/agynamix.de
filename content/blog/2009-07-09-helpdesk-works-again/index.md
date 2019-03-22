@@ -3,8 +3,8 @@ slug: helpdesk-works-again
 date: 2009-07-09
 title: "Helpdesk works again"
 author: "Torsten Uhlmann"
-categories: ["it"]
-keywords: []
+tags: ["it"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

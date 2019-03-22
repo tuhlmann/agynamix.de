@@ -223,10 +223,7 @@ const RoundLink: React.SFC<IRoundLinkProps> = ({background, link, text}) => {
   )
 }
 
-export default function Index(dataWrapper: any) {
-  const {
-    data: {allMdx}
-  } = dataWrapper
+export default function Index() {
   return (
     <Layout headerColor={theme.colors.black} hero={<SimpleHero />} pageTitle="AGYNAMIX - Passionate Software">
       <SEO />
@@ -271,46 +268,3 @@ export default function Index(dataWrapper: any) {
     </Layout>
   )
 }
-
-export const pageQuery = graphql`
-  query {
-    allMdx(
-      limit: 5
-      sort: {fields: [frontmatter___date], order: DESC}
-      filter: {
-        frontmatter: {published: {ne: false}, unlisted: {ne: true}}
-        fileAbsolutePath: {regex: "//content/blog//"}
-      }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 190)
-          id
-          fields {
-            title
-            slug
-            date
-          }
-          parent {
-            ... on File {
-              sourceInstanceName
-            }
-          }
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            description
-            banner {
-              childImageSharp {
-                sizes(maxWidth: 720) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
-            }
-            keywords
-          }
-        }
-      }
-    }
-  }
-`

@@ -3,8 +3,8 @@ slug: asterisk-auf-ubuntu-linux-amd64
 date: 2006-02-18
 title: "Asterisk auf Ubuntu Linux (AMD64)"
 author: "Torsten Uhlmann"
-categories: ["business", "news"]
-keywords: []
+tags: ["business", "news"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

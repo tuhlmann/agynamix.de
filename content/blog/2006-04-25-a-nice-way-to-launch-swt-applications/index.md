@@ -3,8 +3,8 @@ slug: a-nice-way-to-launch-swt-applications
 date: 2006-04-25
 title: "A nice way to launch SWT applications"
 author: "Torsten Uhlmann"
-categories: ["programming"]
-keywords: []
+tags: ["programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

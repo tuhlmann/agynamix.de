@@ -3,8 +3,8 @@ slug: earn-money-by-selling-simidude
 date: 2009-04-28
 title: "Earn Money by Selling Simidude"
 author: "Torsten Uhlmann"
-categories: ["marketing", "newsletter", "sale"]
-keywords: []
+tags: ["marketing", "newsletter", "sale"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: eclipse-gef-and-transparent-images
 date: 2006-07-05
 title: "Eclipse GEF and transparent images"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

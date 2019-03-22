@@ -3,8 +3,8 @@ slug: doo-and-figwheel
 date: 2015-09-22
 title: "ClojureScript Testing with Doo and Figwheel"
 author: "Torsten Uhlmann"
+tags: []
 categories: []
-keywords: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

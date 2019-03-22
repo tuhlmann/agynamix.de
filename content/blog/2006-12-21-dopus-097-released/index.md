@@ -3,8 +3,8 @@ slug: dopus-097-released
 date: 2006-12-21
 title: "Dopus 0.9.7 released"
 author: "Torsten Uhlmann"
-categories: ["business", "programming"]
-keywords: []
+tags: ["business", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

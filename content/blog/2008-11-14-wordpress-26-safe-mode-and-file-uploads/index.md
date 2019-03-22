@@ -3,8 +3,8 @@ slug: wordpress-26-safe-mode-and-file-uploads
 date: 2008-11-14
 title: "Wordpress 2.6, safe_mode and file uploads"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

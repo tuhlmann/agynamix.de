@@ -3,8 +3,8 @@ slug: simidude-110-released
 date: 2008-12-29
 title: "Simidude 1.1.0 released"
 author: "Torsten Uhlmann"
-categories: ["newsletter"]
-keywords: []
+tags: ["newsletter"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: recaptcha-to-the-rescue
 date: 2007-08-16
 title: "reCaptcha to the rescue"
 author: "Torsten Uhlmann"
-categories: ["business", "english", "news"]
-keywords: []
+tags: ["business", "english", "news"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

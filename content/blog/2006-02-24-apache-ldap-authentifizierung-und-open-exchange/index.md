@@ -3,8 +3,8 @@ slug: apache-ldap-authentifizierung-und-open-exchange
 date: 2006-02-24
 title: "Apache LDAP Authentifizierung und Open-Exchange"
 author: "Torsten Uhlmann"
-categories: ["programming"]
-keywords: []
+tags: ["programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

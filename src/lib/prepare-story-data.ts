@@ -1,12 +1,12 @@
 import stripIndent from "strip-indent"
 import slugify from "@sindresorhus/slugify"
-import {format} from "date-fns"
+import { format } from "date-fns"
 
 enum DateFormat {
   MonthAndYear = "MMM YYYY"
 }
 
-export enum Categories {
+export enum AllowedCategories {
   Client = "client",
   Resume = "resume",
   Product = "product",

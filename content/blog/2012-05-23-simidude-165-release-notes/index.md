@@ -3,8 +3,8 @@ slug: simidude-165-release-notes
 date: 2012-05-23
 title: "Simidude 1.6.5 Release Notes"
 author: "Torsten Uhlmann"
-categories: ["business", "english", "marketing", "newsletter", "release-notes", "simidude"]
-keywords: []
+tags: ["business", "english", "marketing", "newsletter", "release-notes", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

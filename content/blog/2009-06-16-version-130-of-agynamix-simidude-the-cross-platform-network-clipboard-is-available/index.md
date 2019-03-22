@@ -3,8 +3,8 @@ slug: version-130-of-agynamix-simidude-the-cross-platform-network-clipboard-is-a
 date: 2009-06-16
 title: "Version 1.3.0 of AGYNAMIX Simidude, the cross platform network clipboard is available"
 author: "Torsten Uhlmann"
-categories: ["it", "marketing", "newsletter"]
-keywords: []
+tags: ["it", "marketing", "newsletter"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

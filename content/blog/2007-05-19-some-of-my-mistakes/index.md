@@ -3,8 +3,8 @@ slug: some-of-my-mistakes
 date: 2007-05-19
 title: "Some of my mistakes"
 author: "Torsten Uhlmann"
-categories: ["business", "english"]
-keywords: []
+tags: ["business", "english"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

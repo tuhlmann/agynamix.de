@@ -3,8 +3,8 @@ slug: palm-handheld-mit-thunderbird-mail-synchronisieren
 date: 2006-04-28
 title: "Palm Handheld mit Thunderbird Mail synchronisieren"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

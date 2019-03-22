@@ -50,13 +50,14 @@
   src: url('Inter-Regular.woff2') format('woff2'),
     url('Inter-Regular.woff') format('woff');
 }
-/* @font-face {
-  font-family: 'Inter Italic';
+
+@font-face {
+  font-family: 'Inter Regular Italic';
   font-style: italic;
   font-weight: 400;
   src: url('Inter-Italic.woff2') format('woff2'),
     url('Inter-Italic.woff') format('woff');
-} */
+}
 
 @font-face {
   font-family: 'Inter Medium';
@@ -80,13 +81,14 @@
   src: url('Inter-SemiBold.woff2') format('woff2'),
     url('Inter-SemiBold.woff') format('woff');
 }
-/* @font-face {
+
+@font-face {
   font-family: 'Inter SemiBold Italic';
   font-style: italic;
   font-weight: 600;
   src: url('Inter-SemiBoldItalic.woff2') format('woff2'),
     url('Inter-SemiBoldItalic.woff') format('woff');
-} */
+}
 
 /* @font-face {
   font-family: 'Inter Bold';

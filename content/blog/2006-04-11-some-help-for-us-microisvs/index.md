@@ -3,8 +3,8 @@ slug: some-help-for-us-microisvs
 date: 2006-04-11
 title: "Some help for us microISV's"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

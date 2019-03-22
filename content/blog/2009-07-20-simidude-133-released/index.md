@@ -3,8 +3,8 @@ slug: simidude-133-released
 date: 2009-07-20
 title: "Simidude 1.3.3 released"
 author: "Torsten Uhlmann"
-categories: ["it", "marketing", "newsletter"]
-keywords: []
+tags: ["it", "marketing", "newsletter"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

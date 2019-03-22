@@ -3,8 +3,8 @@ slug: our-business-model
 date: 2006-06-14
 title: "Our Business Model"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

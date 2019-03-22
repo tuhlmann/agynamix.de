@@ -3,8 +3,8 @@ slug: click2dial-with-your-snom-phone-and-mac-address-book
 date: 2010-09-01
 title: "Click2Dial with your Snom Phone and Mac Address Book"
 author: "Torsten Uhlmann"
-categories: ["english", "fritzbox-snom-phone", "mac", "telefonie"]
-keywords: []
+tags: ["english", "fritzbox-snom-phone", "mac", "telefonie"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: a-new-bitsdujour-sale-is-on-the-way
 date: 2009-10-25
 title: "A New BitsDuJour Sale is on the Way!"
 author: "Torsten Uhlmann"
-categories: ["marketing", "newsletter"]
-keywords: []
+tags: ["marketing", "newsletter"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

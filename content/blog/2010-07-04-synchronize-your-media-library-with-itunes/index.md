@@ -3,8 +3,8 @@ slug: synchronize-your-media-library-with-itunes
 date: 2010-07-04
 title: "Synchronize your media library with iTunes"
 author: "Torsten Uhlmann"
-categories: ["english", "it", "itunes", "mac", "media", "news", "programming"]
-keywords: []
+tags: ["english", "it", "itunes", "mac", "media", "news", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

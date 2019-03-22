@@ -3,8 +3,8 @@ slug: cut-out-dead-wood
 date: 2008-03-25
 title: "Cut out dead wood"
 author: "Torsten Uhlmann"
-categories: ["business", "english"]
-keywords: []
+tags: ["business", "english"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

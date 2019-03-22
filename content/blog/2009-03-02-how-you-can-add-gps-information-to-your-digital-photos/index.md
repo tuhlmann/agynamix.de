@@ -3,8 +3,8 @@ slug: how-you-can-add-gps-information-to-your-digital-photos
 date: 2009-03-02
 title: "How you can add GPS information to your digital photos"
 author: "Torsten Uhlmann"
-categories: ["english", "gps", "photography"]
-keywords: []
+tags: ["english", "gps", "photography"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

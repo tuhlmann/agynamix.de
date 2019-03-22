@@ -2,29 +2,25 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import MDXRenderer from "gatsby-mdx/mdx-renderer"
-import SEO from "components/SEO"
+import SEO from "../components/SEO"
 import { css } from "@emotion/core"
-import { Container } from "components/Container"
-import Layout from "components/Layout"
-import { Share } from "components/Share"
-import SubscribeForm from "components/Forms/Subscribe"
+import { Container } from "../components/Container"
+import Layout from "../components/Layout"
+import { Share } from "../components/Share"
+import SubscribeForm from "../components/Forms/Subscribe"
 import Markdown from "react-markdown"
 import { fonts } from "../lib/typography"
 import config from "../../config/website"
 import { bpMaxSM } from "../lib/breakpoints"
 import { get } from "lodash"
+import { Tags } from "../components/Tags"
 
-export default function Post({ data: { site, mdx } }) {
-  const {
-    author = config.author,
-    title,
-    slug,
-    date,
-    description,
-    banner,
-    bannerCredit,
-    noFooter,
-  } = mdx.fields
+// interface IProps {
+//   data: any
+// }
+
+const Post = ({ data: { site, mdx } }) => {
+  const { author = config.author, title, slug, date, description, banner, bannerCredit, noFooter, tags } = mdx.fields
 
   return (
     <Layout
@@ -35,11 +31,7 @@ export default function Post({ data: { site, mdx } }) {
       noFooter={noFooter}
       subscribeForm={<SubscribeForm />}
     >
-      <SEO
-        frontmatter={mdx.fields}
-        metaImage={get(mdx, "fields.banner.childImageSharp.fluid.src")}
-        isBlogPost
-      />
+      <SEO frontmatter={mdx.fields} metaImage={get(mdx, "fields.banner.childImageSharp.fluid.src")} isBlogPost />
       <article
         css={css`
           width: 100%;
@@ -94,11 +86,13 @@ export default function Post({ data: { site, mdx } }) {
                 }
               `}
             >
-              <Img
-                sizes={banner.childImageSharp.fluid}
-                alt={site.siteMetadata.keywords.join(", ")}
-              />
+              <Img sizes={banner.childImageSharp.fluid} alt={site.siteMetadata.tags.join(", ")} />
               {bannerCredit ? <Markdown>{bannerCredit}</Markdown> : null}
+            </div>
+          )}
+          {tags && (
+            <div css={{ marginTop: 10 }}>
+              <Tags tags={tags} withLink invertBackground />
             </div>
           )}
           <br />
@@ -108,11 +102,7 @@ export default function Post({ data: { site, mdx } }) {
         {/* <SubscribeForm /> */}
       </article>
       <Container noVerticalPadding>
-        <Share
-          url={`${config.siteUrl}${slug}`}
-          title={title}
-          twitterHandle={config.twitterHandle}
-        />
+        <Share url={`${config.siteUrl}${slug}`} title={title} twitterHandle={config.twitterHandle} />
         <br />
       </Container>
     </Layout>
@@ -123,7 +113,7 @@ export const pageQuery = graphql`
   query($id: String!) {
     site {
       siteMetadata {
-        keywords
+        tags
       }
     }
     mdx(fields: {id: {eq: $id}}) {
@@ -143,7 +133,7 @@ export const pageQuery = graphql`
         bannerCredit
         slug
         description
-        keywords
+        tags
       }
       code {
         body
@@ -151,3 +141,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default Post

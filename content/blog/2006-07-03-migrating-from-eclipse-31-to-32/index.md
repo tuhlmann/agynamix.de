@@ -3,8 +3,8 @@ slug: migrating-from-eclipse-31-to-32
 date: 2006-07-03
 title: "Migrating from Eclipse 3.1 to 3.2"
 author: "Torsten Uhlmann"
-categories: ["english", "programming"]
-keywords: []
+tags: ["english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

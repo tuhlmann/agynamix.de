@@ -3,8 +3,8 @@ slug: jira-and-confluence-5-each-for-the-next-5-days
 date: 2009-04-20
 title: "Jira and Confluence $5 each (for the next 5 days)"
 author: "Torsten Uhlmann"
-categories: ["bug-tracking", "business", "java", "programming", "wiki"]
-keywords: []
+tags: ["bug-tracking", "business", "java", "programming", "wiki"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

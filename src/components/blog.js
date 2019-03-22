@@ -7,6 +7,7 @@ import Layout from "../components/Layout"
 import { Link } from "../components/Link"
 import { bpMaxSM } from "../lib/breakpoints"
 import theme from "../../config/theme"
+import { Tags } from "./Tags"
 
 const Blog = ({ data: { allMdx }, pageContext: { pagination }, subscribeForm }) => {
   const { page, nextPagePath, previousPagePath } = pagination
@@ -98,12 +99,21 @@ const Blog = ({ data: { allMdx }, pageContext: { pagination }, subscribeForm }) 
                 {post.frontmatter.title}
               </Link>
             </h2>
-            <small css={css`
-              opacity: 0.6;
-              font-weight: 600;
-            `}>
-              {post.frontmatter.date}
-            </small>
+            <div css={{
+              display: "flex",
+              justifyContent: "space-between",
+              [bpMaxSM]: {
+                flexDirection: "column-reverse"
+              }
+            }}>
+              <small css={css`
+                opacity: 0.6;
+                font-weight: 600;
+              `}>
+                {post.frontmatter.date}
+              </small>
+              <Tags tags={post.frontmatter.tags} withLink />
+            </div>
             <p
               css={css`
                 margin-top: 10px;

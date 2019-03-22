@@ -3,8 +3,8 @@ slug: im-a-twitterer-now-finally
 date: 2009-02-25
 title: "I'm a Twitterer now- finally"
 author: "Torsten Uhlmann"
-categories: ["marketing", "marketing", "twitter"]
-keywords: []
+tags: ["marketing", "marketing", "twitter"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

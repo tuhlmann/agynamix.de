@@ -3,8 +3,8 @@ slug: fogbugz-6-beta
 date: 2007-07-06
 title: "FogBugz 6 Beta"
 author: "Torsten Uhlmann"
-categories: ["business"]
-keywords: []
+tags: ["business"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

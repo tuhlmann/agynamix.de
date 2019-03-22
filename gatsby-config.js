@@ -15,7 +15,7 @@ module.exports = {
     title: config.siteTitle,
     twitterHandle: config.twitterHandle,
     description: config.siteDescription,
-    keywords: ["AGYNAMIX", "Blogger", "Java", "Scala", "Javascript", "Typescript", "ReactJS"],
+    tags: ["AGYNAMIX", "Blogger", "Java", "Scala", "Javascript", "Typescript", "ReactJS"],
     canonicalUrl: config.siteUrl,
     image: config.siteLogo,
     author: {
@@ -94,21 +94,18 @@ module.exports = {
             src: "/favicons/android-chrome-192x192.png",
             sizes: "192x192",
             type: "image/png",
-          },
-          {
-            src: "/favicons/android-chrome-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-          },
+          }
         ],
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-google-analytics",
-    //   options: {
-    //     trackingId: "UA-",
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: config.googleAnalyticsID,
+        anonymize: true,
+        respectDNT: true,
+      },
+    },
     getBlogFeed({
       filePathRegex: "//content/blog//",
       blogUrl: "https://www.agynamix.de/blog",
@@ -132,6 +129,8 @@ module.exports = {
         allExtensions: false, // defaults to false
       },
     },
+    "gatsby-plugin-typescript-checker",
+    // "gatsby-transformer-hjson"
   ],
 }
 

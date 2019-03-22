@@ -3,8 +3,8 @@ slug: dpml-magic
 date: 2005-09-19
 title: "DPML Magic"
 author: "Torsten Uhlmann"
+tags: []
 categories: []
-keywords: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: translating-fogbugz
 date: 2005-09-19
 title: "Translating FogBugz"
 author: "Torsten Uhlmann"
-categories: ["business", "english", "programming"]
-keywords: []
+tags: ["business", "english", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

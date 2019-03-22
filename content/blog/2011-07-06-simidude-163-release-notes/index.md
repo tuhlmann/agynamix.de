@@ -3,8 +3,8 @@ slug: simidude-163-release-notes
 date: 2011-07-06
 title: "Simidude 1.6.3 Release Notes"
 author: "Torsten Uhlmann"
-categories: ["business", "english", "it", "newsletter", "simidude"]
-keywords: []
+tags: ["business", "english", "it", "newsletter", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: simidude-logo
 date: 2008-11-14
 title: "Simidude logo"
 author: "Torsten Uhlmann"
-categories: ["newsletter", "simidude"]
-keywords: []
+tags: ["newsletter", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

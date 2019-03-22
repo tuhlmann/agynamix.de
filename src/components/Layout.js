@@ -150,25 +150,18 @@ function Layout({
   const {
     site: {
       siteMetadata,
-      siteMetadata: { description: siteDescription, keywords: siteKeywords },
+      siteMetadata: { description: siteDescription, tags: siteKeywords }
     },
   } = data
 
-  const {
-    keywords = siteKeywords,
-    description = siteDescription,
-    title = config.siteTitle,
-  } = frontmatter
+  const { tags = siteKeywords, description = siteDescription, title = config.siteTitle } = frontmatter
 
   return (
     <ThemeProvider theme={theme}>
       <Global styles={globalStyles} />
       <Helmet
         title={title}
-        meta={[
-          { name: "description", content: description },
-          { name: "keywords", content: keywords.join() },
-        ]}
+        meta={[{ name: "description", content: description }, { name: "keywords", content: tags.join() }]}
       >
         <html lang="en" />
         <noscript>This site runs best with JavaScript enabled.</noscript>
@@ -222,7 +215,7 @@ export default function LayoutWithSiteData(props) {
               author {
                 name
               }
-              keywords
+              tags
             }
           }
         }

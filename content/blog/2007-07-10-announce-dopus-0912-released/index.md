@@ -3,8 +3,8 @@ slug: announce-dopus-0912-released
 date: 2007-07-10
 title: "Announce: Dopus 0.9.12 released"
 author: "Torsten Uhlmann"
-categories: ["english", "news", "programming"]
-keywords: []
+tags: ["english", "news", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

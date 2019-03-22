@@ -3,8 +3,8 @@ slug: new-simidude-user-manual-published
 date: 2009-08-16
 title: "New Simidude User Manual Published"
 author: "Torsten Uhlmann"
-categories: ["it", "newsletter", "simidude"]
-keywords: []
+tags: ["it", "newsletter", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

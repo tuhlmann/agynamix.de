@@ -4,16 +4,24 @@ import { isEmpty } from "lodash"
 import styled from "@emotion/styled"
 import Markdown from "react-markdown"
 import { bpMaxSM } from "../lib/breakpoints"
-import { StoryData, formatDate, Categories, Recommendation, ImageElement, Alignment } from "../lib/prepare-story-data"
+import {
+  StoryData,
+  formatDate,
+  AllowedCategories,
+  Recommendation,
+  ImageElement,
+  Alignment
+} from "../lib/prepare-story-data"
 import theme from "../../config/theme"
 import { TextLink } from "./Header"
 import { subYears, compareAsc } from "date-fns"
+import { Tags } from "./Tags"
 
 interface IProps {
   story: StoryData[]
   withDescription?: boolean
   withImages?: boolean
-  categories?: Categories[]
+  categories?: AllowedCategories[]
   yearsBack?: number
   more?: string
   less?: string
@@ -325,14 +333,15 @@ export const StoryRenderer: React.FC<IProps> = ({
                 </div>
                 {renderClientImage(link, img)}
               </div>
-              <div>
-                <div className="tags">
-                  {tags.map((tag, index) => (
-                    <span key={index} className="tag">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+              <div
+                css={{
+                  [bpMaxSM]: {
+                    display: "none",
+                    visibility: "hidden"
+                  }
+                }}
+              >
+                <Tags tags={tags} />
               </div>
               {withDescription ? (
                 <>

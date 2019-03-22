@@ -3,8 +3,8 @@ slug: run-32-bit-swt-apps-from-eclipse-in-snow-leopard
 date: 2009-09-16
 title: "Run 32 bit SWT apps from Eclipse in Snow Leopard"
 author: "Torsten Uhlmann"
-categories: ["it"]
-keywords: []
+tags: ["it"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

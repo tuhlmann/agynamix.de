@@ -3,8 +3,8 @@ slug: the-joy-of-having-a-quota
 date: 2005-09-12
 title: "The joy of having a quota"
 author: "Torsten Uhlmann"
+tags: []
 categories: []
-keywords: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

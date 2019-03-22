@@ -3,8 +3,8 @@ slug: avg-reports-false-positives-for-simidude
 date: 2009-11-18
 title: "AVG reports false positives for Simidude"
 author: "Torsten Uhlmann"
-categories: ["business", "simidude"]
-keywords: []
+tags: ["business", "simidude"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

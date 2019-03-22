@@ -3,8 +3,8 @@ slug: simidude-133-release-notes
 date: 2009-07-14
 title: "Simidude 1.3.3 Release Notes"
 author: "Torsten Uhlmann"
-categories: ["release-notes"]
-keywords: []
+tags: ["release-notes"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

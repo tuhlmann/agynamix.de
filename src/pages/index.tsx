@@ -242,11 +242,8 @@ const RoundLink: React.SFC<IRoundLinkProps> = ({background, link, text}) => {
   )
 }
 
-export default function Index(dataWrapper: any) {
+export default function Index() {
   const [showModal, setShowModal] = useState(false)
-  const {
-    data: {allMdx}
-  } = dataWrapper
   return (
     <Layout headerColor={theme.colors.black} hero={<SimpleHero />} pageTitle="AGYNAMIX - Passionate Software">
       <SEO />
@@ -260,7 +257,7 @@ export default function Index(dataWrapper: any) {
           padding-bottom: 0;
           background: ${theme.colors.background_color};
           border-radius: 5px;
-          padding: 75px 120px 60px 120px;
+          padding: 120px 120px 60px 120px;
           margin-bottom: ${rhythm(1)};
           ${bpMaxMD} {
             padding: auto;
@@ -391,45 +388,45 @@ export default function Index(dataWrapper: any) {
   )
 }
 
-export const pageQuery = graphql`
-  query {
-    allMdx(
-      limit: 5
-      sort: {fields: [frontmatter___date], order: DESC}
-      filter: {
-        frontmatter: {published: {ne: false}, unlisted: {ne: true}}
-        fileAbsolutePath: {regex: "//content/blog//"}
-      }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 190)
-          id
-          fields {
-            title
-            slug
-            date
-          }
-          parent {
-            ... on File {
-              sourceInstanceName
-            }
-          }
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            description
-            banner {
-              childImageSharp {
-                sizes(maxWidth: 720) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
-            }
-            keywords
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     allMdx(
+//       limit: 5
+//       sort: {fields: [frontmatter___date], order: DESC}
+//       filter: {
+//         frontmatter: {published: {ne: false}, unlisted: {ne: true}}
+//         fileAbsolutePath: {regex: "//content/blog//"}
+//       }
+//     ) {
+//       edges {
+//         node {
+//           excerpt(pruneLength: 190)
+//           id
+//           fields {
+//             title
+//             slug
+//             date
+//           }
+//           parent {
+//             ... on File {
+//               sourceInstanceName
+//             }
+//           }
+//           frontmatter {
+//             title
+//             date(formatString: "MMMM DD, YYYY")
+//             description
+//             banner {
+//               childImageSharp {
+//                 sizes(maxWidth: 720) {
+//                   ...GatsbyImageSharpSizes
+//                 }
+//               }
+//             }
+//             tags
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

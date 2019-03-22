@@ -3,8 +3,8 @@ slug: simidude-150-release-notes
 date: 2010-02-21
 title: "Simidude 1.5.0 Release Notes"
 author: "Torsten Uhlmann"
-categories: ["release-notes"]
-keywords: []
+tags: ["release-notes"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -3,8 +3,8 @@ slug: mac-security-another-way-to-lock-your-mac-screen
 date: 2009-03-14
 title: "Mac Security- Another Way to Lock Your Mac Screen"
 author: "Torsten Uhlmann"
-categories: ["business", "english", "mac", "mac"]
-keywords: []
+tags: ["business", "english", "mac", "mac"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"

@@ -4,8 +4,8 @@ date: 2019-01-01
 title: 'this post is a ghost'
 author: 'Kent C. Dodds'
 description: 'this post has all of the right fields'
+tags: ['test']
 categories: ['test']
-keywords: ['test']
 banner: './images/banner.jpg'
 bannerCredit: 'someone'
 published: false

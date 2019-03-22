@@ -3,8 +3,8 @@ slug: dopus-new-docbook-publishing-framework
 date: 2006-11-22
 title: "Dopus: New Docbook Publishing Framework"
 author: "Torsten Uhlmann"
-categories: ["business", "programming"]
-keywords: []
+tags: ["business", "programming"]
+categories: []
 description:
 banner: banner.jpg
 bannerCredit: "Photo by Torsten Uhlmann"
