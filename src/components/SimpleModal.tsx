@@ -28,7 +28,7 @@ const handleOutsideClick = (modalRef: React.RefObject<HTMLElement>, onCloseReque
   }
 }
 
-export const SimpleModal: React.FC<IProps> = ({onCloseRequest, children}) => {
+export const SimpleModal: React.FC<IProps> = ({ onCloseRequest, children }) => {
   const modalRef = React.useRef<HTMLDivElement>(null)
   React.useEffect(() => {
     window.addEventListener("keyup", handleKeyUp(onCloseRequest), false)
@@ -62,7 +62,7 @@ export const SimpleModal: React.FC<IProps> = ({onCloseRequest, children}) => {
         css={{
           backgroundColor: "#fff",
           boxShadow: "0 0 0.625rem rgba(0, 0, 0, 0.2)",
-          width: "700px",
+          maxWidth: "500px",
           [bpMaxSM]: {
             width: "100%"
           }
