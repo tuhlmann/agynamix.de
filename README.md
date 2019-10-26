@@ -29,6 +29,10 @@ Other sources include:
 
 ## Setup
 
+> __Note:__ On Windows WSL the build process hangs when `Building production JavaScript and CSS bundles`. 
+The workaround that has been found (https://github.com/gatsbyjs/gatsby/issues/6540#issuecomment-438524817) 
+sets the uglifyer to `parallel: false` in `node_modules/gatsby/dist/utils/webpack-utils.js`
+
 - `git clone git@github.com:tuhlmann/agynamix.de.git`
 - `cd agynamix.de`
 - `npm install`

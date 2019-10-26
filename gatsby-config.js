@@ -98,14 +98,14 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: config.googleAnalyticsID,
-        anonymize: true,
-        respectDNT: true,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: config.googleAnalyticsID,
+    //     anonymize: true,
+    //     respectDNT: true,
+    //   },
+    // },
     getBlogFeed({
       filePathRegex: "//content/blog//",
       blogUrl: "https://www.agynamix.de/blog",
