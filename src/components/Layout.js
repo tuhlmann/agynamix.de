@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { graphql, StaticQuery } from "gatsby"
-import { MDXProvider } from "@mdx-js/tag"
+import { MDXProvider } from "@mdx-js/react"
 import { Global, css } from "@emotion/core"
 // import styled from '@emotion/styled'
 import { ThemeProvider } from "emotion-theming"
@@ -150,18 +150,25 @@ function Layout({
   const {
     site: {
       siteMetadata,
-      siteMetadata: { description: siteDescription, tags: siteKeywords }
+      siteMetadata: { description: siteDescription, tags: siteKeywords },
     },
   } = data
 
-  const { tags = siteKeywords, description = siteDescription, title = config.siteTitle } = frontmatter
+  const {
+    tags = siteKeywords,
+    description = siteDescription,
+    title = config.siteTitle,
+  } = frontmatter
 
   return (
     <ThemeProvider theme={theme}>
       <Global styles={globalStyles} />
       <Helmet
         title={title}
-        meta={[{ name: "description", content: description }, { name: "keywords", content: tags.join() }]}
+        meta={[
+          { name: "description", content: description },
+          { name: "keywords", content: tags.join() },
+        ]}
       >
         <html lang="en" />
         <noscript>This site runs best with JavaScript enabled.</noscript>
@@ -192,10 +199,7 @@ function Layout({
         </div>
         <div css={{ flexShrink: "0" }}>
           {noFooter ? null : (
-            <Footer
-              author={siteMetadata.author.name}
-              subscribeForm={subscribeForm}
-            />
+            <Footer author={siteMetadata.author.name} subscribeForm={subscribeForm} />
           )}
         </div>
       </div>

@@ -48,7 +48,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-mdx",
+      resolve: "gatsby-plugin-mdx",
       options: {
         defaultLayouts: {
           default: here("./src/templates/markdown-page.js"),
@@ -61,7 +61,6 @@ module.exports = {
             options: {
               backgroundColor: "#fafafa",
               maxWidth: 1035,
-              sizeByPixelDensity: true,
             },
           },
           { resolve: require.resolve("./plugins/remark-embedder") },
@@ -94,7 +93,7 @@ module.exports = {
             src: "/favicons/android-chrome-192x192.png",
             sizes: "192x192",
             type: "image/png",
-          }
+          },
         ],
       },
     },
@@ -153,8 +152,7 @@ function getBlogFeed({ filePathRegex, blogUrl, overrides }) {
       feeds: [
         {
           serialize: ({ query: { site, allMdx } }) => {
-            const stripSlash = slug =>
-              slug.startsWith("/") ? slug.slice(1) : slug
+            const stripSlash = slug => (slug.startsWith("/") ? slug.slice(1) : slug)
             return allMdx.edges.map(edge => {
               const siteUrl = site.siteMetadata.siteUrl
               const url = `${siteUrl}/${stripSlash(edge.node.fields.slug)}`

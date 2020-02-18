@@ -12,10 +12,10 @@ const CodingBlogWithData = props => {
       query={graphql`
         query {
           allMdx(
-            sort: {fields: [frontmatter___date], order: DESC}
+            sort: { fields: [frontmatter___date], order: DESC }
             filter: {
-              frontmatter: {published: {ne: false}, unlisted: {ne: true}}
-              fileAbsolutePath: {regex: "//content/blog//"}
+              frontmatter: { published: { ne: false }, unlisted: { ne: true } }
+              fileAbsolutePath: { regex: "//content/blog//" }
             }
           ) {
             edges {
@@ -34,7 +34,7 @@ const CodingBlogWithData = props => {
                 }
                 frontmatter {
                   title
-                  date(formatString: "MMMM DD, YYYY")
+                  date(formatString: "MMMM dd, YYYY")
                   banner {
                     childImageSharp {
                       fluid(maxWidth: 600) {

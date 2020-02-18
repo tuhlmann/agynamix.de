@@ -3,7 +3,7 @@ import slugify from "@sindresorhus/slugify"
 import { format } from "date-fns"
 
 enum DateFormat {
-  MonthAndYear = "MMM YYYY"
+  MonthAndYear = "MMM yyyy",
 }
 
 export enum AllowedCategories {
@@ -12,12 +12,12 @@ export enum AllowedCategories {
   Product = "product",
   Training = "training",
   Publication = "publication",
-  Education = "education"
+  Education = "education",
 }
 
 export enum Alignment {
   Left = "left",
-  Right = "right"
+  Right = "right",
 }
 
 export interface Recommendation {
@@ -66,8 +66,9 @@ export function prepareData(client: StoryData) {
     short: client.short ? stripIndent(client.short) : undefined,
     description: stripIndent(client.description || ""),
     tags: client.tags || [],
-    recommendations: (client.recommendations && client.recommendations.map(prepareRecommendation)) || undefined,
-    images: (client.images && client.images.map(prepareImage)) || undefined
+    recommendations:
+      (client.recommendations && client.recommendations.map(prepareRecommendation)) || undefined,
+    images: (client.images && client.images.map(prepareImage)) || undefined,
   }
 }
 
@@ -76,7 +77,7 @@ function prepareRecommendation(recommendation: Recommendation): Recommendation {
     ...recommendation,
 
     title: stripIndent(recommendation.title || ""),
-    description: stripIndent(recommendation.description || "")
+    description: stripIndent(recommendation.description || ""),
   }
 }
 
@@ -84,7 +85,7 @@ function prepareImage(image: ImageElement): ImageElement {
   return {
     ...image,
 
-    description: stripIndent(image.description || "")
+    description: stripIndent(image.description || ""),
   }
 }
 

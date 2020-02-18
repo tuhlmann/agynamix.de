@@ -3,6 +3,32 @@ import { prepareData, sortByDate, StoryData, AllowedCategories } from "../lib/pr
 // tslint:disable:no-require-imports
 export default ([
   {
+    position: "Senior Fullstack Developer",
+    client: "ScaledAgile, Inc",
+    logo: require("../images/clients/ScaledAgile.svg"),
+    start: "2019-05-01",
+    end: "2020-06-30",
+    link: "https://weave.scaledagile.com",
+    tags: ["Scala", "Lift", "AngularJS", "Javascript", "Typescript", "Docker", "PostgreSQL"],
+    categories: [AllowedCategories.Client, AllowedCategories.Resume],
+    short: "*Tackling complex problems through online collaboration*",
+    description: `
+      Weave (formerly Conteneo Weave) is an online collaboration and planning platform. 
+      The backend uses PostgreSQL, Scala and Lift, containerization and AWS.
+      The frontend is built with Angular. While legacy AngularJS 1 code exists,
+      new features use a new frontend centric Angular 8 / Typescript architecture 
+      within a NX workspace.
+    `,
+    recommendations: [
+      {
+        title: "Letter of Recommendation",
+        date: "2020-06-30",
+        by: "Dan O' Leary, Development Team Lead, ScaledAgile Weave",
+        link: "/documents/scaledagile_rec_tuhlmann.pdf",
+      },
+    ],
+  },
+  {
     position: "Senior Software Developer",
     client: "Ascendant, Inc",
     logo: require("../images/clients/Ascendant.svg"),
@@ -11,7 +37,7 @@ export default ([
     link: "https://www.ascendantcompliancemanager.com",
     tags: ["Scala", "Lift", "GO", "AngularJS", "Javascript", "MarkoJS", "Docker", "MongoDB"],
     categories: [AllowedCategories.Client, AllowedCategories.Resume],
-    short: `*Compliance & Risk Management, Solved*`,
+    short: "*Compliance & Risk Management, Solved*",
     description: `
      In a small team of awesomely great developers we implement a suite of tools 
      using best of breed frameworks like AngularJS for the frontend. 
@@ -23,9 +49,9 @@ export default ([
         title: "Letter of Recommendation",
         date: "2019-03-18",
         by: "Neil Visnapuu, Managing Director, Ascendant",
-        link: "/documents/ascendant_rec_tuhlmann.pdf"
-      }
-    ]
+        link: "/documents/ascendant_rec_tuhlmann.pdf",
+      },
+    ],
   },
   {
     position: "Scala & Lift Consultant",
@@ -35,10 +61,10 @@ export default ([
     end: "2013-07-01",
     tags: ["Scala", "Lift", "MySQL", "Squeryl"],
     categories: [AllowedCategories.Client, AllowedCategories.Resume],
-    short: `*Scala, Lift & MySQL. Kind of a personalized wayback machine.*`,
+    short: "*Scala, Lift & MySQL. Kind of a personalized wayback machine.*",
     description: `
      For a client I'm developing a Lift based information engine application.
-    `
+    `,
   },
   {
     position: "Scala & Lift Consultant",
@@ -49,7 +75,7 @@ export default ([
     link: "https://underscore.io",
     tags: ["Scala", "Lift", "MongoDB", "Cloudbees"],
     categories: [AllowedCategories.Client, AllowedCategories.Resume],
-    short: `*Scala & Lift projects with the awesome folks at Underscore Consulting.*`,
+    short: "*Scala & Lift projects with the awesome folks at Underscore Consulting.*",
     description: `
      I was in charge of developing part of a Scala / Lift client application
      together with a really cool team of Underscore developers.
@@ -65,9 +91,9 @@ He brought technical knowledge, especially with Lift, Scala, and Angular.
 He worked with the customer to understand their needs. As well as generally 
 contributing to the project, he took on responsibility for (and delivered) 
 a rich reporting tool.        
-        `
-      }
-    ]
+        `,
+      },
+    ],
   },
   {
     position: "Senior Software Developer",
@@ -83,14 +109,15 @@ a rich reporting tool.
         title: "Letter of Recommendation",
         date: "2012-09-01",
         by: "Jonathan Wolfe, Chief Scientist",
-        link: "/documents/sgrouples_rec_tuhlmann.pdf"
-      }
+        link: "/documents/sgrouples_rec_tuhlmann.pdf",
+      },
     ],
-    short: `*Formerly sgrouples.com. Scala, Lift & Mongo DB. MeWe is a privacy conscious social network.*`,
+    short:
+      "*Formerly sgrouples.com. Scala, Lift & Mongo DB. MeWe is a privacy conscious social network.*",
     description: `
      With a small bunch of other high profile developers we develop the social groups 
      platform https://sgrouples.com (now: https://mewe.com).
-    `
+    `,
   },
   {
     position: "Software Supplier",
@@ -103,7 +130,7 @@ a rich reporting tool.
     categories: [AllowedCategories.Client],
     short: `
      *B+N Automation uses AGYNAMIX' Net-Herald signal monitoring and broadcasting software.*
-    `
+    `,
   },
   {
     position: "Software Supplier",
@@ -116,7 +143,7 @@ a rich reporting tool.
     categories: [AllowedCategories.Client],
     short: `
      *WKS Group uses several AGYNAMIX' Net-Herald signal monitoring and broadcasting software installations.*
-    `
+    `,
   },
   {
     position: "JSF Developer",
@@ -127,11 +154,11 @@ a rich reporting tool.
     link: "https://www.1822direkt.de",
     tags: ["Java", "JBoss", "Tomcat", "JSF"],
     categories: [AllowedCategories.Client, AllowedCategories.Resume],
-    short: `*Java & JSP. Wrote a frontend for processing customer printables.*`,
+    short: "*Java & JSP. Wrote a frontend for processing customer printables.*",
     description: `
       Development of a JSF(Java Server Faces) front end for an in house application to manage correspondence to their customers.
       We used Tomcat 5, JBoss and JSF 1.2 with MyFaces for development and deployment.    
-    `
+    `,
   },
   {
     position: "AGYNAMIX Numerix",
@@ -160,9 +187,9 @@ a rich reporting tool.
         You can create invoices from tracked time and also adding manual entries along with different taxes, 
         a generated invoice number etc. When done you can generate a PDF from it via the Flying Saucer project.
         `,
-        align: "right"
-      }
-    ]
+        align: "right",
+      },
+    ],
   },
   {
     position: "Unser Gartenverein",
@@ -188,9 +215,9 @@ This software manages garden tenants, readings, documents, a shared calendar and
         After logging in you are greeted with a Dashboard like overview with up-to-date information. From
         there you can quickly navigate to areas like bulk letters, invoices, dates, documents and more.
         `,
-        align: "right"
-      }
-    ]
+        align: "right",
+      },
+    ],
   },
   {
     position: "AGYNAMIX Simidude",
@@ -223,9 +250,9 @@ This software manages garden tenants, readings, documents, a shared calendar and
         Items copied to the clipboard will also appear in the list, are transfered and can be
         activated on any connected computer.
         `,
-        align: "right"
-      }
-    ]
+        align: "right",
+      },
+    ],
   },
   {
     position: "AGYNAMIX Net-Herald",
@@ -256,10 +283,10 @@ This software manages garden tenants, readings, documents, a shared calendar and
     images: [
       {
         image: require("../images/products/Net-HeraldPackung2.png"),
-        description: `### The Net-Herald box image`,
-        align: "right"
-      }
-    ]
+        description: "### The Net-Herald box image",
+        align: "right",
+      },
+    ],
   },
   {
     position: "Software Developer",
@@ -272,7 +299,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     categories: [AllowedCategories.Client, AllowedCategories.Resume],
     recommendations: [
       {
-        title: `Projekt C++ und Java-Programmierung, 07/98 - 03/02`,
+        title: "Projekt C++ und Java-Programmierung, 07/98 - 03/02",
         date: "2005-01-03",
         by: "Projektleiter,  T-Systems",
         description: `
@@ -283,7 +310,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
         Er unterstützte seine Kollegen auch über seinen Aufgabenbereich hinaus. Die Zusammenarbeit war sehr angenehm, 
         der Consultant war eine Bereicherung für das Projektteam. Ich würde sehr gern 
         wieder mit dem Consultant zusammenarbeiten.
-      `
+      `,
       },
       {
         title: "Projekt Verschiedene Projekte im Bereich C++ und Java, 11/96 - 01/05",
@@ -297,10 +324,10 @@ This software manages garden tenants, readings, documents, a shared calendar and
           Durch ihn wurden Fehler und Verbesserungspotentiale in Anforderungen und Umsetzung aufgezeigt.
           Er unterstützte seine Kollegen auch über seinen Aufgabenbereich hinaus. Die Zusammenarbeit war sehr angenehm.
           Er war eine Bereicherung für das Projektteam.
-        `
-      }
+        `,
+      },
     ],
-    short: `*Lots of projects, lots of experience. Java, Oracle & large servers.*`,
+    short: "*Lots of projects, lots of experience. Java, Oracle & large servers.*",
     description: `
       As a contractor for T-Systems I was involved in numerous projects:
 
@@ -332,7 +359,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
       signed and encrypted - by email to the customer. The application was designed to run in multiple processes, 
       possibly distributed across multiple machines. The distributed C++ components used Corba to communicate. 
       Data was stored in a Oracle database. There also was a self service website written Java and servlet (yuck) technology.
-    `
+    `,
   },
   {
     position: "Java Trainer",
@@ -346,7 +373,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     description: `
      I was teaching several Java and programming basics courses at ML Consulting Dresden and Berlin. 
      I got very good ratings from my students and the manager of the consulting facility wants me back for more.
-    `
+    `,
   },
   {
     position: "Speaking about Scala and Lift3",
@@ -359,7 +386,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     categories: [AllowedCategories.Training],
     description: `
      I was giving talks at Scala conferences about my[Lift](https://liftweb.net), the Scala web framework I'm involved with for many years.
-    `
+    `,
   },
   {
     position: "Speaking about Scala and Lift3",
@@ -372,7 +399,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     categories: [AllowedCategories.Training],
     description: `
      I was giving talks at Scala conferences about my[Lift](https://liftweb.net), the Scala web framework I'm involved with for many years.
-    `
+    `,
   },
   {
     position: "Author of 'Lift Web Applications HowTo'",
@@ -386,7 +413,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     description: `
       Together with Pack Publishing I authored a small book about Lift,
       the ['Lift Web Applications HowTo'](https://www.packtpub.com/web-development/instant-lift-web-applications-how-instant).
-    `
+    `,
   },
   {
     position: "Diploma (master equivalent)",
@@ -404,7 +431,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
       Well and this is what I did. I started computer science at this university and finished it 
       quite successfully 4,5 years later. I started at a big telco company shortly before I finished my study. 
       I never was a fan of just hanging around...    
-    `
+    `,
   },
   {
     position: "Software Developer",
@@ -418,7 +445,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     description: `
       Cobol software to convert customer invoices for AFP printer consumption.
       Java based GUI applications to generate specifications for invoice layouts.
-    `
+    `,
   },
   {
     position: "Software Developer",
@@ -432,7 +459,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     description: `
       Development of drivers and associated software for retail cash registers,
       scanners and printers used in combination with the client's software.
-    `
+    `,
   },
   {
     position: "Software Developer",
@@ -446,7 +473,7 @@ This software manages garden tenants, readings, documents, a shared calendar and
     description: `
       Development of a converter software that converts between the Datanorm standard
       and an in house used softwae standard.
-    `
+    `,
   },
   {
     position: "Software Developer",
@@ -460,8 +487,8 @@ This software manages garden tenants, readings, documents, a shared calendar and
     description: `
       Development of a management software for printers / copiers leased by the client
       to its customers.
-    `
-  }
+    `,
+  },
 ] as StoryData[])
   .map(prepareData)
   .sort(sortByDate)

@@ -1,7 +1,7 @@
 const path = require("path")
 const slugify = require("@sindresorhus/slugify")
 const { createFilePath } = require("gatsby-source-filesystem")
-const { format } = require("date-fns")
+const { format, parseISO } = require("date-fns")
 const _ = require("lodash")
 
 const PAGINATION_OFFSET = 7
@@ -43,15 +43,9 @@ function createBlogPages({ blogPath, data, paginationTemplate, actions }) {
   const { edges } = data
   const { createRedirect, createPage } = actions
   createPosts(createPage, createRedirect, edges)
-  createPaginatedPages(
-    actions.createPage,
-    edges,
-    blogPath,
-    paginationTemplate,
-    {
-      categories: [],
-    },
-  )
+  createPaginatedPages(actions.createPage, edges, blogPath, paginationTemplate, {
+    categories: [],
+  })
   return null
 }
 
@@ -107,9 +101,6 @@ exports.createPages = async ({ actions, graphql }) => {
         description
         date
       }
-      code {
-        scope
-      }
       frontmatter {
         tags
       }
@@ -118,15 +109,15 @@ exports.createPages = async ({ actions, graphql }) => {
     query {
       blog: allMdx(
         filter: {
-          frontmatter: {published: {ne: false}}
-          fileAbsolutePath: {regex: "//content/blog//"}
+          frontmatter: { published: { ne: false } }
+          fileAbsolutePath: { regex: "//content/blog//" }
         }
-        sort: {order: DESC, fields: [frontmatter___date]}
+        sort: { order: DESC, fields: [frontmatter___date] }
       ) {
         edges {
           node {
             ...PostDetails
-          }          
+          }
         }
       }
     }
@@ -151,7 +142,6 @@ exports.createPages = async ({ actions, graphql }) => {
     paginationTemplate: path.resolve("src/templates/tags.js"),
     actions,
   })
-
 }
 
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -165,13 +155,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   })
 }
 
-function createPaginatedPages(
-  createPage,
-  edges,
-  pathPrefix,
-  paginationTemplate,
-  context,
-) {
+function createPaginatedPages(createPage, edges, pathPrefix, paginationTemplate, context) {
   const pages = edges.reduce((acc, value, index) => {
     const pageIndex = Math.floor(index / PAGINATION_OFFSET)
 
@@ -195,8 +179,7 @@ function createPaginatedPages(
         pagination: {
           page,
           nextPagePath: index === 0 ? null : nextPagePath,
-          previousPagePath:
-            index === pages.length - 1 ? null : previousPagePath,
+          previousPagePath: index === pages.length - 1 ? null : previousPagePath,
           pageCount: pages.length,
           pathPrefix,
         },
@@ -211,16 +194,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
   if (node.internal.type === "Mdx") {
     const parent = getNode(node.parent)
-    let slug =
-      node.frontmatter.slug ||
-      createFilePath({ node, getNode, basePath: "pages" })
+    let slug = node.frontmatter.slug || createFilePath({ node, getNode, basePath: "pages" })
 
     if (node.fileAbsolutePath.includes("content/blog/")) {
-      const permalink = node.frontmatter.date && node.frontmatter.slug
-        ?
-        `${format(node.frontmatter.date, "YYYY-MM-DD")}-${node.frontmatter.slug}`
-        :
-        slugify(parent.name)
+      const permalink =
+        node.frontmatter.date && node.frontmatter.slug
+          ? `${format(parseISO(node.frontmatter.date), "yyyy-MM-dd")}-${node.frontmatter.slug}`
+          : slugify(parent.name)
       slug = `/blog/${permalink}`
     }
 

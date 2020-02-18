@@ -33,7 +33,14 @@ interface IProps {
   big?: boolean
 }
 
-const Card: React.SFC<IProps> = ({backgroundColor = "#E75248", image, title, description, link, big = false}) => (
+const Card: React.SFC<IProps> = ({
+  backgroundColor = "#E75248",
+  image,
+  title,
+  description,
+  link,
+  big = false,
+}) => (
   <Link
     to={link}
     aria-label={`View ${title}`}
@@ -143,7 +150,7 @@ function SubscribeConfirmation() {
       top: 0,
       left: 0,
       width: "100%",
-      zIndex: 11
+      zIndex: 11,
     })
     document.body.append(portalContainerRef.current)
   }, [])
@@ -183,7 +190,7 @@ function SubscribeConfirmation() {
       >
         Thanks for subscribing!
       </button>,
-      portalContainerRef.current!
+      portalContainerRef.current!,
     )
   } else {
     return null
@@ -196,11 +203,11 @@ interface IRoundLinkProps {
   text: string
 }
 
-const RoundLink: React.SFC<IRoundLinkProps> = ({background, link, text}) => {
+const RoundLink: React.SFC<IRoundLinkProps> = ({ background, link, text }) => {
   return (
     <Link
       css={{
-        [bpMaxSM]: {alignSelf: "stretch"}
+        [bpMaxSM]: { alignSelf: "stretch" },
       }}
       to={link}
     >
@@ -220,8 +227,8 @@ const RoundLink: React.SFC<IRoundLinkProps> = ({background, link, text}) => {
             width: "inherit",
             borderRadius: 10,
             height: 70,
-            backgroundSize: "cover"
-          }
+            backgroundSize: "cover",
+          },
         }}
       >
         <span
@@ -231,8 +238,8 @@ const RoundLink: React.SFC<IRoundLinkProps> = ({background, link, text}) => {
             color: "white",
             opacity: 0.8,
             "&:hover": {
-              opacity: 1
-            }
+              opacity: 1,
+            },
           }}
         >
           {text}
@@ -245,7 +252,11 @@ const RoundLink: React.SFC<IRoundLinkProps> = ({background, link, text}) => {
 export default function Index() {
   const [showModal, setShowModal] = useState(false)
   return (
-    <Layout headerColor={theme.colors.black} hero={<SimpleHero />} pageTitle="AGYNAMIX - Passionate Software">
+    <Layout
+      headerColor={theme.colors.black}
+      hero={<SimpleHero />}
+      pageTitle="AGYNAMIX - Passionate Software"
+    >
       <SEO />
       <SubscribeConfirmation />
       <Container
@@ -272,13 +283,13 @@ export default function Index() {
           }
         `}
       >
-        <div css={{flexGrow: 1, alignSelf: "center"}}>
+        <div css={{ flexGrow: 1, alignSelf: "center" }}>
           <div
             css={{
               maxWidth: 380,
               [bpMaxSM]: {
-                width: 200
-              }
+                width: 200,
+              },
             }}
           >
             <div
@@ -322,8 +333,8 @@ export default function Index() {
                   "& video": {
                     display: "block",
                     maxWidth: "100%",
-                    height: "auto"
-                  }
+                    height: "auto",
+                  },
                 }}
               >
                 <video controls autoPlay>
@@ -334,12 +345,12 @@ export default function Index() {
             </SimpleModal>
           )}
         </div>
-        <div css={{flexGrow: 1, maxWidth: 600}}>
+        <div css={{ flexGrow: 1, maxWidth: 600 }}>
           <div>
-            <h1 css={{marginTop: 0}}>Hello, my name is Torsten.</h1>
+            <h1 css={{ marginTop: 0 }}>Hello, my name is Torsten.</h1>
             <p>
-              I'm a Full Stack software developer working with Scala, Java, Clojure and Typescript,{" "}
-              <TextLink to="/resume#skills">amongst others</TextLink>.
+              I&apos;m a Full Stack software developer working with Scala, Java, Clojure and
+              Typescript, <TextLink to="/resume#skills">amongst others</TextLink>.
             </p>
             <p>
               I love developing <TextLink to="/products">new things</TextLink> and working with{" "}
@@ -348,7 +359,7 @@ export default function Index() {
               <TextLink to="/resume#training">conferences</TextLink> and wrote a{" "}
               <TextLink to="/resume#training">book</TextLink>.
             </p>
-            <h2 style={{marginBottom: "10px"}}>More about me:</h2>
+            <h2 style={{ marginBottom: "10px" }}>More about me:</h2>
           </div>
           <div
             css={css`
@@ -377,9 +388,9 @@ export default function Index() {
             />
           </div>
           <div>
-            <p style={{marginTop: 10}}>
-              If you're looking for an accomplished software engineer you've come to the right place,{" "}
-              <TextLink href={website.contactEmail}>let's get in touch!</TextLink>
+            <p style={{ marginTop: 10 }}>
+              If you're looking for an accomplished software engineer you've come to the right
+              place, <TextLink href={website.contactEmail}>let's get in touch!</TextLink>
             </p>
           </div>
         </div>
@@ -414,7 +425,7 @@ export default function Index() {
 //           }
 //           frontmatter {
 //             title
-//             date(formatString: "MMMM DD, YYYY")
+//             date(formatString: "MMMM dd, YYYY")
 //             description
 //             banner {
 //               childImageSharp {

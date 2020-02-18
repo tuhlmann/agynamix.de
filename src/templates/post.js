@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import MDXRenderer from "gatsby-mdx/mdx-renderer"
+import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
 import SEO from "../components/SEO"
 import { css } from "@emotion/core"
 import { Container } from "../components/Container"
@@ -20,7 +20,17 @@ import { Tags } from "../components/Tags"
 // }
 
 const Post = ({ data: { site, mdx } }) => {
-  const { author = config.author, title, slug, date, description, banner, bannerCredit, noFooter, tags } = mdx.fields
+  const {
+    author = config.author,
+    title,
+    slug,
+    date,
+    description,
+    banner,
+    bannerCredit,
+    noFooter,
+    tags,
+  } = mdx.fields
 
   return (
     <Layout
@@ -31,7 +41,11 @@ const Post = ({ data: { site, mdx } }) => {
       noFooter={noFooter}
       subscribeForm={<SubscribeForm />}
     >
-      <SEO frontmatter={mdx.fields} metaImage={get(mdx, "fields.banner.childImageSharp.fluid.src")} isBlogPost />
+      <SEO
+        frontmatter={mdx.fields}
+        metaImage={get(mdx, "fields.banner.childImageSharp.fluid.src")}
+        isBlogPost
+      />
       <article
         css={css`
           width: 100%;
@@ -97,12 +111,16 @@ const Post = ({ data: { site, mdx } }) => {
           )}
           <br />
           {description ? <Markdown>{description}</Markdown> : null}
-          <MDXRenderer>{mdx.code.body}</MDXRenderer>
+          <MDXRenderer>{mdx.body}</MDXRenderer>
         </Container>
         {/* <SubscribeForm /> */}
       </article>
       <Container noVerticalPadding>
-        <Share url={`${config.siteUrl}${slug}`} title={title} twitterHandle={config.twitterHandle} />
+        <Share
+          url={`${config.siteUrl}${slug}`}
+          title={title}
+          twitterHandle={config.twitterHandle}
+        />
         <br />
       </Container>
     </Layout>
@@ -116,12 +134,12 @@ export const pageQuery = graphql`
         tags
       }
     }
-    mdx(fields: {id: {eq: $id}}) {
+    mdx(fields: { id: { eq: $id } }) {
       fields {
         title
         noFooter
         description
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM dd, YYYY")
         author
         banner {
           childImageSharp {
@@ -135,9 +153,7 @@ export const pageQuery = graphql`
         description
         tags
       }
-      code {
-        body
-      }
+      body
     }
   }
 `

@@ -10,11 +10,11 @@ import {
   AllowedCategories,
   Recommendation,
   ImageElement,
-  Alignment
+  Alignment,
 } from "../lib/prepare-story-data"
 import theme from "../../config/theme"
 import { TextLink } from "./Header"
-import { subYears, compareAsc } from "date-fns"
+import { subYears, compareAsc, parseISO } from "date-fns"
 import { Tags } from "./Tags"
 
 interface IProps {
@@ -39,11 +39,11 @@ const RecommendationStrong = styled.span`
 
 function renderClientImage(url?: string, img?: any) {
   const divCss = {
-    [bpMaxSM]: {alignSelf: "center"}
+    [bpMaxSM]: { alignSelf: "center" },
   }
 
   if (img) {
-    const i = <img css={{maxWidth: 200}} src={img} />
+    const i = <img css={{ minWidth: 200, maxWidth: 200 }} src={img} />
     if (url) {
       return (
         <div css={divCss}>
@@ -57,7 +57,7 @@ function renderClientImage(url?: string, img?: any) {
 }
 
 function renderRecommendation(recommendation: Recommendation) {
-  const {title, link, by, date, description} = recommendation
+  const { title, link, by, date, description } = recommendation
   const titleElem = link ? (
     <TextLink href={link}>
       <RecommendationStrong>{title}</RecommendationStrong>
@@ -101,7 +101,7 @@ function renderRecommendations(recommendations?: Recommendation[]) {
             <li
               key={idx}
               css={{
-                "& + &": {marginTop: 20}
+                "& + &": { marginTop: 20 },
               }}
             >
               <div
@@ -122,14 +122,14 @@ function renderRecommendations(recommendations?: Recommendation[]) {
 }
 
 function renderImage(imageElement: ImageElement) {
-  const {image, align, description} = imageElement
+  const { image, align, description } = imageElement
   const imgEl = (
-    <div css={{padding: "0 5px"}}>
-      <img css={{maxWidth: 350}} src={image} />
+    <div css={{ padding: "0 5px" }}>
+      <img css={{ maxWidth: 350 }} src={image} />
     </div>
   )
   const txt = (
-    <div css={{padding: "0 5px"}}>
+    <div css={{ padding: "0 5px" }}>
       <Markdown source={description} />
     </div>
   )
@@ -165,7 +165,7 @@ function renderImages(images?: ImageElement[]) {
             <li
               key={idx}
               css={{
-                "& + &": {marginTop: 20}
+                "& + &": { marginTop: 20 },
               }}
             >
               <div
@@ -195,19 +195,37 @@ export const StoryRenderer: React.FC<IProps> = ({
   withImages = true,
   yearsBack,
   more,
-  less
+  less,
 }) => {
   const [renderAll, setRenderAll] = React.useState(false)
 
   // Let me know if Metusalem wants to use it
   const renderUntil = subYears(new Date(), yearsBack || 100)
-  const allElements = story.filter(c => !categories || categories.some(v => c.categories.includes(v)))
-  const limitedElements = allElements.filter(c => compareAsc(c.end, renderUntil) > -1)
+  const allElements = story.filter(
+    c => !categories || categories.some(v => c.categories.includes(v)),
+  )
+  const limitedElements = allElements.filter(c => {
+    const endDate = parseISO(c.end)
+    return compareAsc(endDate, renderUntil) > -1
+  })
   const renderElements = renderAll ? allElements : limitedElements
   return (
     <React.Fragment>
       {renderElements.map(
-        ({position, client, logo: img, start, end, slug, short, description, link, tags, recommendations, images}) => {
+        ({
+          position,
+          client,
+          logo: img,
+          start,
+          end,
+          slug,
+          short,
+          description,
+          link,
+          tags,
+          recommendations,
+          images,
+        }) => {
           const niceStart = formatDate(start)
           const niceEnd = formatDate(end)
           return (
@@ -307,12 +325,12 @@ export const StoryRenderer: React.FC<IProps> = ({
                 <div
                   css={{
                     alignSelf: "flex-start",
-                    [bpMaxSM]: {alignSelf: "center"}
+                    [bpMaxSM]: { alignSelf: "center" },
                   }}
                 >
                   <h2
                     css={{
-                      [bpMaxSM]: {textAlign: "center"}
+                      [bpMaxSM]: { textAlign: "center" },
                     }}
                   >
                     <a href={`#${slug}`} id={slug}>
@@ -321,13 +339,13 @@ export const StoryRenderer: React.FC<IProps> = ({
                   </h2>
                   <h4
                     css={{
-                      [bpMaxSM]: {textAlign: "center"}
+                      [bpMaxSM]: { textAlign: "center" },
                     }}
                   >
                     {client};
                     <small>
                       {" "}
-                      {niceStart} -> {niceEnd}
+                      {niceStart} -&gt; {niceEnd}
                     </small>
                   </h4>
                 </div>
@@ -337,8 +355,8 @@ export const StoryRenderer: React.FC<IProps> = ({
                 css={{
                   [bpMaxSM]: {
                     display: "none",
-                    visibility: "hidden"
-                  }
+                    visibility: "hidden",
+                  },
                 }}
               >
                 <Tags tags={tags} />
@@ -406,18 +424,18 @@ export const StoryRenderer: React.FC<IProps> = ({
             </ul> */}
             </div>
           )
-        }
+        },
       )}
       {!renderAll && allElements.length > limitedElements.length && (
-        <div css={{display: "flex"}}>
-          <button css={{margin: "auto"}} type="button" onClick={() => setRenderAll(true)}>
+        <div css={{ display: "flex" }}>
+          <button css={{ margin: "auto" }} type="button" onClick={() => setRenderAll(true)}>
             {more || "Show More"}
           </button>
         </div>
       )}
       {renderAll && allElements.length > limitedElements.length && (
-        <div css={{display: "flex"}}>
-          <button css={{margin: "auto"}} type="button" onClick={() => setRenderAll(false)}>
+        <div css={{ display: "flex" }}>
+          <button css={{ margin: "auto" }} type="button" onClick={() => setRenderAll(false)}>
             {less || "Show Less"}
           </button>
         </div>

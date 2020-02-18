@@ -17,12 +17,10 @@ declare module "@sindresorhus/slugify" {
   export default slugify
 }
 
-declare module "gatsby-mdx/mdx-renderer" {
-  export default class MDXRenderer extends React.Component<any> {}
-}
+declare module "gatsby-plugin-mdx/mdx-renderer"
 
-declare module "@mdx-js/tag" {
-  export class MDXProvider extends React.Component<any> {}
-}
+// declare module "gatsby-mdx/mdx-renderer" {
+//   export default class MDXRenderer extends React.Component<any> {}
+// }
 
 declare module "react-share"
