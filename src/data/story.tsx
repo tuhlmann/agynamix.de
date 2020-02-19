@@ -19,14 +19,14 @@ export default ([
       new features use a new frontend centric Angular 8 / Typescript architecture 
       within a NX workspace.
     `,
-    recommendations: [
-      {
-        title: "Letter of Recommendation",
-        date: "2020-06-30",
-        by: "Dan O' Leary, Development Team Lead, ScaledAgile Weave",
-        link: "/documents/scaledagile_rec_tuhlmann.pdf",
-      },
-    ],
+    // recommendations: [
+    //   {
+    //     title: "Letter of Recommendation",
+    //     date: "2020-06-30",
+    //     by: "Dan O' Leary, Development Team Lead, ScaledAgile Weave",
+    //     link: "/documents/scaledagile_rec_tuhlmann.pdf",
+    //   },
+    // ],
   },
   {
     position: "Senior Software Developer",
